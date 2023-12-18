@@ -12,73 +12,49 @@
 }
 
 @font-face {
-    @include font-face('Nunito Sans', normal, 400, 'Nunito Sans Regular',
-            '../fonts/nunito/NunitoSans-Regular.ttf?s16i6w',
-            '../fonts/nunito/NunitoSans-Regular.ttf?s16i6w#iefix',
-            '../fonts/nunito/NunitoSans-Regular.woff?s16i6w',
-            '../fonts/nunito/NunitoSans-Regular.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 100, 'Catamaran Thin',
+            '../fonts/catamaran/Catamaran-Thin.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-Thin.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-Thin.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-Thin.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Nunito Sans', italic, 400, 'Nunito Sans Italic',
-            '../fonts/nunito/NunitoSans-Italic.ttf?s16i6w',
-            '../fonts/nunito/NunitoSans-Italic.ttf?s16i6w#iefix',
-            '../fonts/nunito/NunitoSans-Italic.woff?s16i6w',
-            '../fonts/nunito/NunitoSans-Italic.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 300, 'Catamaran Light',
+            '../fonts/catamaran/Catamaran-Light.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-Light.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-Light.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-Light.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Nunito Sans', normal, 700, 'Nunito Sans Bold',
-            '../fonts/nunito/NunitoSans-Bold.ttf?s16i6w',
-            '../fonts/nunito/NunitoSans-Bold.ttf?s16i6w#iefix',
-            '../fonts/nunito/NunitoSans-Bold.woff?s16i6w',
-            '../fonts/nunito/NunitoSans-Bold.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 400, 'Catamaran Regular',
+            '../fonts/catamaran/Catamaran-Regular.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-Regular.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-Regular.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-Regular.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Banda', normal, 200, 'Banda Extra Light',
-            '../fonts/banda/Banda-ExtraLight.ttf?s16i6w',
-            '../fonts/banda/Banda-ExtraLight.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-ExtraLight.woff?s16i6w',
-            '../fonts/banda/Banda-ExtraLight.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 500, 'Catamaran Medium',
+            '../fonts/catamaran/Catamaran-Medium.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-Medium.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-Medium.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-Medium.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Banda', normal, 300, 'Banda Light',
-            '../fonts/banda/Banda-Light.ttf?s16i6w',
-            '../fonts/banda/Banda-Light.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-Light.woff?s16i6w',
-            '../fonts/banda/Banda-Light.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 700, 'Catamaran Bold',
+            '../fonts/catamaran/Catamaran-Bold.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-Bold.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-Bold.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-Bold.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Banda', normal, 400, 'Banda Regular',
-            '../fonts/banda/Banda-Regular.ttf?s16i6w',
-            '../fonts/banda/Banda-Regular.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-Regular.woff?s16i6w',
-            '../fonts/banda/Banda-Regular.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Banda', italic, 400, 'Banda Italic',
-            '../fonts/banda/Banda-RegularItalic.ttf?s16i6w',
-            '../fonts/banda/Banda-RegularItalic.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-RegularItalic.woff?s16i6w',
-            '../fonts/banda/Banda-RegularItalic.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Banda', normal, 600, 'Banda Semi Bold',
-            '../fonts/banda/Banda-SemiBold.ttf?s16i6w',
-            '../fonts/banda/Banda-SemiBold.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-SemiBold.woff?s16i6w',
-            '../fonts/banda/Banda-SemiBold.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Banda', normal, 700, 'Banda Bold',
-            '../fonts/banda/Banda-Bold.ttf?s16i6w',
-            '../fonts/banda/Banda-Bold.ttf?s16i6w#iefix',
-            '../fonts/banda/Banda-Bold.woff?s16i6w',
-            '../fonts/banda/Banda-Bold.woff2?s16i6w');
+    @include font-face('Catamaran', normal, 800, 'Catamaran Extra Bold',
+            '../fonts/catamaran/Catamaran-ExtraBold.ttf?s16i6w',
+            '../fonts/catamaran/Catamaran-ExtraBold.ttf?s16i6w#iefix',
+            '../fonts/catamaran/Catamaran-ExtraBold.woff?s16i6w',
+            '../fonts/catamaran/Catamaran-ExtraBold.woff2?s16i6w');
 }
