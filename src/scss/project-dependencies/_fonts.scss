@@ -1,0 +1,84 @@
+// Fonts
+@mixin font-face($font-family, $font-style, $font-weight, $font1, $font-local, $font2, $font3, $font4) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($font1);
+    src: local($font-local),
+        url($font2) format('truetype'),
+        url($font3) format('woff'),
+        url($font4) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    @include font-face('Nunito Sans', normal, 400, 'Nunito Sans Regular',
+            '../fonts/nunito/NunitoSans-Regular.ttf?s16i6w',
+            '../fonts/nunito/NunitoSans-Regular.ttf?s16i6w#iefix',
+            '../fonts/nunito/NunitoSans-Regular.woff?s16i6w',
+            '../fonts/nunito/NunitoSans-Regular.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Nunito Sans', italic, 400, 'Nunito Sans Italic',
+            '../fonts/nunito/NunitoSans-Italic.ttf?s16i6w',
+            '../fonts/nunito/NunitoSans-Italic.ttf?s16i6w#iefix',
+            '../fonts/nunito/NunitoSans-Italic.woff?s16i6w',
+            '../fonts/nunito/NunitoSans-Italic.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Nunito Sans', normal, 700, 'Nunito Sans Bold',
+            '../fonts/nunito/NunitoSans-Bold.ttf?s16i6w',
+            '../fonts/nunito/NunitoSans-Bold.ttf?s16i6w#iefix',
+            '../fonts/nunito/NunitoSans-Bold.woff?s16i6w',
+            '../fonts/nunito/NunitoSans-Bold.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', normal, 200, 'Banda Extra Light',
+            '../fonts/banda/Banda-ExtraLight.ttf?s16i6w',
+            '../fonts/banda/Banda-ExtraLight.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-ExtraLight.woff?s16i6w',
+            '../fonts/banda/Banda-ExtraLight.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', normal, 300, 'Banda Light',
+            '../fonts/banda/Banda-Light.ttf?s16i6w',
+            '../fonts/banda/Banda-Light.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-Light.woff?s16i6w',
+            '../fonts/banda/Banda-Light.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', normal, 400, 'Banda Regular',
+            '../fonts/banda/Banda-Regular.ttf?s16i6w',
+            '../fonts/banda/Banda-Regular.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-Regular.woff?s16i6w',
+            '../fonts/banda/Banda-Regular.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', italic, 400, 'Banda Italic',
+            '../fonts/banda/Banda-RegularItalic.ttf?s16i6w',
+            '../fonts/banda/Banda-RegularItalic.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-RegularItalic.woff?s16i6w',
+            '../fonts/banda/Banda-RegularItalic.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', normal, 600, 'Banda Semi Bold',
+            '../fonts/banda/Banda-SemiBold.ttf?s16i6w',
+            '../fonts/banda/Banda-SemiBold.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-SemiBold.woff?s16i6w',
+            '../fonts/banda/Banda-SemiBold.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Banda', normal, 700, 'Banda Bold',
+            '../fonts/banda/Banda-Bold.ttf?s16i6w',
+            '../fonts/banda/Banda-Bold.ttf?s16i6w#iefix',
+            '../fonts/banda/Banda-Bold.woff?s16i6w',
+            '../fonts/banda/Banda-Bold.woff2?s16i6w');
+}
