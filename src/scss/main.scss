@@ -1,24 +1,24 @@
 //Include bootstrap
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-@import "patterns/mod-var-bootstrap";
+// @import "patterns/mod-var-bootstrap";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables";
 
 // 4. Include any default map overrides here
-@import "patterns/mod-map-bootstrap";
+// @import "patterns/mod-map-bootstrap";
 
 // 5. Include remainder of required parts
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/root";
 
 // 6. Optionally include any other parts as needed
-@import "../../node_modules/bootstrap/scss/utilities";
-@import "../../node_modules/bootstrap/scss/images";
-@import "../../node_modules/bootstrap/scss/grid";
+// @import "../../node_modules/bootstrap/scss/utilities";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/grid";
 
 //Libraries
 @import "../../node_modules/swiper/swiper-bundle";
@@ -34,6 +34,7 @@
 @import "components/title";
 @import "components/tabs";
 @import "components/text-align";
+@import "components/banner-tuenti";
 
 // Patterns
 @import "patterns/general";
