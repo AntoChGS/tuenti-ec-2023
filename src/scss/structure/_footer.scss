@@ -236,6 +236,18 @@
             }
         }
 
+        &__apps {
+            >li {
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .link-app {}
+        }
+
         &__copyright {
             padding: 16px 0;
             background: #372E7D;
