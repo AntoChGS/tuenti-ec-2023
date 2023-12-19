@@ -16,7 +16,7 @@ animationDelay();
 // swiperLoops();
 
 // Footer Menu accordion
-// footerAccordion();
+footerAccordion();
 
 //function resize
 // window.addEventListener("resize", widthChangeCallback);
@@ -239,9 +239,9 @@ function swiperLoops() {
 
 //Footer Function
 function footerAccordion() {
-  if (document.querySelector(".prv-footer .menu-accordion")) {
+  if (document.querySelector(".tue-footer .menu-accordion")) {
     let acc = document.querySelectorAll(
-      ".prv-footer .menu-accordion .menu-accordion__header"
+      ".tue-footer .menu-accordion .menu-accordion__header"
     );
     let i;
     for (i = 0; i < acc.length; i++) {

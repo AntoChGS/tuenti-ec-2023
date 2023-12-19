@@ -51,7 +51,7 @@ footer.tue-footer
                                             li: a(href="https://www.tuenti.ec/avisos-legales") Avisos legales
                                             li: a(href="https://www.tuenti.ec/buen-uso-de-numero-de-emergencia") 911
                         .nav__column
-                            .footer__menu
+                            .footer__menu.menu-apps
                                 p.menu__title Descarga App Tuenti
                                 ul.footer__apps 
                                     li 
@@ -75,21 +75,15 @@ footer.tue-footer
                                             li: a(href="#") Rentabilidad y fichas Pensiones Voluntarias
     .footer__copyright
         .container
-            .copyright__text 
-                p Copyright © 2023
-            //.footer__groups
-                .groups__item
-                    a.groups__link(href="https://www.grupoaval.com/", target="_blank", rel="noopener noreferrer") 
-                        picture.groups__image 
-                            source(media="(min-width: 768px)", srcset="images/logo/logo-grupo-aval.png")
-                            img(src="images/logo/logo-grupo-aval-mobile.png", alt="logo grupo aval", width="164", heigh="33")
-                .groups__item
-                    a.groups__link(href="#", target="_blank", rel="noopener noreferrer") 
-                        picture.groups__image 
-                            source(media="(min-width: 768px)", srcset="images/logo/logo-CCCE-blanco.png")
-                            img(src="images/logo/logo-CCCE-blanco-mobile.png", alt="logo ccce", width="164", heigh="53")
-                .groups__item
-                    a.groups__link(href="https://www.superfinanciera.gov.co/", target="_blank", rel="noopener noreferrer") 
-                        picture.groups__image 
-                            source(media="(min-width: 768px)", srcset="images/logo/logo-vigilado-superintendencia-financiera-de-colombia-blanco.png")
-                            img(src="images/logo/logo-vigilado-superintendencia-financiera-de-colombia-blanco-mobile.png", alt="logo vigilado superintendencia financiera de colombia", width="304", heigh="21")
+            .row.copyright-row
+                .col-md-6
+                    .footer__social
+                        ul.social__list 
+                            li: a(href="https://www.facebook.com/TuentiEC", target="_blank", rel="noopener noreferrer"): span.icon: svg: use(xlink:href=iconPath+'facebook')
+                            li: a(href="https://twitter.com/tuentiec?lang=en", target="_blank", rel="noopener noreferrer"): span.icon: svg: use(xlink:href=iconPath+'twitter')
+                            li: a(href="https://www.instagram.com/tuentiec/?hl=en", target="_blank", rel="noopener noreferrer"): span.icon: svg: use(xlink:href=iconPath+'instagram')
+                            li: a(href="https://www.youtube.com/channel/UC2UHK0TaJWDrlQE-NoU8uhw", target="_blank", rel="noopener noreferrer"): span.icon: svg: use(xlink:href=iconPath+'youtube')
+                .col-md-6
+                    .copyright__text 
+                        p Copyright © 2023
+            
