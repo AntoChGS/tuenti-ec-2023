@@ -1,85 +1,92 @@
-header.pvr__header 
-    div.header--quicklinks
-        div.dropdown
-            button(href="/personas" class="dropdown--toggle") 
-                span.text Personas 
-                span.icon: svg: use(xlink:href=iconPath+'chevron-down')               
-            ul.dropdown--menu#quickLinks
-                li.dropdown--item.active
-                    a(href="/inicio.html", target="_blank", rel="noopener noreferrer" class="link") Personas
-                li.dropdown--item
-                    a(href="/empresas.html", target="_blank", rel="noopener noreferrer" class="link") Empresas
-                li.dropdown--item
-                    a(href="/prensionados.html", target="_blank", rel="noopener noreferrer" class="link") Pensionados
-                li.dropdown--item.offset--item
-                    a(href="/servicios.html", target="_blank", rel="noopener noreferrer" class="link") Servicios en línea
-                li.dropdown--item
-                    a(href="/certificados.html", target="_blank", rel="noopener noreferrer" class="link") Certificados y extractos 
-                li.dropdown--item
-                    a(href="/ayuda.html", target="_blank", rel="noopener noreferrer" class="link") Ayuda 
+header.tuec__header 
+    .container 
+        .brand 
+            picture 
+                img(src="images/header/tuec_logo.png", alt="logo tuenti", srcset="images/header/tuec_logo.png")
+        nav.navigation
+            ul.menu__list.accordion(data-multiselect="false")
+                li.menu__item.has__child
+                    a(href="http://", target="_blank", rel="noopener noreferrer", class="link accordion__tab") 
+                        span.icon: img(src="images/header/icon-sim-card.png", alt="icono sim card", srcset="images/header/icon-sim-card.png")
+                        span.text Pide tu chip
+                        span.icon--toggle: img(src="images/header/icon_arrow-down.png", alt="icon flecha abajo", srcset="images/header/icon_arrow-down.png")
+                    .submenu.accordion__panel
+                        .container
+                            .submenu__children
+                                ul.submenu__list 
+                                    li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                        span.icon: img(src="images/header/icon-sim-card.png", alt="icono sim card", srcset="images/header/icon-chip.png")
+                                        span.text ¿Qué es Chip Tuenti?
+                                    li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                        span.icon
+                                        span.text Comprar Chip Tuenti con Combo
+                                    li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                        span.icon
+                                        span.text Pásate con tu mismo número        
+                            .submenu__webcontent                                                                       
+                li.menu__item.has__child
+                    a(href="http://", target="_blank", rel="noopener noreferrer", class="link accordion__tab") 
+                        span.icon: img(src="images/header/icon-phone-add.png", alt="icono celular", srcset="images/header/icon-phone-add.png")
+                        span.text Recarga
+                        span.icon--toggle: img(src="images/header/icon_arrow-down.png", alt="icon flecha abajo", srcset="images/header/icon_arrow-down.png")
+                    .submenu.accordion__panel
+                        .submenu__children
+                            ul.submenu__list 
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon: img(src="images/header/icon-sim-card.png", alt="icono sim card", srcset="images/header/icon-recarga.png")
+                                    span.text Como recargar
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon
+                                    span.text Recarga online
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon: img(src="images/header/icon-sim-card.png", alt="icono sim card", srcset="images/header/icon-canales-recarga.png")
+                                    span.text Otros canales de recarga      
+                        .submenu__webcontent                         
+                li.menu__item.has__child
+                    a(href="http://", target="_blank", rel="noopener noreferrer", class="link accordion__tab") 
+                        span.icon: img(src="images/header/icon-shopping-cart.png", alt="icono carro de compra", srcset="images/header/icon-shopping-cart.png")
+                        span.text Compra
+                        span.icon--toggle: img(src="images/header/icon_arrow-down.png", alt="icon flecha abajo", srcset="images/header/icon_arrow-down.png")
+                    .submenu.accordion__panel
+                        .submenu__children
+                            ul.submenu__list 
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon
+                                    span.text Comprar Combos Tuenti
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon
+                                    span.text Comprar Comodines Tuenti
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon
+                                    span.text Prepago Tuenti     
+                        .submenu__webcontent                              
+                li.menu__item.has__child
+                    a(href="http://", target="_blank", rel="noopener noreferrer", class="link accordion__tab") 
+                        span.icon: img(src="images/header/icon-question.png", alt="icono pregunta", srcset="images/header/icon-question.png")
+                        span.text Ayuda
+                        span.icon--toggle: img(src="images/header/icon_arrow-down.png", alt="icon flecha abajo", srcset="images/header/icon_arrow-down.png")
+                    .submenu.accordion__panel
+                        .submenu__children
+                            ul.submenu__list 
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon: img(src="images/header/icon-centro-ayuda.png", alt="icono pregunta", srcset="images/header/icon-centro-ayuda.png")
+                                    span.text Centro de ayuda Tuenti
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon: img(src="images/header/icon-person-circle.png", alt="icono pregunta", srcset="images/header/icon-person-circle.png")
+                                    span.text Lo más preguntado
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon
+                                    span.text Centro de Transparencia
+                                li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                                    span.icon: img(src="images/header/icon-comunity.png", alt="icono pregunta", srcset="images/header/icon-comunity.png")
+                                    span.text Comunidad                                         
+                        .submenu__webcontent                              
+            .search 
+                a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                    span.icon: img(src="images/header/icon-search.png", alt="icon lupa", srcset="images/header/icon-search.png")
+                    span.text Búsqueda
+            .login
+                a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                    span.text Mi tuenti
+                    span.icon: img(src="images/header/icon-search.png", alt="icon usuario", srcset="images/header/icon-person-fill.png")
 
-    .header--navigation
-        .content
-            .brand 
-                a(href="/" class="brand__link") 
-                    picture 
-                        source(media="(min-width: 992px)", srcset="images/header/brand-desktop.png")
-                        img(src="images/header/brand-mobile.png", alt="Logo Porvenir", srcset="images/header/brand-mobile.png" class="image")
-
-            .navigation
-                .navigation--desktop              
-                .navigation--login
-                    a(href="#" class="btn--login") 
-                        span.text Iniciar sesión 
-                        span.icon: svg: use(xlink:href=iconPath+'arrow-right')
-                .navigation--action
-                    button(type="button" class="btn--search") 
-                        span.text buscar 
-                        span.icon: svg: use(xlink:href=iconPath+'search') 
-                    button(type="button" class="btn--menu" id="btnNav") 
-                        span.text Menu
-                        span.icon-left
-                        span.icon-right
-            .navigation--menu   
-
-    .global__navigation      
-        nav.nav__menu#navigation
-            ul.menu--list.accordion__list(data-multiselect="false")
-                li.menu--item
-                    a(href="/pensiones-obligatorias" class="link accordion__tab") 
-                        span.icon: svg: use(xlink:href=iconPath+'piggy-bank') 
-                        span.text Pensiones Obligatorias
-                        span.icon.icon--toggle: svg: use(xlink:href=iconPath+'chevron-down')
-                    ul.submenu--list.accordion__panel
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Servicios en línea
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Articulo de interés
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Preguntas frecuentes
-                li.menu--item
-                    a(href="/cesantias" class="link accordion__tab") 
-                        span.icon: svg: use(xlink:href=iconPath+'home') 
-                        span.text Cesantías
-                        span.icon.icon--toggle: svg: use(xlink:href=iconPath+'chevron-down')
-                    ul.submenu--list.accordion__panel
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Servicios en línea
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Articulo de interés
-                li.menu--item
-                    a(href="pensiones voluntarias" class="link accordion__tab") 
-                        span.icon: svg: use(xlink:href=iconPath+'coins') 
-                        span.text Pensiones Voluntarias
-                        span.icon.icon--toggle: svg: use(xlink:href=iconPath+'chevron-down')
-                    ul.submenu--list.accordion__panel
-                        li.submenu--item 
-                            a(href="/", target="_blank", rel="noopener noreferrer", class="sub-link") Servicios en línea       
-
-        .navigation--search
-            form(action="", method="get") 
-                input(type="search" id="search" name="q" class="search__input")
-                label(for="search" class="search__label") Buscar
-                button(type="submit" value="Buscar" class="search__btn") 
-                    span.text buscar
-                    span.icon: svg: use(xlink:href=iconPath+'search') 

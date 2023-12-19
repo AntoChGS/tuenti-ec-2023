@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: var(--fontNunito);
+    font-family: var(--fontCatamaran);
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-gray-500);
@@ -111,7 +111,7 @@ p {
 
 a {
     word-wrap: break-word;
-    color: --color-blue;
+    color: var(--color-blue);
     -webkit-tap-highlight-color: var(--transparent);
     transition: all ease 300ms;
     text-decoration: none;
@@ -141,7 +141,7 @@ img {
 }
 
 button {
-    font-family: var(--fontNunito);
+    font-family: var(--fontCatamaran);
 }
 
 form {

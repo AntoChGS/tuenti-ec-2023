@@ -1,83 +1,70 @@
-footer.prv-footer
+footer.tue-footer
     .footer__nav
         .container
+            .nav__brand
+                .footer__logo
+                    a.logo__link(href="https://www.tuenti.ec/", title="Tuenti") 
+                        picture.logo__picture 
+                            source(media="(min-width: 768px)", srcset="images/logo/logo-tuenti-ec-blanco.png")
+                            img(src="images/logo/logo-tuenti-ec-blanco.png", alt="logo tuenti ec", width="139", heigh="28")
             .nav__wrapper
-                .nav__brand
-                    .footer__logo
-                        a.logo__link(href="https://www.porvenir.com.co/", title="Porvenir") 
-                            picture.logo__picture 
-                                source(media="(min-width: 768px)", srcset="images/logo/logo-porvenir-blanco.png")
-                                img(src="images/logo/logo-porvenir-blanco.png", alt="logo porvenir", width="113", heigh="87")
-                    .footer__social
-                        p.menu__title Síguenos en:
-                        ul.social__list 
-                            li
-                                a(href="#", target="_blank", rel="noopener noreferrer", title="Twitter")
-                                    span.icon: svg: use(xlink:href=iconPath+'twitter') 
-                            li
-                                a(href="#", target="_blank", rel="noopener noreferrer", title="Facebook")
-                                    span.icon: svg: use(xlink:href=iconPath+'facebook')
-                            li
-                                a(href="#", target="_blank", rel="noopener noreferrer", title="Instagram")
-                                    span.icon: svg: use(xlink:href=iconPath+'instagram')
-                            li
-                                a(href="#", target="_blank", rel="noopener noreferrer", title="Youtube")
-                                    span.icon: svg: use(xlink:href=iconPath+'youtube')
                 .nav__menu
                     .nav__wrapper
                         .nav__column
                             .footer__menu.menu-accordion 
                                 p.menu-accordion__header.menu__title 
-                                    button.menu-accordion__button Documentación
+                                    button.menu-accordion__button Conoce más de Tuenti
                                         span.icon: svg: use(xlink:href=iconPath+'arrow-down')
                                 .menu-accordion__collapse
                                     .menu-accordion__body
                                         ul.menu__links 
-                                            li: a(href="#") Ir a todos los documentos
-                                            li: a(href="#") Comisiones de Administración
-                                            li: a(href="#") Consulta de solicitudes y quejas
-                                 
-                                p.menu-accordion__header.menu__title 
-                                    button.menu-accordion__button Noticias
-                                        span.icon: svg: use(xlink:href=iconPath+'arrow-down')
-                                .menu-accordion__collapse
-                                    .menu-accordion__body
-                                        ul.menu__links 
-                                            li: a(href="#") Todas las noticias
-                                            li: a(href="#") Comunicados de prensa
+                                            li: a(href="https://www.tuenti.ec/por-que-tuenti") ¿Qué es Tuenti?
+                                            li: a(href="https://www.tuenti.ec/pasarme-a-tuenti-con-linea-nueva") Pedir tu chip Tuenti
+                                            li: a(href="https://www.tuenti.ec/portarse-a-tuenti") Portarse a tuenti
+                                            li: a(href="https://www.tuenti.ec/referidos-tuenti") Referidos Tuenti
+                                            li: a(href="https://www.tuenti.ec/app") App Tuenti
+                                            li: a(href="https://www.tuenti.ec/prepago-tuenti") Prepago Tuenti
+                                
                         .nav__column 
                             .footer__menu.menu-accordion 
                                 p.menu-accordion__header.menu__title 
-                                    button.menu-accordion__button(type="button") Corporativo
+                                    button.menu-accordion__button(type="button") Combos Tuenti y Recarga
                                         span.icon: svg: use(xlink:href=iconPath+'arrow-down')
                                 .menu-accordion__collapse
                                     .menu-accordion__body
                                         ul.menu__links 
-                                            li: a(href="#") Mapa del sitio
-                                            li: a(href="#") Sobre nosotros
-                                            li: a(href="#") Estados financieros
-                                            li: a(href="#") Reconocimientos
-                                            li: a(href="#") Inclusión a la diversidad y a los afiliados con discapacidades
-                                            li: a(href="#") Sostenibilidad
+                                            li: a(href="https://www.tuenti.ec/recarga-online") Recarga online tu Tuenti
+                                            li: a(href="https://www.tuenti.ec/compra-comodines-tuenti") Comprar Comodines
+                                            li: a(href="https://www.tuenti.ec/comprar-combos-tuenti") Comprar Combos Tuenti
+                                            li: a(href="#") Compra de celulares Online
                         .nav__column 
                             .footer__menu.menu-accordion 
                                 p.menu-accordion__header.menu__title 
-                                    button.menu-accordion__button(type="button") Legal
+                                    button.menu-accordion__button(type="button") Consultas sobre Tuenti
                                         span.icon: svg: use(xlink:href=iconPath+'arrow-down')
                                 .menu-accordion__collapse
                                     .menu-accordion__body
                                         ul.menu__links 
-                                            li: a(href="#") Línea ética
-                                            li: a(href="#") Transparencia y acceso a la información
-                                            li: a(href="#") Protección de datos personales
-                                            li: a(href="#") Sistema de atención al consumidor
-                                            li: a(href="#") Defensor del consumidor financiero
+                                            li: a(href="https://www.tuenti.ec/centro-de-ayuda-tuenti") Ayuda
+                                            li: a(href="https://www.tuenti.ec/preguntas-frecuentes") Lo más preguntado
+                                            li: a(href="https://comunidad.tuenti.ec/") Comunidad Tuenti
+                                            li: a(href="https://www.tuenti.ec/avisos-legales") Avisos legales
+                                            li: a(href="https://www.tuenti.ec/buen-uso-de-numero-de-emergencia") 911
                         .nav__column
-                            .footer__menu.menu-accordion
-                                p.menu-accordion__header.menu__title 
-                                    button.menu-accordion__button(type="button") Productos
-                                        span.icon: svg: use(xlink:href=iconPath+'arrow-down')
-                                .menu-accordion__collapse
+                            .footer__menu
+                                p.menu__title Descarga App Tuenti
+                                ul.footer__apps 
+                                    li 
+                                        a.link-app(href="https://play.google.com/store/apps/details?id=ec.otecel.tuenti", target="_blank", rel="noopener noreferrer")
+                                            picture.picture-app
+                                                source(media="(min-width: 768px)", srcset="images/logo/descargar-google-play.png")
+                                                img(src="images/logo/descargar-google-play.png", alt="logo app store", width="146", heigh="45") 
+                                    li  
+                                        a.link-app(href="https://apps.apple.com/us/app/id1526222776", target="_blank", rel="noopener noreferrer")
+                                            picture.picture-app
+                                                source(media="(min-width: 768px)", srcset="images/logo/descargar-app-store.png")
+                                                img(src="images/logo/descargar-app-store.png", alt="logo app store", width="146", heigh="45") 
+                                //.menu-accordion__collapse
                                     .menu-accordion__body
                                         ul.menu__links 
                                             li: a(href="#") Pensiones Obligatorias
@@ -89,8 +76,8 @@ footer.prv-footer
     .footer__copyright
         .container
             .copyright__text 
-                p Para cualquier contacto con nuestra entidad escríbenos a #[a(href="https://contacto.porvenir.com.co/", target="_blank", rel="noopener noreferrer") Ventanilla Virtual] Para notificaciones judiciales, escríbenos a #[a(href="mailto:notificacionesjudiciales@porvenir.com.co") notificacionesjudiciales@porvenir.com.co] o consulta información en nuestra página haciendo clic #[a(href="https://www.porvenir.com.co/web/personas/notificaciones-judiciales", target="_blank", rel="noopener noreferrer") aquí] Cuentas con un Defensor del Consumidor Financiero, Dra. Ana María Giraldo Rincón ubicado en la carrera 10 # 97A-13 Oficina 502 en Bogotá, Teléfono: 601 610 81 64, #[a(href="mailto:defensoriaporvenir@legalcrc.com") defensoriaporvenir@legalcrc.com], quien dará trámite a tu queja de forma objetiva y gratuita. © 2021, Todos los derechos reservados por Porvenir S.A
-            .footer__groups
+                p Copyright © 2023
+            //.footer__groups
                 .groups__item
                     a.groups__link(href="https://www.grupoaval.com/", target="_blank", rel="noopener noreferrer") 
                         picture.groups__image 
