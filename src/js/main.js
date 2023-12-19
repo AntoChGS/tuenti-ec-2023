@@ -4,23 +4,22 @@
 
 //function accordion toggle
 accordionToggle("accordion");
-accordionToggle("accordion__list");
 
 //dropdown menu quicklinks
-dropDownQuickLinks();
+// dropDownQuickLinks();
 
 //function header mobile
-showMenuHamburguer();
+// showMenuHamburguer();
 
 // function swiper sliders
-swiperLoops();
+// swiperLoops();
 
 // Footer Menu accordion
-footerAccordion();
+// footerAccordion();
 
 //function resize
-window.addEventListener("resize", widthChangeCallback);
-widthChangeCallback();
+// window.addEventListener("resize", widthChangeCallback);
+// widthChangeCallback();
 
 //dropdown menu quicklinks
 function dropDownQuickLinks() {
@@ -296,175 +295,3 @@ function widthChangeCallback() {
       .insertAdjacentElement("beforeEnd", navigation);
   }
 }
-
-//  sticky
-(function () {
-  let d = document;
-
-  function init() {
-    let links = document.querySelectorAll(".btn__navigatelink");
-    links.forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        let anchor = this.getAttribute("data-navigatelink");
-        anchor = document.querySelector(`[data-navigateanchor='${anchor}']`);
-        scrollTo(anchor, e);
-      });
-    });
-  }
-
-  var requestAnimFrame = (function () {
-    return (
-      window.requestAnimationFrame ||
-      window.webkitRequestAnimationFrame ||
-      window.mozRequestAnimationFrame ||
-      function (callback) {
-        window.setTimeout(callback, 1000 / 60);
-      }
-    );
-  })();
-
-  function scrollTo(to, callback, duration = 500) {
-    if (isDomElement(to)) {
-      // console.log('this is an element:', to); //DEBUG
-      to = to.offsetTop;
-    }
-    /*else {
-			// console.log('this is NOT an element:', to); //DEBUG
-		}*/
-
-    // because it's so fucking difficult to detect the scrolling element, just move them all
-    function move(amount) {
-      // document.scrollingElement.scrollTop = amount; //FIXME Test that
-      document.documentElement.scrollTop = amount;
-      document.body.parentNode.scrollTop = amount;
-      document.body.scrollTop = amount;
-    }
-
-    function position() {
-      console.log("anchor position", to);
-      return (
-        // document.documentElement.offsetTop ||
-        // document.body.parentNode.offsetTop ||
-        // document.body.offsetTop
-        document.body.getBoundingClientRect().top * -1
-      );
-    }
-
-    var start = position(),
-      change = to - start,
-      currentTime = 0,
-      increment = 20;
-    console.log("start:", start); //DEBUG
-    console.log("to:", to); //DEBUG
-    console.log("change:", change); //DEBUG
-
-    var animateScroll = function () {
-      // increment the time
-      currentTime += increment;
-      // find the value with the quadratic in-out easing function
-      var val = Math.easeInOutQuad(currentTime, start, change, duration);
-      // move the document.body
-      move(val);
-      // do the animation unless its over
-      if (currentTime < duration) {
-        requestAnimFrame(animateScroll);
-      } else {
-        if (callback && typeof callback === "function") {
-          // the animation is done so lets callback
-          callback();
-        }
-      }
-    };
-
-    animateScroll();
-  }
-
-  init();
-})();
-
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d / 2;
-  if (t < 1) {
-    return (c / 2) * t * t + b;
-  }
-  t--;
-  return (-c / 2) * (t * (t - 2) - 1) + b;
-};
-
-Math.easeInCubic = function (t, b, c, d) {
-  var tc = (t /= d) * t * t;
-  return b + c * tc;
-};
-
-Math.inOutQuintic = function (t, b, c, d) {
-  var ts = (t /= d) * t,
-    tc = ts * t;
-  return b + c * (6 * tc * ts + -15 * ts * ts + 10 * tc);
-};
-
-function isDomElement(obj) {
-  return obj instanceof Element;
-}
-
-function isMouseEvent(obj) {
-  return obj instanceof MouseEvent;
-}
-
-function findScrollingElement(element) {
-  //FIXME Test this too
-  do {
-    if (
-      element.clientHeight < element.scrollHeight ||
-      element.clientWidth < element.scrollWidth
-    ) {
-      return element;
-    }
-  } while ((element = element.parentNode));
-}
-
-// ver mas
-let certificados__items = document.querySelectorAll(".prv__certificados--item");
-let boton_vermas = document.querySelector(".prv__certificados--vermas");
-if (certificados__items.length <= 4) {
-  boton_vermas.style.display = "none";
-}
-if (certificados__items.length > 4) {
-  certificados__items.forEach((elem, i) => {
-    if (i > 3) {
-      certificados__items[i].classList.add("desactive");
-    }
-  });
-}
-boton_vermas.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (boton_vermas.classList.contains("active")) {
-    boton_vermas.classList.remove("active");
-    certificados__items.forEach((elem, i) => {
-      if (i > 3) {
-        boton_vermas.textContent = "Ver más";
-        certificados__items[i].classList.add("desactive");
-      }
-    });
-
-    boton_vermas.blur();
-    setTimeout(function () {
-      certificados__items[0]
-        .querySelector(".prv__certificados--item--link")
-        .focus();
-    }, 50);
-  } else {
-    boton_vermas.classList.add("active");
-    certificados__items.forEach((elem, i) => {
-      boton_vermas.textContent = "Ver menos";
-      certificados__items[i].classList.remove("desactive");
-    });
-
-    boton_vermas.blur();
-    setTimeout(function () {
-      certificados__items[4]
-        .querySelector(".prv__certificados--item--link")
-        .focus();
-    }, 50);
-  }
-});

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Web Design</title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="description" content="{page-description}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link(rel='apple-touch-icon' sizes="180x180" href='images/favicon/apple-touch-icon.png')-->
+        <!--link(rel='icon' type='image/png' sizes="32x32" href='images/favicon/favicon-32x32.png')-->
+        <!--link(rel='icon' type='image/png' sizes="16x16" href='images/favicon/favicon-16x16.png')-->
+        <!--link(rel='manifest' href='images/favicon/manifest.json')-->
+        <!--link(rel='mask-icon' href='images/favicon/safari-pinned-tab.svg' color='#4eb500')-->
+        <!--link(rel='shortcut icon' href='images/favicon/favicon.ico')-->
+        <!--meta(name='msapplication-TileColor' content='#4eb500')-->
+        <!--meta(name='msapplication-config' content='images/favicon/browserconfig.xml')-->
+        <!--meta(name='theme-color' content='#0044bd')-->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="body">
+        <h1 class="visually--hidden">Porvenir Colombia</h1>
+        <header class="tuec__header"> 
+            <div class="container"> 
+                <div class="brand"> 
+                    <picture> <img src="images/header/tuec_logo.png" alt="logo tuenti" srcset="images/header/tuec_logo.png"></picture>
+                </div>
+                <nav class="navigation">
+                    <ul class="menu__list accordion" data-multiselect="false">
+                        <li class="menu__item has__child"><a class="link accordion__tab" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-sim-card.png" alt="icono sim card" srcset="images/header/icon-sim-card.png"></span><span class="text">Pide tu chip</span><span class="icon--toggle"><img src="images/header/icon_arrow-down.png" alt="icon flecha abajo" srcset="images/header/icon_arrow-down.png"></span></a>
+                            <div class="submenu accordion__panel">
+                                <div class="container">
+                                    <div class="submenu__children">
+                                        <ul class="submenu__list"> 
+                                            <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-sim-card.png" alt="icono sim card" srcset="images/header/icon-chip.png"></span><span class="text">¿Qué es Chip Tuenti?</span></a></li>
+                                            <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Comprar Chip Tuenti con Combo</span></a></li>
+                                            <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Pásate con tu mismo número        </span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__webcontent">                                                                      </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item has__child"><a class="link accordion__tab" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-phone-add.png" alt="icono celular" srcset="images/header/icon-phone-add.png"></span><span class="text">Recarga</span><span class="icon--toggle"><img src="images/header/icon_arrow-down.png" alt="icon flecha abajo" srcset="images/header/icon_arrow-down.png"></span></a>
+                            <div class="submenu accordion__panel">
+                                <div class="submenu__children">
+                                    <ul class="submenu__list"> 
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-sim-card.png" alt="icono sim card" srcset="images/header/icon-recarga.png"></span><span class="text">Como recargar</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Recarga online</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-sim-card.png" alt="icono sim card" srcset="images/header/icon-canales-recarga.png"></span><span class="text">Otros canales de recarga      </span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__webcontent">                        </div>
+                            </div>
+                        </li>
+                        <li class="menu__item has__child"><a class="link accordion__tab" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-shopping-cart.png" alt="icono carro de compra" srcset="images/header/icon-shopping-cart.png"></span><span class="text">Compra</span><span class="icon--toggle"><img src="images/header/icon_arrow-down.png" alt="icon flecha abajo" srcset="images/header/icon_arrow-down.png"></span></a>
+                            <div class="submenu accordion__panel">
+                                <div class="submenu__children">
+                                    <ul class="submenu__list"> 
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Comprar Combos Tuenti</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Comprar Comodines Tuenti</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Prepago Tuenti     </span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__webcontent">                             </div>
+                            </div>
+                        </li>
+                        <li class="menu__item has__child"><a class="link accordion__tab" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-question.png" alt="icono pregunta" srcset="images/header/icon-question.png"></span><span class="text">Ayuda</span><span class="icon--toggle"><img src="images/header/icon_arrow-down.png" alt="icon flecha abajo" srcset="images/header/icon_arrow-down.png"></span></a>
+                            <div class="submenu accordion__panel">
+                                <div class="submenu__children">
+                                    <ul class="submenu__list"> 
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-centro-ayuda.png" alt="icono pregunta" srcset="images/header/icon-centro-ayuda.png"></span><span class="text">Centro de ayuda Tuenti</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-person-circle.png" alt="icono pregunta" srcset="images/header/icon-person-circle.png"></span><span class="text">Lo más preguntado</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"></span><span class="text">Centro de Transparencia</span></a></li>
+                                        <li class="submenu__item"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-comunity.png" alt="icono pregunta" srcset="images/header/icon-comunity.png"></span><span class="text">Comunidad                                         </span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__webcontent">                             </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search"> <a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="icon"><img src="images/header/icon-search.png" alt="icon lupa" srcset="images/header/icon-search.png"></span><span class="text">Búsqueda</span></a></div>
+                    <div class="login"><a class="link" href="http://" target="_blank" rel="noopener noreferrer"> <span class="text">Mi tuenti</span><span class="icon"><img src="images/header/icon-search.png" alt="icon usuario" srcset="images/header/icon-person-fill.png"></span></a></div>
+                </nav>
+            </div>
+        </header>
+        <main role="main">
+            <section class="pvr__banner pvr__banner--v1 pvr__banner--bkg-green">
+                <div class="pvr__banner--content">
+                    <div class="pvr__banner--left">
+                        <h1 class="title">Ahorra para tus sueños, construye tu futuro.</h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class="pvr__banner--btn--content"><a class="pvr__banner--btn prv-btn prv-btn--round-corner prv-btn--orange" href="#">Afiliate a Porvenir</a></div>
+                    </div>
+                    <div class="pvr__banner--right"> 
+                        <picture class="pvr__banner--image">
+                            <source media="(min-width: 1024px)" srcset="images/Banner-Family-desktop.png"><img class="picture" src="images/Banner-Family-mobile.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="pvr__caracteristicas prv-bg-white-300 prv-bg-green-90deg-2">
+                <div class="pvr__caracteristicas--content"> 
+                    <ul class="pvr__caracteristicas--list">
+                        <li class="pvr__caracteristicas--item">
+                            <div class="pvr__caracteristicas--item--content">
+                                <div class="pvr__caracteristicas--item--image"><img src="images/Icono-Pension-Obligatorias.png" alt=""></div>
+                                <h2 class="title">Pensiones Obligatorias</h2>
+                                <p class="text">La pensión obligatoria es el derecho que construyes mediante los aportes que realizas para pensión.</p>
+                                <ul class="btn__list">
+                                    <li><a class="btn__item" href="#" target="_blank"><span class="btn__item--info"><span class="btn__item--number">01</span><span class="btn__item--text">Asesoría pensional</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></a></li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">02</span><span class="btn__item--text">Certificado de afiliación</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">03</span><span class="btn__item--text">Requisitos para pensionarse</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">04</span><span class="btn__item--text">Extracto o saldo</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="pvr__caracteristicas--item">
+                            <div class="pvr__caracteristicas--item--content">
+                                <div class="pvr__caracteristicas--item--image"><img src="images/Icono-Cesantias.png" alt=""></div>
+                                <h2 class="title">Pensiones Obligatorias</h2>
+                                <p class="text">La pensión obligatoria es el derecho que construyes mediante los aportes que realizas para pensión.</p>
+                                <ul class="btn__list">
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">01</span><span class="btn__item--text">Asesoría pensional</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">02</span><span class="btn__item--text">Certificado de afiliación</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">03</span><span class="btn__item--text">Requisitos para pensionarse</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">04</span><span class="btn__item--text">Extracto o saldo</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="pvr__caracteristicas--item">
+                            <div class="pvr__caracteristicas--item--content">
+                                <div class="pvr__caracteristicas--item--image"><img src="images/Icono-Pension-Voluntarias.png" alt=""></div>
+                                <h2 class="title">Pensiones Obligatorias</h2>
+                                <p class="text">La pensión obligatoria es el derecho que construyes mediante los aportes que realizas para pensión.</p>
+                                <ul class="btn__list">
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">01</span><span class="btn__item--text">Asesoría pensional</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">02</span><span class="btn__item--text">Certificado de afiliación</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">03</span><span class="btn__item--text">Requisitos para pensionarse</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn__item"><span class="btn__item--info"><span class="btn__item--number">04</span><span class="btn__item--text">Extracto o saldo</span></span><span class="btn__item--icon"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79625 5.70374C9.79625 6.26374 10.2463 6.70374 10.7963 6.70374H16.3863L5.49625 17.5937C5.10625 17.9837 5.10625 18.6137 5.49625 19.0037C5.88625 19.3937 6.51625 19.3937 6.90625 19.0037L17.7963 8.11374V13.7037C17.7963 14.2537 18.2463 14.7037 18.7963 14.7037C19.3463 14.7037 19.7963 14.2537 19.7963 13.7037V5.70374C19.7963 5.15374 19.3463 4.70374 18.7963 4.70374H10.7963C10.2463 4.70374 9.79625 5.15374 9.79625 5.70374Z" fill="black"/>
+</svg></span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="pvr__historias">
+                <div class="pvr__historias--content">
+                    <h2 class="pvr__historias--title prv-title prv-txt-green-700">¿Qué esperas para vivir tu Porvenir? </h2>
+                    <ul class="pvr__historias--list">
+                        <li class="pvr__historias--item">
+                            <div class="pvr__historias--item--content">
+                                <div class="pvr__historias--item--image"><img src="images/Historias-Person.png" alt=""></div>
+                                <h3 class="title">Gilberto hace parte de los 2.099 pensionados en Porvenir del mes de septiembre.  </h3>
+                                <p class="text">“Pensionarme con Porvenir fue sencillo y me acompañaron en cada paso. Ahora disfruto de mis nietos con la tranquilidad de que mi futuro está asegurado".</p>
+                            </div>
+                        </li>
+                        <li class="pvr__historias--item">
+                            <div class="pvr__historias--item--content">
+                                <div class="pvr__historias--item--image"><img src="images/Historias-Person.png" alt=""></div>
+                                <h3 class="title">Con sus cesantías, Carolina cumplió uno de sus sueños en septiembre.  </h3>
+                                <p class="text">“Con mis cesantías de Porvenir logré pagar la primera cuota del apartamento que siempre quise. Porvenir, además, me acompañó en cada momento”.</p>
+                            </div>
+                        </li>
+                        <li class="pvr__historias--item">
+                            <div class="pvr__historias--item--content">
+                                <div class="pvr__historias--item--image"><img src="images/Historias-Person.png" alt=""></div>
+                                <h3 class="title">Camilo es una de los 8000 personas que ya disfrutan de la pensión voluntaria. </h3>
+                                <p class="text">“Estuve buscando muchas opciones para invertir, y la pensión voluntaria de Porvenir fue la que más me impresionó”.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="pvr__preguntas">
+                <div class="pvr__preguntas--content">
+                    <h2 class="pvr__preguntas--title prv-title prv-txt-green-700">Preguntas frecuentes</h2>
+                    <div class="pvr__preguntas--right">
+                        <div class="pvr__preguntas--list accordion" data-multiselect="false">
+                            <div class="pvr__preguntas--item">
+                                <p class="pvr__preguntas--item--header accordion__tab">
+                                    <button class="title">¿Hijos pueden heredar pensión de padres?</button>
+                                </p>
+                                <div class="pvr__preguntas--item--body accordion__panel">
+                                    <div class="info c-accordion__panel__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia assumenda neque harum enim, odio, aliquid eveniet rem et pariatur magnam perspiciatis quod corrupti quo. Quasi quos tenetur similique voluptatibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pvr__preguntas--item">
+                                <p class="pvr__preguntas--item--header accordion__tab">
+                                    <button class="title">¿Hijos pueden heredar pensión de padres?</button>
+                                </p>
+                                <div class="pvr__preguntas--item--body accordion__panel">
+                                    <div class="info c-accordion__panel__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia assumenda neque harum enim, odio, aliquid eveniet rem et pariatur magnam perspiciatis quod corrupti quo. Quasi quos tenetur similique voluptatibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pvr__preguntas--item">
+                                <p class="pvr__preguntas--item--header accordion__tab">
+                                    <button class="title">¿Hijos pueden heredar pensión de padres?</button>
+                                </p>
+                                <div class="pvr__preguntas--item--body accordion__panel">
+                                    <div class="info c-accordion__panel__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia assumenda neque harum enim, odio, aliquid eveniet rem et pariatur magnam perspiciatis quod corrupti quo. Quasi quos tenetur similique voluptatibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pvr__preguntas--item">
+                                <p class="pvr__preguntas--item--header accordion__tab">
+                                    <button class="title">¿Hijos pueden heredar pensión de padres?</button>
+                                </p>
+                                <div class="pvr__preguntas--item--body accordion__panel">
+                                    <div class="info c-accordion__panel__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia assumenda neque harum enim, odio, aliquid eveniet rem et pariatur magnam perspiciatis quod corrupti quo. Quasi quos tenetur similique voluptatibus.                                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pvr__preguntas--footer"> <a class="prv-btn" href="http://" target="_blank" rel="noopener noreferrer">Consultar todas las preguntas</a></div>
+                </div>
+            </section>
+            <div class="prv-interest-section">
+                <div class="container"> 
+                    <h2 class="interest__title prv-title prv-txt-green-700">Esto también te podría interesar</h2>
+                    <h2 class="interest__subtitle prv-subtitle">Esto también te podría interesar</h2>
+                </div>
+                <div class="container">
+                    <div class="prv-tab-horizontal">
+                        <ul class="prv-nav-tab"> 
+                            <li class="tab__item active" data-tab-extra="tab-1">
+                                <button class="tab__link" type="button" role="tab">Artículo</button>
+                            </li>
+                            <li class="tab__item" data-tab-extra="tab-2">
+                                <button class="tab__link" type="button" role="tab">Noticias</button>
+                            </li>
+                            <li class="tab__item" data-tab-extra="tab-3">
+                                <button class="tab__link" type="button" role="tab">Tab Label</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prv-tab-content">
+                        <div class="prv-tab-pane active" id="tab-1" role="tabpanel">
+                            <div class="prv-cards-tpl prv-style-1">
+                                <div class="cards-tpl-swiper">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 3</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 4</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 5</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 6</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards-tpl-slider-controls">
+                                            <div class="cards-tpl-slider-btn swiper-button-prev"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M7 0.705006C6.61 0.315006 5.98 0.315006 5.59 0.705006L1 5.29501C0.610004 5.68501 0.610004 6.31501 1 6.70501L5.59 11.295C5.98 11.685 6.61 11.685 7 11.295C7.39 10.905 7.39 10.275 7 9.88501L3.12 5.99501L7 2.11501C7.38 1.72501 7.38 1.08501 7 0.705006Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="cards-tpl-slider-btn swiper-button-next"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M0.999989 0.710632C0.609989 1.10063 0.609989 1.73063 0.999989 2.12063L4.87999 6.00063L0.999989 9.88063C0.609989 10.2706 0.609989 10.9006 0.999989 11.2906C1.38999 11.6806 2.01999 11.6806 2.40999 11.2906L6.99999 6.70063C7.38999 6.31063 7.38999 5.68063 6.99999 5.29063L2.40999 0.700632C2.02999 0.320632 1.38999 0.320632 0.999989 0.710632Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prv-tab-pane" id="tab-2" role="tabpanel">
+                            <div class="prv-cards-tpl prv-style-1">
+                                <div class="cards-tpl-swiper">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 1-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 2-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 3-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 4-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 5-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 6-1</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards-tpl-slider-controls">
+                                            <div class="cards-tpl-slider-btn swiper-button-prev"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M7 0.705006C6.61 0.315006 5.98 0.315006 5.59 0.705006L1 5.29501C0.610004 5.68501 0.610004 6.31501 1 6.70501L5.59 11.295C5.98 11.685 6.61 11.685 7 11.295C7.39 10.905 7.39 10.275 7 9.88501L3.12 5.99501L7 2.11501C7.38 1.72501 7.38 1.08501 7 0.705006Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="cards-tpl-slider-btn swiper-button-next"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M0.999989 0.710632C0.609989 1.10063 0.609989 1.73063 0.999989 2.12063L4.87999 6.00063L0.999989 9.88063C0.609989 10.2706 0.609989 10.9006 0.999989 11.2906C1.38999 11.6806 2.01999 11.6806 2.40999 11.2906L6.99999 6.70063C7.38999 6.31063 7.38999 5.68063 6.99999 5.29063L2.40999 0.700632C2.02999 0.320632 1.38999 0.320632 0.999989 0.710632Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prv-tab-pane" id="tab-3" role="tabpanel">
+                            <div class="prv-cards-tpl prv-style-1">
+                                <div class="cards-tpl-swiper">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 1-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 2-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 3-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 4-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 5-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="prv-card prv-style-1">
+                                                    <picture class="prv-card__img-top"> 
+                                                        <source media="(min-width: 768px)" srcset="images/cards/card-image-desktop.jpg"><img src="images/cards/card-image-mobile.jpg" alt="title" width="380" heigh="186">
+                                                    </picture>
+                                                    <div class="prv-card__body">
+                                                        <p class="card__badge prv-txt-orange-300">Label</p>
+                                                        <h3 class="card__title prv-txt-green-700">Title 6-2</h3>
+                                                        <div class="card__description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                                        </div>
+                                                        <div class="card__button"><a class="prv-btn prv-btn--round-corner prv-btn--orange" href="#">Ver más</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards-tpl-slider-controls">
+                                            <div class="cards-tpl-slider-btn swiper-button-prev"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M7 0.705006C6.61 0.315006 5.98 0.315006 5.59 0.705006L1 5.29501C0.610004 5.68501 0.610004 6.31501 1 6.70501L5.59 11.295C5.98 11.685 6.61 11.685 7 11.295C7.39 10.905 7.39 10.275 7 9.88501L3.12 5.99501L7 2.11501C7.38 1.72501 7.38 1.08501 7 0.705006Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="cards-tpl-slider-btn swiper-button-next"><svg class="svg--inline" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" role="img">
+<path d="M0.999989 0.710632C0.609989 1.10063 0.609989 1.73063 0.999989 2.12063L4.87999 6.00063L0.999989 9.88063C0.609989 10.2706 0.609989 10.9006 0.999989 11.2906C1.38999 11.6806 2.01999 11.6806 2.40999 11.2906L6.99999 6.70063C7.38999 6.31063 7.38999 5.68063 6.99999 5.29063L2.40999 0.700632C2.02999 0.320632 1.38999 0.320632 0.999989 0.710632Z" fill="currentColor"/>
+</svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="prv-footer">
+            <div class="footer__nav">
+                <div class="container">
+                    <div class="nav__wrapper">
+                        <div class="nav__brand">
+                            <div class="footer__logo"><a class="logo__link" href="https://www.porvenir.com.co/" title="Porvenir"> 
+                                    <picture class="logo__picture"> 
+                                        <source media="(min-width: 768px)" srcset="images/logo/logo-porvenir-blanco.png"><img src="images/logo/logo-porvenir-blanco.png" alt="logo porvenir" width="113" heigh="87">
+                                    </picture></a></div>
+                            <div class="footer__social">
+                                <p class="menu__title">Síguenos en:</p>
+                                <ul class="social__list"> 
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer" title="Twitter"><span class="icon">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-twitter"> </use>
+                                                </svg></span></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer" title="Facebook"><span class="icon">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-facebook"></use>
+                                                </svg></span></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="icon">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-instagram"></use>
+                                                </svg></span></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer" title="Youtube"><span class="icon">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-youtube"></use>
+                                                </svg></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__menu">
+                            <div class="nav__wrapper">
+                                <div class="nav__column">
+                                    <div class="footer__menu menu-accordion"> 
+                                        <p class="menu-accordion__header menu__title"> 
+                                            <button class="menu-accordion__button">Documentación<span class="icon">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-down"></use>
+                                                    </svg></span></button>
+                                        </p>
+                                        <div class="menu-accordion__collapse">
+                                            <div class="menu-accordion__body">
+                                                <ul class="menu__links"> 
+                                                    <li><a href="#">Ir a todos los documentos</a></li>
+                                                    <li><a href="#">Comisiones de Administración</a></li>
+                                                    <li><a href="#">Consulta de solicitudes y quejas</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="menu-accordion__header menu__title"> 
+                                            <button class="menu-accordion__button">Noticias<span class="icon">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-down"></use>
+                                                    </svg></span></button>
+                                        </p>
+                                        <div class="menu-accordion__collapse">
+                                            <div class="menu-accordion__body">
+                                                <ul class="menu__links"> 
+                                                    <li><a href="#">Todas las noticias</a></li>
+                                                    <li><a href="#">Comunicados de prensa</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav__column"> 
+                                    <div class="footer__menu menu-accordion"> 
+                                        <p class="menu-accordion__header menu__title"> 
+                                            <button class="menu-accordion__button" type="button">Corporativo<span class="icon">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-down"></use>
+                                                    </svg></span></button>
+                                        </p>
+                                        <div class="menu-accordion__collapse">
+                                            <div class="menu-accordion__body">
+                                                <ul class="menu__links"> 
+                                                    <li><a href="#">Mapa del sitio</a></li>
+                                                    <li><a href="#">Sobre nosotros</a></li>
+                                                    <li><a href="#">Estados financieros</a></li>
+                                                    <li><a href="#">Reconocimientos</a></li>
+                                                    <li><a href="#">Inclusión a la diversidad y a los afiliados con discapacidades</a></li>
+                                                    <li><a href="#">Sostenibilidad</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav__column"> 
+                                    <div class="footer__menu menu-accordion"> 
+                                        <p class="menu-accordion__header menu__title"> 
+                                            <button class="menu-accordion__button" type="button">Legal<span class="icon">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-down"></use>
+                                                    </svg></span></button>
+                                        </p>
+                                        <div class="menu-accordion__collapse">
+                                            <div class="menu-accordion__body">
+                                                <ul class="menu__links"> 
+                                                    <li><a href="#">Línea ética</a></li>
+                                                    <li><a href="#">Transparencia y acceso a la información</a></li>
+                                                    <li><a href="#">Protección de datos personales</a></li>
+                                                    <li><a href="#">Sistema de atención al consumidor</a></li>
+                                                    <li><a href="#">Defensor del consumidor financiero</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav__column">
+                                    <div class="footer__menu menu-accordion">
+                                        <p class="menu-accordion__header menu__title"> 
+                                            <button class="menu-accordion__button" type="button">Productos<span class="icon">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-down"></use>
+                                                    </svg></span></button>
+                                        </p>
+                                        <div class="menu-accordion__collapse">
+                                            <div class="menu-accordion__body">
+                                                <ul class="menu__links"> 
+                                                    <li><a href="#">Pensiones Obligatorias</a></li>
+                                                    <li><a href="#">Rentabilidad y fichas Pensiones Obligatorias</a></li>
+                                                    <li><a href="#">Cesantías</a></li>
+                                                    <li><a href="#">Rentabilidad y fichas Cesantías</a></li>
+                                                    <li><a href="#">Pensiones Voluntarias</a></li>
+                                                    <li><a href="#">Rentabilidad y fichas Pensiones Voluntarias</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="copyright__text"> 
+                        <p>Para cualquier contacto con nuestra entidad escríbenos a <a href="https://contacto.porvenir.com.co/" target="_blank" rel="noopener noreferrer">Ventanilla Virtual</a> Para notificaciones judiciales, escríbenos a <a href="mailto:notificacionesjudiciales@porvenir.com.co">notificacionesjudiciales@porvenir.com.co</a> o consulta información en nuestra página haciendo clic <a href="https://www.porvenir.com.co/web/personas/notificaciones-judiciales" target="_blank" rel="noopener noreferrer">aquí</a> Cuentas con un Defensor del Consumidor Financiero, Dra. Ana María Giraldo Rincón ubicado en la carrera 10 # 97A-13 Oficina 502 en Bogotá, Teléfono: 601 610 81 64, <a href="mailto:defensoriaporvenir@legalcrc.com">defensoriaporvenir@legalcrc.com</a>, quien dará trámite a tu queja de forma objetiva y gratuita. © 2021, Todos los derechos reservados por Porvenir S.A</p>
+                    </div>
+                    <div class="footer__groups">
+                        <div class="groups__item"><a class="groups__link" href="https://www.grupoaval.com/" target="_blank" rel="noopener noreferrer"> 
+                                <picture class="groups__image"> 
+                                    <source media="(min-width: 768px)" srcset="images/logo/logo-grupo-aval.png"><img src="images/logo/logo-grupo-aval-mobile.png" alt="logo grupo aval" width="164" heigh="33">
+                                </picture></a></div>
+                        <div class="groups__item"><a class="groups__link" href="#" target="_blank" rel="noopener noreferrer"> 
+                                <picture class="groups__image"> 
+                                    <source media="(min-width: 768px)" srcset="images/logo/logo-CCCE-blanco.png"><img src="images/logo/logo-CCCE-blanco-mobile.png" alt="logo ccce" width="164" heigh="53">
+                                </picture></a></div>
+                        <div class="groups__item"><a class="groups__link" href="https://www.superfinanciera.gov.co/" target="_blank" rel="noopener noreferrer"> 
+                                <picture class="groups__image"> 
+                                    <source media="(min-width: 768px)" srcset="images/logo/logo-vigilado-superintendencia-financiera-de-colombia-blanco.png"><img src="images/logo/logo-vigilado-superintendencia-financiera-de-colombia-blanco-mobile.png" alt="logo vigilado superintendencia financiera de colombia" width="304" heigh="21">
+                                </picture></a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
