@@ -4,7 +4,7 @@
     .footer {
         &__nav {
             padding: 30px 0;
-            background: #E90A66;
+            background: var(--color-fuchsia-300);
 
             @media (min-width: 992px) {
                 padding: 32px 0;
@@ -245,12 +245,23 @@
                 }
             }
 
-            .link-app {}
+            .link-app {
+                display: inline-block;
+                .picture-app {
+                    display: inline-block;
+                    >img {
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+            }
         }
 
         &__copyright {
             padding: 16px 0;
-            background: #372E7D;
+            background: var(--color-blue-300);
 
             .copyright__text {
                 font-size: 16px;
