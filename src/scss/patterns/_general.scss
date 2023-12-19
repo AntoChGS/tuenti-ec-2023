@@ -111,7 +111,7 @@ p {
 
 a {
     word-wrap: break-word;
-    color: --color-blue;
+    color: var(--color-blue);
     -webkit-tap-highlight-color: var(--transparent);
     transition: all ease 300ms;
     text-decoration: none;
