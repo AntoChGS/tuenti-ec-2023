@@ -10,6 +10,12 @@
                 padding: 32px 0;
             }
 
+            .container {
+                @media (min-width: 992px) {
+                    max-width: 1054px;
+                }
+            }
+
             .nav {
                 &__brand {
                     display: block;
@@ -247,8 +253,10 @@
 
             .link-app {
                 display: inline-block;
+
                 .picture-app {
-                    display: inline-block;
+                    display: block;
+
                     >img {
                         display: block;
                         width: auto;
