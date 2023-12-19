@@ -3,13 +3,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-@import "patterns/mod-var-bootstrap";
+//@import "patterns/mod-var-bootstrap";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../node_modules/bootstrap/scss/variables";
 
 // 4. Include any default map overrides here
-@import "patterns/mod-map-bootstrap";
+//@import "patterns/mod-map-bootstrap";
 
 // 5. Include remainder of required parts
 @import "../../node_modules/bootstrap/scss/mixins";
