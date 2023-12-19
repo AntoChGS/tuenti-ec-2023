@@ -4,6 +4,7 @@
 
 //function accordion toggle
 accordionToggle("accordion");
+animationDelay();
 
 //dropdown menu quicklinks
 // dropDownQuickLinks();
@@ -185,6 +186,18 @@ function getHeight(tab, panel) {
   let height = panel.scrollHeight + "px";
   tab.classList.remove("accordion__tab--active");
   return height;
+}
+
+function animationDelay(){
+  document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
+    let childrenMenu = element.children[1].children[0].childNodes[1].querySelectorAll('.submenu__item');
+    let count = 0
+    childrenMenu.forEach((elementChild)=>{
+      let delay = 0.1 + count*0.03;
+      elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
+      count++;
+    })
+  })
 }
 
 //Swiper Sliders Function
