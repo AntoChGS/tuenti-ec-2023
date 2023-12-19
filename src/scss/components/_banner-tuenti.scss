@@ -1,0 +1,86 @@
+* {
+  font-family: "Catamaran", sans-serif;
+}
+.tuenti__banner {
+  background-color: #d30279;
+  height: 380px;
+  .tuenti__banner--content {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .tuenti__banner--body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .tuenti__banner--right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .text {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  .title {
+    color: #ffffff;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  .button {
+    color: #ffffff;
+    padding: 14px 48px;
+    background-color: #372e7d;
+    border-radius: 30px;
+    display: inline-block;
+  }
+  .tuenti__banner--image {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  &.tuenti__banner--v2 {
+    background-color: #ff4d94;
+  }
+}
+
+//
+.tuenti__acciones {
+  background-color: #fdf2df;
+  .tuenti__banner--content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tuenti__acciones--list {
+    display: flex;
+    justify-content: center;
+  }
+  .tuenti__acciones--card {
+    border-radius: 8px;
+    border: 1px solid #d8dee3;
+    background: #fff;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    .tuenti__acciones--card__image {
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+    .text {
+      color: #545353;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
