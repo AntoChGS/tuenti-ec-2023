@@ -12,49 +12,17 @@
 }
 
 @font-face {
-    @include font-face('Catamaran', normal, 100, 'Catamaran Thin',
-            '../fonts/catamaran/Catamaran-Thin.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-Thin.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-Thin.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-Thin.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Catamaran', normal, 300, 'Catamaran Light',
-            '../fonts/catamaran/Catamaran-Light.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-Light.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-Light.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-Light.woff2?s16i6w');
-}
-
-@font-face {
     @include font-face('Catamaran', normal, 400, 'Catamaran Regular',
-            '../fonts/catamaran/Catamaran-Regular.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-Regular.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-Regular.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-Regular.woff2?s16i6w');
+            '../fonts/catamaran/catamaran-regular.ttf?s16i6w',
+            '../fonts/catamaran/catamaran-regular.ttf?s16i6w#iefix',
+            '../fonts/catamaran/catamaran-regular.woff?s16i6w',
+            '../fonts/catamaran/catamaran-regular.woff2?s16i6w');
 }
 
 @font-face {
-    @include font-face('Catamaran', normal, 500, 'Catamaran Medium',
-            '../fonts/catamaran/Catamaran-Medium.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-Medium.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-Medium.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-Medium.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Catamaran', normal, 700, 'Catamaran Bold',
-            '../fonts/catamaran/Catamaran-Bold.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-Bold.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-Bold.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-Bold.woff2?s16i6w');
-}
-
-@font-face {
-    @include font-face('Catamaran', normal, 800, 'Catamaran Extra Bold',
-            '../fonts/catamaran/Catamaran-ExtraBold.ttf?s16i6w',
-            '../fonts/catamaran/Catamaran-ExtraBold.ttf?s16i6w#iefix',
-            '../fonts/catamaran/Catamaran-ExtraBold.woff?s16i6w',
-            '../fonts/catamaran/Catamaran-ExtraBold.woff2?s16i6w');
+    @include font-face('Catamaran', bold, 700, 'Catamaran Bold',
+            '../fonts/catamaran/catamaran-bold.ttf?s16i6w',
+            '../fonts/catamaran/catamaran-bold.ttf?s16i6w#iefix',
+            '../fonts/catamaran/catamaran-bold.woff?s16i6w',
+            '../fonts/catamaran/catamaran-bold.woff2?s16i6w');
 }
