@@ -159,13 +159,15 @@ function getHeight(tab, panel) {
 
 function animationDelay(){
   document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
-    let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
-    let count = 0
-    childrenMenu.forEach((elementChild)=>{
-      let delay = 0.1 + count*0.03;
-      elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
-      count++;
-    })
+    if (element.childNodes[2]) {
+      let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
+      let count = 0
+      childrenMenu.forEach((elementChild)=>{
+        let delay = 0.1 + count*0.03;
+        elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
+        count++;
+      })
+    }
   })
 }
 
