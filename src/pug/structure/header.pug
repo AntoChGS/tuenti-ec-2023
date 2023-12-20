@@ -1,8 +1,9 @@
 header.tuec__header 
     .container 
         .brand 
-            picture 
-                img(src="images/header/tuec_logo.png", alt="logo tuenti", srcset="images/header/tuec_logo.png")
+            a(href="http://", target="_self", rel="noopener noreferrer", class="brand__link") 
+                picture 
+                    img(src="images/header/tuec_logo.png", alt="logo tuenti", srcset="images/header/tuec_logo.png")
         .hambMenu
             button(type="button" class="btn--menu" id="btnNav") 
                 span.text Menu
@@ -70,12 +71,11 @@ header.tuec__header
                             span.text Centro de Transparencia
                         li.submenu__item: a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
                             span.icon: img(src="images/header/submenu/icon-sim-card.png", alt="icono sim card", srcset="images/header/submenu/icon-sim-card.png")
-                            span.text Comunidad                                         
-                                                     
-            .search 
-                a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
-                    span.icon: img(src="images/header/icon-search.png", alt="icon lupa", srcset="images/header/icon-search.png")
-                    span.text Búsqueda
+                            span.text Comunidad       
+                li.menu__item
+                    a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
+                        span.icon: img(src="images/header/icon-search.png", alt="icon lupa", srcset="images/header/icon-search.png")
+                        span.text Buscar
             .login
                 a(href="http://", target="_blank", rel="noopener noreferrer", class="link") 
                     span.text Mi tuenti
