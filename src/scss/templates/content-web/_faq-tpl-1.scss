@@ -7,33 +7,58 @@
     }
 
     .faq-tpl {
+        &__content {
+            position: relative;
+            z-index: 1;
+        }
+
         &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            width: 100%;
+            max-width: 1360px;
+            height: 100%;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
             &.bg-icons {
                 &--gray-20 {
                     .icon__left {
                         color: var(--color-silver-100);
+                        opacity: .6;
                     }
 
                     .icon__right {
                         color: var(--color-silver-50);
                     }
                 }
+
                 &--orange-0 {
                     .icon__left {
                         color: var(--color-orange-50);
+                        opacity: .6;
                     }
 
                     .icon__right {
                         color: var(--color-orange-50);
+                        opacity: .6;
                     }
                 }
+
                 &--purple-0 {
                     .icon__left {
                         color: var(--color-purple-75);
+                        opacity: .6;
                     }
 
                     .icon__right {
                         color: var(--color-purple-50);
+                        opacity: .6;
                     }
                 }
             }
@@ -57,7 +82,7 @@
             text-align: center;
         }
 
-        &__content {
+        &__panel {
             display: block;
             width: 100%;
             margin: 0 auto;
