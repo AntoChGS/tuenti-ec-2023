@@ -1,13 +1,60 @@
 .tue-faq-tpl {
     position: relative;
+    padding: 24px 0 40px;
+
+    @media (min-width: 992px) {
+        padding: 52px 0;
+    }
 
     .faq-tpl {
-        &__title {
-            text-align: left;
+        &__bg {
+            &.bg-icons {
+                &--gray-20 {
+                    .icon__left {
+                        color: var(--color-silver-100);
+                    }
 
-            @media (min-width: 992px) {
-                text-align: center;
+                    .icon__right {
+                        color: var(--color-silver-50);
+                    }
+                }
+                &--orange-0 {
+                    .icon__left {
+                        color: var(--color-orange-50);
+                    }
+
+                    .icon__right {
+                        color: var(--color-orange-50);
+                    }
+                }
+                &--purple-0 {
+                    .icon__left {
+                        color: var(--color-purple-75);
+                    }
+
+                    .icon__right {
+                        color: var(--color-purple-50);
+                    }
+                }
             }
+
+            .icon__left {
+                position: absolute;
+                bottom: 70px;
+                left: 40px;
+                font-size: 205px;
+            }
+
+            .icon__right {
+                position: absolute;
+                top: 50px;
+                right: 40px;
+                font-size: 205px;
+            }
+        }
+
+        &__title {
+            text-align: center;
         }
 
         &__content {
@@ -16,20 +63,25 @@
             margin: 0 auto;
 
             @media (min-width: 992px) {
-                background-color: var(--color-white);
-                border-radius: 24px;
-                padding: 16px 20px;
+                max-width: 624px;
             }
         }
 
         &__footer {
-            width: 100%;
-            text-align: right;
-            margin-top: 12px;
+            display: block;
+            text-align: center;
+            margin-top: 32px;
 
-            .prv-btn--link {
-                padding-left: 0;
-                padding-right: 0;
+            .info__text {
+                font-size: 16px;
+
+                @media (min-width: 992px) {
+                    font-size: 20px;
+                }
+
+                >a {
+                    color: var(--color-magenta-75);
+                }
             }
         }
 
@@ -43,25 +95,22 @@
 
             .faq-acc {
                 &__header {
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                    width: 100%;
+                    display: block;
                     height: 60px;
                     background-color: var(--color-white);
-                    border: none;
                     margin: 0px;
 
                     .title {
-                        color: #363636;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        color: var(--color-title);
+                        font-size: 16px;
                         font-weight: bold;
-                        margin-bottom: 0px;
-                        font-size: 14px;
                         line-height: 1.2;
                         background-color: transparent;
                         border: none;
-                        position: relative;
-                        padding: 4px 40px 4px 24px;
+                        padding: 4px 24px 4px 24px;
                         text-align: left;
                         width: 100%;
                         height: 100%;
@@ -69,25 +118,16 @@
                         outline: none;
 
                         @media (min-width: 992px) {
-                            font-size: 16px;
+                            font-size: 18px;
                         }
 
-                        &:after {
-                            position: absolute;
-                            right: 16px;
-                            top: 13px;
-                            width: 12px;
-                            height: 12px;
-                            margin-left: 5px;
-                            margin-top: 8px;
-                            transform: rotate(45deg);
-                            border-radius: 1px;
-                            content: "";
-                            transition: all 0.1s;
-
-                            @media (min-width: 992px) {
-                                right: 16px;
-                            }
+                        .icon {
+                            font-size: 24px;
+                            line-height: 0.6;
+                            flex-shrink: 0;
+                            margin-left: auto;
+                            transition: all 0.25s ease-in;
+                            color: var(--color-primary);
                         }
                     }
 
@@ -95,33 +135,35 @@
                         border-bottom: 1px solid var(--Brand-Gray-2);
 
                         .title {
-                            &:after {
-                                transform: rotate(225deg);
-                                top: 20px;
+                            .icon {
+                                transform: rotate(180deg);
+                                transition: all 0.25s ease-out;
                             }
                         }
 
                         &+.accordion__panel {
                             visibility: visible;
-                            //transition: all ease-in 250ms;
                         }
                     }
                 }
 
                 &__body {
                     height: 0;
+                    background: var(--color-white);
                     visibility: hidden;
                     overflow: hidden;
                     transition: all ease-in 250ms;
 
                     .info {
                         font-size: 16px;
-                        line-height: 1.2;
-                        color: var(--color-gray-500);
-                        padding: 12px;
+                        line-height: 1.5;
+                        color: var(--color-body);
+                        padding: 16px 24px;
 
-                        @media (min-width: 992px) {
-                            font-size: 16px;
+                        >* {
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
                         }
                     }
                 }
