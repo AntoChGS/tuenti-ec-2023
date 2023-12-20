@@ -4,7 +4,7 @@
         position: relative;
         display: flex;
         height: 64px;
-        padding: 20px 16px;
+        padding: 20px 0;
         justify-content: space-between;
         align-items: center;
         gap: 184px;
@@ -16,14 +16,9 @@
         .container{
             display: flex;
             justify-content: space-between;
-            margin: 0 auto;
-            width: 100%;
-            
-            @media (min-width: 1200px){
-                max-width: 1054px;
-            }
+            width: 100%;            
             @media (min-width: 992px){
-                padding: 0 15px;
+                max-width: 1054px;
             }
         }
         .brand{
@@ -37,11 +32,14 @@
             background: var(--color-white);
             width: 100%;
             height: 100vh;
-            top: 100px;
+            top: 64px;
             right: 0;
             transition: all 0.2s linear;
             z-index: 100;
             margin-right: -100%;
+            @media (min-width: 1200px){
+                gap: 32px;
+            }
             @media (min-width: 992px) {      
                 position: initial;     
                 width: auto;
@@ -61,25 +59,56 @@
         }
         .menu{
             &__list{
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-start;
-                gap: 24px;
                 margin: 0;
+                @media (min-width: 1200px){
+                    gap: 32px;
+                }
+                @media (min-width: 992px){
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    gap: 24px;
+                }
             }
             &__item{
+                position: relative;
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                @media (min-width: 992px){
+                    width: auto;
+                    position: initial;
+                }
                 > .link{
+                    width: 100%;                    
+                    background: var(--color-white);
+                    border-bottom: 1px solid var(--silver-50);
                     display: flex;
-                    justify-content: center;
+                    padding: 16px 108px 16px 52px;
+                    position: relative;
                     align-items: center;
-                    gap: 4px;
-                    color: var(--color-white);
-                    text-align: center;
+                    color: var(--Brand-Gray-4);
                     font-family: var(--fontCatamaran);
-                    font-size: 16px;
+                    font-size: 14px;
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: 16px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    @media (min-width: 992px){
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 0;
+                        gap: 4px;
+                        color: var(--color-white);
+                        text-align: center;                        
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px;
+                        padding: 0;
+                        background: var(--transparent);
+                    }
                     &.accordion__tab--active{
                          + .accordion__panel{
                             visibility: visible;
@@ -96,11 +125,36 @@
                         }
                         .icon--toggle{
                             transform: rotate(180deg);
+
+                        }
+                    }
+                    .icon{
+                        filter: brightness(0.5);
+                        position: absolute;
+                        left: 16px;
+                        @media (min-width: 992px){
+                            filter: brightness(1);
+                            position: relative;
+                            left: 0;
                         }
                     }
                     .icon--toggle{
                         transform: rotate(0deg);
                         transition: all 0.1s;
+                        position: absolute;
+                        right: 16px;
+                        left: inherit;
+                        width: 24px;
+                        height: 24px;
+                        filter: none;
+                        svg{
+                            font-size: 24px;
+                            line-height: 24px;
+                        }
+                        @media (min-width: 992px){
+                            position: relative;
+                            right: 0;
+                        }
                     }
                 }
             }
@@ -112,10 +166,14 @@
                 align-items: flex-start;
                 background: var(--color-gray-20);
                 box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.10);
-                position: absolute;
-                top: 100%;
-                z-index: 1000;
-                
+                width: 100%;
+                @media (min-width: 992px){
+                    position: absolute;
+                    width: auto;
+                    min-width: 260px;
+                    top: 100%;
+                    z-index: 1000;
+                }
                 &.accordion__panel{
                     height: 0;
                     visibility: hidden;
@@ -131,7 +189,6 @@
                     height: 52px;
                     padding: 16px;
                     align-items: center;
-                    gap: 12px;
                     color: var(--Brand-Gray-4);
                     font-family: Catamaran;
                     font-size: 14px;
@@ -142,6 +199,7 @@
                         width: 20px;
                         filter: grayscale(1);
                         transition: all 0.25s ease-in-out;
+                        margin-right: 12px;
                     }                    
                     &:hover,
                     &:focus,
@@ -161,28 +219,59 @@
             }
         }
         .search{
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;            
             .link{
-                display: flex;
+                display: inline-flex;
+                height: 56px;
+                padding: 16px 108px 16px 52px;
                 align-items: center;
-                gap: 4px;
-                color: var(--color-white);
-                text-align: center;
+                gap: 12px;
+                width: 100%;
+                color: var(--Brand-Gray-4);
                 font-family: var(--fontCatamaran);
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 16px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+            .icon{
+                filter: brightness(.5);
+                position: absolute;
+                left: 16px;
+            }
+            @media (min-width: 992px){
+                .link{
+                    display: flex;
+                    gap: 4px;
+                    color: var(--color-white);
+                    text-align: center;                    
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 0;
+                    width: auto;
+                    height: auto;
+                }
+                .icon{
+                    filter: none;
+                    position: relative;
+                    left: 0;
+                }
             }
         }
         .login{
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            @media (min-width: 992px){
+                width: auto;
+                max-width: fit-content;
+                margin: 0;
+            }
             .link{
                 border-radius: 28px;
                 background: var(--color-blue-300);
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 8px;
                 color: var(--color-white);
                 text-align: right;
