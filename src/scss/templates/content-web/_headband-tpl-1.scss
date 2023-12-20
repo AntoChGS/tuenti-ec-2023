@@ -26,21 +26,24 @@
         }
 
         &-image {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            height: 100%;
-            margin-left: 8px;
+            display: block;
+            .image__picture {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                height: 100%;
+                margin-left: 8px;
 
-            @media (min-width:992px) {
-                margin-left: 12px;
-            }
+                @media (min-width:992px) {
+                    margin-left: 12px;
+                }
 
-            >img {
-                display: block;
-                width: auto;
-                height: auto;
-                max-width: 100%;
+                >img {
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                }
             }
         }
 
