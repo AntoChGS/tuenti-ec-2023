@@ -1,0 +1,40 @@
+.tue-headband-intern-tpl {
+    .intern {
+        &__content {
+            width: 100%;
+            max-width: 1024px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        &__badge {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--color-title);
+            margin: 0;
+
+            @media (min-width:992px) {
+                font-size: 28px;
+            }
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: var(--color-title);
+            margin: 0;
+
+            @media (min-width:992px) {
+                font-size: 32px;
+            }
+        }
+
+        &__button {
+            font-size: 18px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+}
