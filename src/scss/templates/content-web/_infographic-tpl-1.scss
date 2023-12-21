@@ -1,0 +1,30 @@
+.tue-infographic-tpl {
+    position: relative;
+    padding: 32px 0 40px;
+
+    @media (min-width:992px) {
+        padding: 40px 0 48px;
+    }
+
+    .infographic {
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__picture {
+            display: block;
+
+            >img {
+                display: block;
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
