@@ -1,0 +1,198 @@
+.tue-faq-tpl {
+    position: relative;
+    padding: 24px 0 40px;
+
+    @media (min-width: 992px) {
+        padding: 52px 0;
+    }
+
+    .faq-tpl {
+        &__content {
+            position: relative;
+            z-index: 1;
+        }
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            width: 100%;
+            max-width: 1360px;
+            height: 100%;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
+            &.bg-icons {
+                &--gray-20 {
+                    .icon__left {
+                        color: var(--color-silver-100);
+                        opacity: .6;
+                    }
+
+                    .icon__right {
+                        color: var(--color-silver-50);
+                    }
+                }
+
+                &--orange-0 {
+                    .icon__left {
+                        color: var(--color-orange-50);
+                        opacity: .6;
+                    }
+
+                    .icon__right {
+                        color: var(--color-orange-50);
+                        opacity: .6;
+                    }
+                }
+
+                &--purple-0 {
+                    .icon__left {
+                        color: var(--color-purple-75);
+                        opacity: .6;
+                    }
+
+                    .icon__right {
+                        color: var(--color-purple-50);
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .icon__left {
+                position: absolute;
+                bottom: 70px;
+                left: 40px;
+                font-size: 205px;
+            }
+
+            .icon__right {
+                position: absolute;
+                top: 50px;
+                right: 40px;
+                font-size: 205px;
+            }
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__panel {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+
+            @media (min-width: 992px) {
+                max-width: 624px;
+            }
+        }
+
+        &__footer {
+            display: block;
+            text-align: center;
+            margin-top: 32px;
+
+            .info__text {
+                font-size: 16px;
+
+                @media (min-width: 992px) {
+                    font-size: 20px;
+                }
+
+                >a {
+                    color: var(--color-magenta-75);
+                }
+            }
+        }
+
+        &__list {
+            .list__item {
+                border-radius: 8px;
+                box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.10);
+                overflow: hidden;
+                margin-bottom: 24px;
+            }
+
+            .faq-acc {
+                &__header {
+                    display: block;
+                    height: 60px;
+                    background-color: var(--color-white);
+                    margin: 0px;
+
+                    .title {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        color: var(--color-title);
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        background-color: transparent;
+                        border: none;
+                        padding: 4px 24px 4px 24px;
+                        text-align: left;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        outline: none;
+
+                        @media (min-width: 992px) {
+                            font-size: 18px;
+                        }
+
+                        .icon {
+                            font-size: 24px;
+                            line-height: 0.6;
+                            flex-shrink: 0;
+                            margin-left: auto;
+                            transition: all 0.25s ease-in;
+                            color: var(--color-primary);
+                        }
+                    }
+
+                    &.accordion__tab--active {
+                        border-bottom: 1px solid var(--Brand-Gray-2);
+
+                        .title {
+                            .icon {
+                                transform: rotate(180deg);
+                                transition: all 0.25s ease-out;
+                            }
+                        }
+
+                        &+.accordion__panel {
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                &__body {
+                    height: 0;
+                    background: var(--color-white);
+                    visibility: hidden;
+                    overflow: hidden;
+                    transition: all ease-in 250ms;
+
+                    .info {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: var(--color-body);
+                        padding: 16px 24px;
+
+                        >* {
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
