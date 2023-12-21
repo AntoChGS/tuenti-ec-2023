@@ -1,46 +1,76 @@
-* {
-  font-family: "Catamaran", sans-serif;
-}
 .tuenti__banner {
-  background-color: #d30279;
-  height: 380px;
+  background-color: #c70855;
+  height: 500px;
+  @media (min-width: 768px) {
+    height: 380px;
+  }
   .tuenti__banner--content {
-    max-width: 1024px;
+    max-width: 328px;
     margin: 0 auto;
     height: 100%;
+    padding: 32px 0px;
+    @media (min-width: 768px) {
+      width: 90%;
+      max-width: 100%;
+    }
+    @media (min-width: 1024px) {
+      max-width: 1024px;
+    }
   }
   .tuenti__banner--body {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   .tuenti__banner--right {
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: center;
+    @media (min-width: 768px) {
+      align-items: center;
+    }
   }
 
   .text {
     color: #ffffff;
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
     margin-bottom: 8px;
+    @media (min-width: 900px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
   }
   .title {
     color: #ffffff;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    @media (min-width: 900px) {
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 24px;
+    }
   }
   .button {
     color: #ffffff;
-    padding: 14px 48px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 49px;
     background-color: #372e7d;
     border-radius: 30px;
     display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
   }
   .tuenti__banner--image {
     img {
@@ -49,6 +79,9 @@
     }
   }
   &.tuenti__banner--v2 {
+    background-color: #d30279;
+  }
+  &.tuenti__banner--v3 {
     background-color: #ff4d94;
   }
 }
@@ -56,31 +89,496 @@
 //
 .tuenti__acciones {
   background-color: #fdf2df;
+  padding: 32px 0px 8px;
+  @media (min-width: 1024px) {
+    padding: 50px 0px 26px;
+  }
   .tuenti__banner--content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    max-width: 360px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      max-width: 100%;
+      width: 90%;
+    }
+    @media (min-width: 1024px) {
+      width: 1024px;
+    }
+    .tuenti__acciones--left {
+      .title {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: #363636;
+        @media (min-width: 1024px) {
+          font-size: 36px;
+          line-height: 40px;
+          width: 600px;
+          margin: 0 auto;
+        }
+      }
+      .text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #545353;
+        font-weight: 400;
+        width: 328px;
+        margin: 0 auto 20px;
+        letter-spacing: 0.5px;
+        @media (min-width: 1024px) {
+          font-size: 20px;
+          line-height: 40px;
+          width: 900px;
+        }
+        a {
+          color: #f06;
+          text-decoration: underline;
+        }
+      }
+    }
   }
   .tuenti__acciones--list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
   }
-  .tuenti__acciones--card {
-    border-radius: 8px;
-    border: 1px solid #d8dee3;
-    background: #fff;
-    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
-    .tuenti__acciones--card__image {
-      img {
-        width: auto;
-        height: auto;
+  .tuenti__acciones--item {
+    margin: 0 12px 24px;
+    @media (min-width: 1024px) {
+      margin: 0 20px 24px;
+    }
+    &:first-child {
+      @media (min-width: 1024px) {
+        margin-left: 0px;
       }
     }
+    &:nth-child(4n) {
+      @media (min-width: 1024px) {
+        margin-right: 0px;
+      }
+    }
+  }
+  &.tuenti__acciones--v2 {
+    background-color: #ffd9ff;
+  }
+}
+
+.tuenti__acciones--card {
+  border-radius: 8px;
+  border: 1px solid #d8dee3;
+  background: #fff;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: 144px;
+  height: 100%;
+  @media (min-width: 1024px) {
+    width: 220px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tuenti__acciones--card__left {
+    @media (min-width: 1024px) {
+      margin-right: 12px;
+    }
+  }
+  .tuenti__acciones--card--icono {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 12px;
+    background-color: #fdf2df;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 1024px) {
+      width: 64px;
+      height: 64px;
+      margin: auto;
+    }
+  }
+  .tuenti__acciones--card__image {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  .text {
+    color: #545353;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    display: block;
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
+  }
+
+  &.tuenti__acciones--card--v2 {
+    .tuenti__acciones--card--icono {
+      background-color: #ffd9ff;
+    }
+  }
+
+  &:hover {
+    background-color: #f06;
+    text-decoration: none;
+    .tuenti__acciones--card--icono {
+      background-color: #ffffff;
+    }
     .text {
-      color: #545353;
+      color: #ffffff;
+    }
+  }
+}
+
+// steps
+
+.tuenti__steps {
+  background-color: #f2f4f6;
+  padding: 24px 0px;
+  @media (min-width: 1024px) {
+    padding: 50px 0px;
+  }
+  .title {
+    width: 328px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 22px;
+    @media (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      width: 1024px;
+    }
+  }
+  .tuenti__steps--list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      max-width: 1074px;
+    }
+  }
+  .tuenti__steps--item {
+    margin: 0 12px 24px;
+  }
+  .tuenti__steps--bottom {
+    width: 328px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1024px) {
+      width: 1024px;
+    }
+  }
+  .tuenti__steps--terminos {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+
+    a {
+      color: #f06;
+      text-decoration: underline;
+    }
+  }
+  .tuenti__steps--bottom__enlace {
+    padding: 14px 48px;
+    color: #ffffff;
+    background-color: #372e7d;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 30px;
+  }
+  &.tuenti__steps--v2 {
+    background-color: #fdf2df;
+  }
+  &.tuenti__steps--v3 {
+    background-color: #ffd9ff;
+  }
+}
+
+.tuenti__steps--card {
+  width: 328px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8px 0px 12px;
+  margin: 0 auto;
+  border-radius: 16px;
+  height: 128px;
+  .tuenti__steps--card__left {
+    width: 180px;
+  }
+  .tuenti__steps--card__paso {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #363636;
+    font-weight: 500;
+  }
+  .tuenti__steps--card__numero {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+    background-color: #f06;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .tuenti__steps--card__cuenta {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    color: #545353;
+    font-weight: bold;
+  }
+}
+
+// plans
+.tuenti__plans {
+  padding: 24px 0px;
+  @media (min-width: 1024px) {
+    padding: 50px 0px;
+  }
+  .tuenti__plans--content {
+    width: 360px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 540px;
+    }
+    @media (min-width: 1024px) {
+      width: 1040px;
+    }
+  }
+  .tuenti__plans--title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #363636;
+    width: 328px;
+    margin: 0 auto 8px;
+    font-weight: bold;
+    @media (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 40px;
+      width: 600px;
+    }
+  }
+  .tuenti__plans--text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #545353;
+    font-weight: 400;
+    width: 328px;
+    margin: 0 auto 24px;
+    letter-spacing: 0.5px;
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 40px;
+      width: 900px;
+    }
+    a {
+      color: #f06;
+      text-decoration: underline;
+    }
+  }
+  .tuenti__plans--list {
+    padding: 40px 10px 50px;
+    margin: 0 auto;
+  }
+  .swiper-pagination--plans {
+    .swiper-pagination-bullet {
+      background: #ffffff;
+      border: 2px solid #5144b8;
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      margin: 0 8px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #5144b8;
+    }
+  }
+}
+
+.plans--card {
+  width: 240px;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 24px 0px;
+  margin: 0 auto;
+  position: relative;
+  .plans__card--bagde {
+    padding: 0px 24px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: #e90a66;
+    font-weight: 600;
+  }
+  .plans__card--gigas {
+    padding: 0px 24px;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    color: #e90a66;
+    font-weight: 700;
+  }
+  .plans__card--price {
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 22px;
+    color: #e90a66;
+    font-weight: 400;
+  }
+  .plans__card--info {
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .plans__card--info__icon {
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+  }
+  .plans__card--info__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    color: #545353;
+    font-weight: 400;
+  }
+  .plans__card--apps {
+    background-color: #f2f4f6;
+    padding: 8px 24px 7px;
+    margin-bottom: 16px;
+    .title {
       font-size: 14px;
       line-height: 16px;
+      margin-bottom: 9px;
+      color: #545353;
+      font-weight: 500;
+    }
+    .picture {
+      width: auto;
+      height: auto;
+    }
+  }
+  .plans__card--acumula {
+    padding: 0px 24px;
+    font-size: 12px;
+    line-height: 8px;
+    margin-bottom: 16px;
+    color: #767d85;
+    font-weight: 500;
+    text-align: center;
+  }
+  .plans__card--enlace-content {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px;
+  }
+  .plans__card--enlace {
+    width: 100%;
+    padding: 14px;
+    background-color: #372e7d;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .plans__card--velocidad {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+  }
+  &.plans--card--recomentado {
+    background-color: #f06;
+    padding-top: 0px;
+    border: 1px solid #f06;
+    margin-top: -40px;
+    .plans__card--recomendado {
+      background-color: #fff78f;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 16px;
+      line-height: 16px;
+      color: #f06;
+      font-weight: 700;
+      margin-bottom: 24px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .plans__card--bagde {
+      color: #ffffff;
+    }
+    .plans__card--gigas {
+      color: #ffffff;
+    }
+    .plans__card--price {
+      color: #ffffff;
+    }
+    .plans__card--info__text {
+      color: #ffffff;
+    }
+    .plans__card--acumula {
+      color: #ffffff;
+    }
+    .plans__card--info {
+      &:nth-of-type(1) {
+        .plans__card--info__icon {
+          path {
+            stroke: #ffffff;
+            fill: none;
+          }
+        }
+      }
+      .plans__card--info__icon {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+    .plans__card--velocidad {
+      top: 85px;
     }
   }
 }

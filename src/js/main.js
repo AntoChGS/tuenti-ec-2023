@@ -295,3 +295,22 @@ function widthChangeCallback() {
       .insertAdjacentElement("beforeEnd", navigation);
   }
 }
+
+// plans
+var swiper = new Swiper(".tuenti__plans--list", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination--plans",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
