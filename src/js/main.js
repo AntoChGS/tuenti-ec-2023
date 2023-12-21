@@ -1,3 +1,28 @@
+let swiper = new Swiper(".mySwiperBenefit", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+    },
+  },
+});
+
 // Imports
 //=require jquery/dist/jquery.min.js
 //=require swiper/swiper-bundle.min.js
