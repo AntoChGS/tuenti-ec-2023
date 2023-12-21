@@ -1,47 +1,22 @@
-let swiper = new Swiper(".mySwiperBenefit", {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 25,
-    },
-  },
-});
-
 // Imports
 //=require jquery/dist/jquery.min.js
 //=require swiper/swiper-bundle.min.js
 
 //function accordion toggle
-accordionToggle("accordion");
-animationDelay();
+// accordionToggle("accordion");
+// animationDelay();
 
-//dropdown menu quicklinks
-// dropDownQuickLinks();
+// //dropdown menu quicklinks
+// // dropDownQuickLinks();
 
-//function header mobile
-showMenuHamburguer();
+// //function header mobile
+// showMenuHamburguer();
 
-// function swiper sliders
-// swiperLoops();
+// // function swiper sliders
+// // swiperLoops();
 
-// Footer Menu accordion
-footerAccordion();
+// // Footer Menu accordion
+// footerAccordion();
 
 //function resize
 // window.addEventListener("resize", widthChangeCallback);
@@ -320,6 +295,32 @@ var swiper_plans = new Swiper(".tuenti__plans--list", {
     1024: {
       slidesPerView: 4,
       spaceBetween: 20,
+    },
+  },
+});
+
+// benefit
+let swiper_benefit = new Swiper(".mySwiperBenefit", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
     },
   },
 });

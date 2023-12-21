@@ -416,6 +416,20 @@
     padding: 40px 10px 50px;
     margin: 0 auto;
   }
+  .tuenti__miniplans--list {
+    .swiper-wrapper {
+      @media (min-width: 1024px) {
+        transform: none !important;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .tuenti__plans--item {
+      @media (min-width: 1024px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
   .swiper-pagination--plans {
     .swiper-pagination-bullet {
       background: #ffffff;
