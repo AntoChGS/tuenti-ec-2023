@@ -114,38 +114,11 @@ function showMenuHamburguer() {
       event.preventDefault();
       btnNav.classList.toggle("open");
       navMain.classList.toggle("show");
-      // if (navMain.classList.contains("show")) {
-      //   document.body.style.overflow = "hidden";
-      //   document.querySelector(
-      //     ".navigation--menu .nav__menu"
-      //   ).style.visibility = "visible";
-      //   const visibleNav = Array.from(
-      //     document.querySelectorAll(".nav__menu")
-      //   ).filter(
-      //     (s) =>
-      //       window.getComputedStyle(s).getPropertyValue("display") !== "none"
-      //   )[0];
-      //   const visibleNavLinks = Array.from(
-      //     visibleNav.getElementsByTagName("li")
-      //   ).filter(
-      //     (s) =>
-      //       window.getComputedStyle(s).getPropertyValue("display") !== "none"
-      //   );
-      //   if (visibleNavLinks.length > 0) {
-      //     const firstLink = visibleNavLinks[0].querySelector("a");
-      //     firstLink.focus();
-      //   }
-      // } else {
-      //   document.querySelector(
-      //     ".navigation--menu .nav__menu"
-      //   ).style.visibility = "hidden";
-      //   document.body.removeAttribute("style");
-      // }
-    // navMain.addEventListener("focusout", (e) => {
-    //   if (navMain !== e.target && !navMain.contains(e.relatedTarget)) {
-    //     document.getElementById("btnNav").focus();
-    //   }
-    // });
+      if (navMain.classList.contains("show")) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.removeAttribute("style");
+      }
   });
 }
 
@@ -211,13 +184,15 @@ function getHeight(tab, panel) {
 
 function animationDelay(){
   document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
-    let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
-    let count = 0
-    childrenMenu.forEach((elementChild)=>{
-      let delay = 0.1 + count*0.03;
-      elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
-      count++;
-    })
+    if (element.childNodes[2]) {
+      let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
+      let count = 0
+      childrenMenu.forEach((elementChild)=>{
+        let delay = 0.1 + count*0.03;
+        elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
+        count++;
+      })
+    }
   })
 }
 
