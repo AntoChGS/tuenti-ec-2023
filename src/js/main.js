@@ -2,65 +2,6 @@
 //=require jquery/dist/jquery.min.js
 //=require swiper/swiper-bundle.min.js
 
-//dropdown menu quicklinks
-function dropDownQuickLinks() {
-  const btnQuicklink = document.querySelector(
-    ".header--quicklinks .dropdown--toggle"
-  );
-  const contQuicklinks = document.getElementById("quickLinks");
-  btnQuicklink.addEventListener("click", (event) => {
-    if (document.getElementById("mainQuicklinks")) {
-      event.preventDefault();
-      if (!contQuicklinks.classList.contains("show")) {
-        btnQuicklink.classList.add("open");
-        contQuicklinks.classList.add("show");
-        contQuicklinks.style.height = "auto";
-        let height = contQuicklinks.clientHeight + "px";
-        contQuicklinks.style.height = "0px";
-        document.body.insertAdjacentHTML(
-          "beforeend",
-          '<div class="backdrop">&nbsp;</div>'
-        );
-        setTimeout(function () {
-          contQuicklinks.style.height = height;
-        }, 0);
-        document
-          .querySelector(".header--navigation .navigation--menu")
-          .classList.remove("show");
-        document
-          .querySelector(".header--navigation .navigation--action .btn--menu")
-          .classList.remove("open");
-        btnQuicklink.focus();
-      } else {
-        contQuicklinks.style.height = "0px";
-        contQuicklinks.addEventListener(
-          "transitionend",
-          function () {
-            contQuicklinks.classList.remove("show");
-            btnQuicklink.classList.remove("open");
-            document.querySelector(".backdrop").remove();
-          },
-          {
-            once: true,
-          }
-        );
-      }
-    }
-  });
-  //focus next btnclick
-  if (btnQuicklink.nextElementSibling) {
-    const subMenu = btnQuicklink.nextElementSibling;
-    const subMenuLinks = subMenu.querySelectorAll("a");
-    const lastLinkIndex = subMenuLinks.length - 1;
-    const lastLink = subMenuLinks[lastLinkIndex];
-    lastLink.addEventListener("blur", function () {
-      if (document.getElementById("mainQuicklinks")) {
-        btnQuicklink.parentElement.querySelector(".dropdown--toggle").focus();
-      }
-    });
-  }
-}
-
 //Funcion Hamburger Show and Hide Menu Navegación Mobile
 function showMenuHamburguer() {
   const btnNav = document.querySelector("#btnNav");
@@ -139,7 +80,7 @@ function getHeight(tab, panel) {
 
 function animationDelay() {
   document.querySelectorAll(".menu__list .menu__item").forEach((element) => {
-    if (element.childNodes[2]) {
+    if (element.childNodes[3]) {
       let childrenMenu = element.children[1].querySelectorAll(".submenu__item");
       let count = 0;
       childrenMenu.forEach((elementChild) => {
@@ -241,39 +182,6 @@ function footerAccordion() {
   }
 }
 
-//Window Resize
-function widthChangeCallback() {
-  const navigation = document.querySelector(".nav__menu#navigation");
-  const search = document.querySelector(".navigation--search");
-  if (window.innerWidth > 768) {
-    document.querySelector(".header--quicklinks").removeAttribute("id");
-    document
-      .querySelector(".navigation .navigation--desktop")
-      .insertAdjacentElement("beforeEnd", navigation);
-    document
-      .querySelector(".navigation .navigation--login")
-      .insertAdjacentElement("beforebegin", search);
-  } else {
-    document
-      .querySelector(".header--quicklinks")
-      .setAttribute("id", "mainQuicklinks");
-  }
-  if (window.innerWidth > 992) {
-    document.querySelector(".nav__menu").classList.remove("nav__accordion");
-    document.querySelector(".navigation--menu").classList.remove("show");
-    document
-      .querySelector(".navigation--action .btn--menu")
-      .classList.remove("open");
-    document.querySelector(".nav__menu").removeAttribute("style");
-    document.querySelector(".nav__menu").classList.add("nav__accessible");
-  } else {
-    document.querySelector(".nav__menu").classList.add("nav__accordion");
-    document.querySelector(".nav__menu").classList.remove("nav__accessible");
-    document
-      .querySelector(".navigation--menu")
-      .insertAdjacentElement("beforeEnd", navigation);
-  }
-}
 
 // plans
 var swiper_plans = new Swiper(".tuenti__plans--list", {
@@ -382,24 +290,17 @@ if (document.querySelector("#fragment-2-aywy")) {
 }
 
 // function accordion toggle
-// accordionToggle("accordion");
-// animationDelay();
-
-// // //dropdown menu quicklinks
-// //dropDownQuickLinks();
+accordionToggle("accordion");
+animationDelay();
 
 // // function header mobile
-// showMenuHamburguer();
+showMenuHamburguer();
 
 // // function swiper sliders
 // swiperLoops();
 
 // // Tabs Section
-// mainTabs();
+mainTabs();
 
-// // // Footer Menu accordion
-// footerAccordion();
-
-//function resize
-// window.addEventListener("resize", widthChangeCallback);
-// widthChangeCallback();
+// Footer Menu accordion
+footerAccordion();
