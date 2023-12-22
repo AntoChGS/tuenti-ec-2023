@@ -36,6 +36,7 @@
             overflow: hidden;
             visibility: hidden;
             transition: all ease-in 150ms;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
 
             .info {
                 &__box {

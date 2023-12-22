@@ -261,18 +261,21 @@ if (document.querySelector("#fragment-2-aywy")) {
   }
 }
 
-const hunterBox = document.querySelector('.tue-hunter-tpl');
-const hunterClick = document.querySelector('.hunter__button');
-const hunterInfo = document.querySelector('.hunter__info');
+// Hunter
+function hunterWeb() {
+  if (document.querySelector(".tue-hunter-tpl")) {
+    const hunterBox = document.querySelector('.tue-hunter-tpl');
+    const hunterClick = document.querySelector('.hunter__button');
 
-hunterClick.addEventListener("click", function (e) {
-  if (hunterBox.classList.contains('active')) {
-    hunterBox.classList.remove("active");
-  } else {
-    hunterBox.classList.add("active");
+    hunterClick.addEventListener("click", function (e) {
+      if (hunterBox.classList.contains('active')) {
+        hunterBox.classList.remove("active");
+      } else {
+        hunterBox.classList.add("active");
+      }
+    });
   }
-  //hunterInfo.style.height = null;
-});
+}
 
 // function accordion toggle
 accordionToggle("accordion");
@@ -289,3 +292,6 @@ mainTabs();
 
 // Footer Menu accordion
 footerAccordion();
+
+// Function Hunter
+hunterWeb();
