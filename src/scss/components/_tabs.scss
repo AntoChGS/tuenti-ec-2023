@@ -1,0 +1,107 @@
+.tue {
+    &-tab {
+        &-horizontal {
+            width: 100%;
+            margin: auto;
+        }
+
+        &-content {
+            >.tue-tab-pane {
+                padding: 12px 0px;
+
+                &.tue-tab-pane--none {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-nav-tab {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 12px 0;
+        padding: 0;
+        list-style: none;
+
+        .tab {
+            &__item {
+                flex-grow: 1;
+                flex-shrink: 0;
+
+                &:first-child {
+                    .tab__link {
+                        border-top-left-radius: 100px;
+                        border-bottom-left-radius: 100px;
+                    }
+                }
+
+                &:last-child {
+                    .tab__link {
+                        border-top-right-radius: 100px;
+                        border-bottom-right-radius: 100px;
+                    }
+                }
+
+
+                .tab__link {
+                    &.active {
+                        background: var(--color-primary);
+                        color: var(--color-white);
+
+                        &::after {
+                            height: 3px;
+                        }
+                    }
+                }
+            }
+
+            &__link {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 42px;
+                padding: 6px 4px;
+                background: transparent;
+                border: 1px solid var(--color-primary);
+                border-radius: 0;
+                text-decoration: none;
+                cursor: pointer;
+                width: 100%;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: var(--fontCatamaran);
+                line-height: 1.15;
+                text-align: center;
+                color: var(--color-body);
+                transition: all ease-in 300ms;
+
+                @media (min-width: 992px) {
+                    font-size: 18px;
+                    padding: 6px 8px;
+                    height: 48px;
+                }
+
+                &:hover {
+                    color: var(--color-primary);
+
+                    &::after {
+                        height: 3px;
+                    }
+                }
+
+                &:focus,
+                >*:focus {
+                    outline: 0;
+                    box-shadow: inset 0 0 0 4px var(--color-magenta-50);
+                }
+
+                *:focus {
+                    outline: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
