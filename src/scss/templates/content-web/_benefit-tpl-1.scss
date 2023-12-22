@@ -2,12 +2,12 @@
   .benefits--title{
     text-align: left;
   }
-  .benefits--title h2 {
+  .benefits--title__ti{
     margin-bottom: 0;
     margin-top: 60px;
   }
 
-  .benefits--title p {
+  .benefits--title__subti{
     font-size: 18px;
   }
 
@@ -87,7 +87,7 @@
       text-align: center;
     }
 
-    .benefits--title p {
+    .benefits--title_subti{
       font-size: 25px;
     }
 
@@ -110,7 +110,7 @@
       width: 200px;
       display: inline;
     }
-    .benefits--card__mid h3 {
+    .benefits--card__mid__title{
       font-size: 25px;
     }
 
