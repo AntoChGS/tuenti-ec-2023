@@ -227,34 +227,45 @@
         .row
             .col-lg-12
                 h2.tabs__title.tue-title Requisitos para portar
-            .col-lg-6
-                picture.infographic__picture
+            .col-lg-6.tabs__image
+                picture.picture
                     source(media="(min-width: 768px)", srcset="images/banner/sticker-requisitos-portar-desktop.png")
                     img(src="images/banner/sticker-requisitos-portar-mobile.png", alt="requisitos para portar", width="291", heigh="245")
             .col-lg-6
-                .tabs__info
-                    p Si pagas mes a mes.
-                    .info__object
-                        picture.object__picture
-                            source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
-                            img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
-                        .object__description
-                            p.title Deuda
-                            .description
-                                p No debes tener pagos pendientes con tu operadora actual.
-                    .info__object
-                        picture.object__picture
-                            source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
-                            img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
-                        .object__description
-                            p.title Tipo de servicio
-                            .description
-                                p Selecciona Postpago si te cobran cada mes y te acreditan saldo.
-                    .info__object
-                        picture.object__picture
-                            source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
-                            img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
-                        .object__description
-                            p.title Titularidad
-                            .description
-                                p Asegúrate que la línea que vas a portar está a tu nombre.
+                .tue-tab-horizontal
+                    ul.tue-nav-tab(role="tablist") 
+                        li.tab__item.active(data-tab-extra="tab-1", role="presentation")
+                            button.tab__link(type="button", role="tab") Prepago
+                        li.tab__item(data-tab-extra="tab-2", role="presentation")
+                            button.tab__link(type="button", role="tab") Postpago
+                .tue-tab-content
+                    .tue-tab-pane.active#tab-1(role="tabpanel")
+                        .tabs__info
+                            p Si pagas mes a mes.
+                            .info__object
+                                picture.object__picture
+                                    source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
+                                    img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
+                                .object__description
+                                    p.title Deuda
+                                    .description
+                                        p No debes tener pagos pendientes con tu operadora actual.
+                            .info__object
+                                picture.object__picture
+                                    source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
+                                    img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
+                                .object__description
+                                    p.title Tipo de servicio
+                                    .description
+                                        p Selecciona Postpago si te cobran cada mes y te acreditan saldo.
+                            .info__object
+                                picture.object__picture
+                                    source(media="(min-width: 768px)", srcset="images/banner/check-circle.png")
+                                    img(src="images/banner/check-circle.png", alt="icono check", width="32", heigh="32")
+                                .object__description
+                                    p.title Titularidad
+                                    .description
+                                        p Asegúrate que la línea que vas a portar está a tu nombre.
+
+                    .tue-tab-pane#tab-2(role="tabpanel")
+                    

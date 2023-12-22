@@ -7,6 +7,20 @@
             text-align: center;
         }
 
+        &__image {
+            .picture {
+                display: block;
+
+                >img {
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
         &__info {
             font-size: 18px;
             line-height: 1.3;
