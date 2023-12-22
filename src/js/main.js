@@ -182,34 +182,6 @@ function footerAccordion() {
   }
 }
 
-
-// plans
-var swiper_plans = new Swiper(".tuenti__plans--list", {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination--plans",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 26,
-    },
-  },
-});
-
-// plans
-var swiper_banner = new Swiper(".tuenti__banner--carousel", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  pagination: {
-    el: ".swiper-pagination--banner",
-  },
-});
 // Tabs
 if (document.querySelector("#fragment-2-aywy")) {
   var fragmentElement = document.querySelector("#fragment-2-aywy");
@@ -297,7 +269,7 @@ animationDelay();
 showMenuHamburguer();
 
 // // function swiper sliders
-// swiperLoops();
+swiperLoops();
 
 // // Tabs Section
 mainTabs();
