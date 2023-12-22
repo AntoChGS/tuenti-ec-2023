@@ -1,3 +1,18 @@
+.tuenti__banner--carousel {
+  .swiper-pagination--banner {
+    .swiper-pagination-bullet {
+      background: transparent;
+      border: 2px solid #ffffff;
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      margin: 0 8px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #ffffff;
+    }
+  }
+}
 .tuenti__banner {
   background-color: #c70855;
   height: 500px;
