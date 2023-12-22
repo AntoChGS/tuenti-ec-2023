@@ -8,6 +8,26 @@ nav.tue-breadcrumb-tpl(aria-label="breadcrumb")
             li.breadcrumb-item
                 a(href="#") Nivel 3
             li.breadcrumb-item.active(aria-current="page") Nivel 4
+
+.tue-hunter-tpl
+    .hunter__info 
+        .info__box
+            .box__icon
+                <svg aria-hidden="true" class="svg--inline" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                <path d="M26.6667 26.6668L21.2667 21.2668M21.2667 21.2668C22.1334 20.4001 22.8209 19.3711 23.29 18.2387C23.759 17.1063 24.0005 15.8926 24.0005 14.6668C24.0005 13.4411 23.759 12.2274 23.29 11.0949C22.8209 9.96249 22.1334 8.93354 21.2667 8.06682C20.3999 7.20009 19.371 6.51257 18.2386 6.0435C17.1061 5.57443 15.8924 5.33301 14.6667 5.33301C13.4409 5.33301 12.2272 5.57443 11.0948 6.0435C9.96234 6.51257 8.93339 7.20009 8.06667 8.06682C6.31624 9.81725 5.33286 12.1913 5.33286 14.6668C5.33286 17.1423 6.31624 19.5164 8.06667 21.2668C9.81709 23.0172 12.1912 24.0006 14.6667 24.0006C17.1421 24.0006 19.5162 23.0172 21.2667 21.2668Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            .box__description
+                a.description-link(href="#") ¿Qué estás buscando? 
+    .hunter__button
+        picture.hunter__picture
+            source(media="(min-width: 768px)", srcset="images/banner/sticker-hunter-browser.png")
+            img(src="images/banner/sticker-hunter-browser.png", alt="hunter buscador", width="32", heigh="42") 
+        
+        <svg aria-hidden="true" class="hunter__icon svg--inline" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+        <path d="M5.33334 5.3335L26.6667 26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.33334 26.6668L26.6667 5.3335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    
 h2(style="font-size:18px;margin:0;padding:10px 15px;border-top: 1px solid #000;border-bottom: 1px solid #000;background:#000;color:#fff") HEADBAND
 .tue-headband-tpl.tue-bg-magenta-0
     .headband-content
