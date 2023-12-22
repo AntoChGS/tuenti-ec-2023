@@ -3,20 +3,20 @@
 //=require swiper/swiper-bundle.min.js
 
 //function accordion toggle
-accordionToggle("accordion");
-animationDelay();
+// accordionToggle("accordion");
+// animationDelay();
 
-//dropdown menu quicklinks
-// dropDownQuickLinks();
+// //dropdown menu quicklinks
+// // dropDownQuickLinks();
 
-//function header mobile
-showMenuHamburguer();
+// //function header mobile
+// showMenuHamburguer();
 
-// function swiper sliders
-// swiperLoops();
+// // function swiper sliders
+// // swiperLoops();
 
-// Footer Menu accordion
-footerAccordion();
+// // Footer Menu accordion
+// footerAccordion();
 
 //function resize
 // window.addEventListener("resize", widthChangeCallback);
@@ -86,14 +86,14 @@ function showMenuHamburguer() {
   const btnNav = document.querySelector("#btnNav");
   const navMain = document.querySelector(".navigation");
   btnNav.addEventListener("click", (event) => {
-      event.preventDefault();
-      btnNav.classList.toggle("open");
-      navMain.classList.toggle("show");
-      if (navMain.classList.contains("show")) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.removeAttribute("style");
-      }
+    event.preventDefault();
+    btnNav.classList.toggle("open");
+    navMain.classList.toggle("show");
+    if (navMain.classList.contains("show")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.removeAttribute("style");
+    }
   });
 }
 
@@ -157,18 +157,18 @@ function getHeight(tab, panel) {
   return height;
 }
 
-function animationDelay(){
-  document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
+function animationDelay() {
+  document.querySelectorAll(".menu__list .menu__item").forEach((element) => {
     if (element.childNodes[2]) {
-      let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
-      let count = 0
-      childrenMenu.forEach((elementChild)=>{
-        let delay = 0.1 + count*0.03;
-        elementChild.setAttribute('style', 'animation-delay:'+delay+'s;');
+      let childrenMenu = element.children[1].querySelectorAll(".submenu__item");
+      let count = 0;
+      childrenMenu.forEach((elementChild) => {
+        let delay = 0.1 + count * 0.03;
+        elementChild.setAttribute("style", "animation-delay:" + delay + "s;");
         count++;
-      })
+      });
     }
-  })
+  });
 }
 
 //Swiper Sliders Function
@@ -279,3 +279,48 @@ function widthChangeCallback() {
       .insertAdjacentElement("beforeEnd", navigation);
   }
 }
+
+// plans
+var swiper_plans = new Swiper(".tuenti__plans--list", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination--plans",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+// benefit
+let swiper_benefit = new Swiper(".mySwiperBenefit", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+    },
+  },
+});

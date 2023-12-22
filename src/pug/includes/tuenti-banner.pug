@@ -1,15 +1,15 @@
-.tuenti__banner
+section.tuenti__banner
     .tuenti__banner--content
         .tuenti__banner--body
             .tuenti__banner--left 
                 p.text Descarga la App Tuenti y
                 h1.title Te regalamos 1 GB
-                a(href="#").button Descargar app
+                a(href="#").button Descargar App
             .tuenti__banner--right
                 picture.tuenti__banner--image
                     source(media="(min-width: 1024px)" srcset="images/banner-1-desktop.png")
-                    img(src="images/banner-1-desktop.png", alt="").picture
-.tuenti__banner.tuenti__banner--v2
+                    img(src="images/banner-1-mobile.png", alt="").picture
+section.tuenti__banner.tuenti__banner--v2
     .tuenti__banner--content
         .tuenti__banner--body
             .tuenti__banner--left 
@@ -19,21 +19,528 @@
             .tuenti__banner--right
                 picture.tuenti__banner--image
                     source(media="(min-width: 1024px)" srcset="images/banner-2-desktop.png")
-                    img(src="images/banner-2-desktop.png", alt="").picture
-.tuenti__acciones
+                    img(src="images/banner-2-mobile.png", alt="").picture
+section.tuenti__banner.tuenti__banner--v3
+    .tuenti__banner--content
+        .tuenti__banner--body
+            .tuenti__banner--left 
+                p.text ¡Pásate a Tuenti! Tu primer mes 
+                h1.title ES 100% GRATIS
+                a(href="#").button Cambiar a Tuenti
+            .tuenti__banner--right
+                picture.tuenti__banner--image
+                    source(media="(min-width: 1024px)" srcset="images/banner-2-desktop.png")
+                    img(src="images/banner-2-mobile.png", alt="").picture
+section.tuenti__acciones
     .tuenti__banner--content
         .tuenti__acciones--left
             h2.title Tuenti es 100% digital
             p.text Accede a la opción que necesites con un solo clic y disfruta de múltiples beneficios 
                 b ¡sin contratos!
-                a(href="#")  preguntas
+                
         .tuenti__acciones--right
             ul.tuenti__acciones--list
                 li.tuenti__acciones--item
-                    .tuenti__acciones--card
-                        .tuenti__acciones--card__left
+                    a(href="#").tuenti__acciones--card
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-1-desktop.png")
+                                    img(src="images/acciones-icono-1-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-1-desktop.png")
+                                    img(src="images/acciones-icono-1-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-1-desktop.png")
+                                    img(src="images/acciones-icono-1-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-1-desktop.png")
+                                    img(src="images/acciones-icono-1-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+
+section.tuenti__acciones.tuenti__acciones--v2
+    .tuenti__banner--content
+        .tuenti__acciones--left
+            h2.title Centro de ayuda
+            p.text Despeja tus dudas, revisa nuestra lista de 
+                a(href="#") preguntas frecuentes.
+        .tuenti__acciones--right
+            ul.tuenti__acciones--list
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card.tuenti__acciones--card--v2
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-2-desktop.png")
+                                    img(src="images/acciones-icono-2-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card.tuenti__acciones--card--v2
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-2-desktop.png")
+                                    img(src="images/acciones-icono-2-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card.tuenti__acciones--card--v2
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-2-desktop.png")
+                                    img(src="images/acciones-icono-2-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+                li.tuenti__acciones--item
+                    a(href="#").tuenti__acciones--card.tuenti__acciones--card--v2
+                        span.tuenti__acciones--card__left
+                            span.tuenti__acciones--card--icono
+                                picture.tuenti__acciones--card__image
+                                    source(media="(min-width: 1024px)" srcset="images/acciones-icono-2-desktop.png")
+                                    img(src="images/acciones-icono-2-mobile.png", alt="").picture
+                        span.tuenti__acciones--card__right
+                            span.text Suscripción a combos
+
+section.tuenti__steps
+    .tuenti__steps--content
+        h2.title Sigue los pasos para recargar desde la App Tuenti
+        ul.tuenti__steps--list
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 1
+                            span Paso 1
+                        p.tuenti__steps--card__cuenta Ingresa a cuenta
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
                             picture.tuenti__acciones--card__image
-                                source(media="(min-width: 1024px)" srcset="images/acciones-icono-1-desktop.png")
-                                img(src="images/acciones-icono-1-desktop.png", alt="").picture
-                        .tuenti__acciones--card__right
-                            p.text Suscripción a combos
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 2
+                            span Paso 2
+                        p.tuenti__steps--card__cuenta Elige el botón Recargar
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-2-desktop.png")
+                                img(src="images/steps-icono-2-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 3
+                            span Paso 3
+                        p.tuenti__steps--card__cuenta Elige el monto $
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-3-desktop.png")
+                                img(src="images/steps-icono-3-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 4
+                            span Paso 4
+                        p.tuenti__steps--card__cuenta Confirma los datos de la tarjeta y facturación
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-4-desktop.png")
+                                img(src="images/steps-icono-4-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 5
+                            span Paso 5
+                        p.tuenti__steps--card__cuenta Recibe un SMS de confirmación y ¡Listo!
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-5-desktop.png")
+                                img(src="images/steps-icono-5-mobile.png", alt="").picture
+        .tuenti__steps--bottom
+            p.tuenti__steps--terminos Si no tienes la App Tuenti, puedes 
+                a(href="#") Recargar aquí
+
+section.tuenti__steps.tuenti__steps--v2
+    .tuenti__steps--content
+        h2.title Sigue los pasos para recargar desde la App Tuenti
+        ul.tuenti__steps--list
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 1
+                            span Paso 1
+                        p.tuenti__steps--card__cuenta Ingresa a cuenta
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 2
+                            span Paso 2
+                        p.tuenti__steps--card__cuenta Elige el botón Recargar
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 3
+                            span Paso 3
+                        p.tuenti__steps--card__cuenta Elige el monto $
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 4
+                            span Paso 4
+                        p.tuenti__steps--card__cuenta Confirma los datos de la tarjeta y facturación
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 5
+                            span Paso 5
+                        p.tuenti__steps--card__cuenta Recibe un SMS de confirmación y ¡Listo!
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+        .tuenti__steps--bottom
+            a(href="").tuenti__steps--bottom__enlace Pasarme a Tuenti
+
+section.tuenti__steps.tuenti__steps--v3
+    .tuenti__steps--content
+        h2.title Sigue los pasos para recargar desde la App Tuenti
+        ul.tuenti__steps--list
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 1
+                            span Paso 1
+                        p.tuenti__steps--card__cuenta Ingresa a cuenta
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 2
+                            span Paso 2
+                        p.tuenti__steps--card__cuenta Elige el botón Recargar
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 3
+                            span Paso 3
+                        p.tuenti__steps--card__cuenta Elige el monto $
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 4
+                            span Paso 4
+                        p.tuenti__steps--card__cuenta Confirma los datos de la tarjeta y facturación
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+            li.tuenti__steps--item
+                .tuenti__steps--card
+                    .tuenti__steps--card__left
+                        p.tuenti__steps--card__paso
+                            span.tuenti__steps--card__numero 5
+                            span Paso 5
+                        p.tuenti__steps--card__cuenta Recibe un SMS de confirmación y ¡Listo!
+                    .tuenti__steps--card__right
+                        .tuenti__steps--card__icono
+                            picture.tuenti__acciones--card__image
+                                source(media="(min-width: 1024px)" srcset="images/steps-icono-1-desktop.png")
+                                img(src="images/steps-icono-1-mobile.png", alt="").picture
+        .tuenti__steps--bottom
+            p.tuenti__steps--terminos Si no tienes la App Tuenti, puedes 
+                a(href="#") Recargar aquí
+
+
+section.tuenti__plans
+    .tuenti__plans--content
+        h2.tuenti__plans--title Escoge el combo ideal para ti 
+        p.tuenti__plans--text Nuestros combos son chéveres como tú. Conoce más sobre nuestros 
+            a(href="#") planes prepago.
+        ul.tuenti__plans--list.swiper
+            .swiper-wrapper
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 7.55556C15.1382 7.55556 15.5903 7.74286 15.9237 8.07625C16.2571 8.40965 16.4444 8.86184 16.4444 9.33333M14.6667 4C16.0812 4 17.4377 4.5619 18.4379 5.5621C19.4381 6.56229 20 7.91885 20 9.33333M5.77778 4.88889H9.33333L11.1111 9.33333L8.88889 10.6667C9.84085 12.5969 11.4031 14.1591 13.3333 15.1111L14.6667 12.8889L19.1111 14.6667V18.2222C19.1111 18.6937 18.9238 19.1459 18.5904 19.4793C18.257 19.8127 17.8048 20 17.3333 20C13.866 19.7893 10.5957 18.3169 8.1394 15.8606C5.68311 13.4043 4.21071 10.134 4 6.66667C4 6.19517 4.1873 5.74299 4.5207 5.40959C4.8541 5.07619 5.30628 4.88889 5.77778 4.88889Z" stroke="#FF0066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            p.plans__card--info__text 50 min otras operadoras
+                                br
+                                span Ilimitado entre Tuenti
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 11C8.28333 11 8.521 10.904 8.713 10.712C8.905 10.52 9.00067 10.2827 9 10C9 9.71667 8.904 9.479 8.712 9.287C8.52 9.095 8.28267 8.99934 8 9C7.71667 9 7.479 9.096 7.287 9.288C7.095 9.48 6.99933 9.71734 7 10C7 10.2833 7.096 10.521 7.288 10.713C7.48 10.905 7.71733 11.0007 8 11ZM12 11C12.2833 11 12.521 10.904 12.713 10.712C12.905 10.52 13.0007 10.2827 13 10C13 9.71667 12.904 9.479 12.712 9.287C12.52 9.095 12.2827 8.99934 12 9C11.7167 9 11.479 9.096 11.287 9.288C11.095 9.48 10.9993 9.71734 11 10C11 10.2833 11.096 10.521 11.288 10.713C11.48 10.905 11.7173 11.0007 12 11ZM16 11C16.2833 11 16.521 10.904 16.713 10.712C16.905 10.52 17.0007 10.2827 17 10C17 9.71667 16.904 9.479 16.712 9.287C16.52 9.095 16.2827 8.99934 16 9C15.7167 9 15.479 9.096 15.287 9.288C15.095 9.48 14.9993 9.71734 15 10C15 10.2833 15.096 10.521 15.288 10.713C15.48 10.905 15.7173 11.0007 16 11ZM2 22V4C2 3.45 2.196 2.979 2.588 2.587C2.98 2.195 3.45067 1.99934 4 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V16C22 16.55 21.804 17.021 21.412 17.413C21.02 17.805 20.5493 18.0007 20 18H6L2 22ZM5.15 16H20V4H4V17.125L5.15 16Z" fill="#FF0066"/>
+                                </svg>
+                            p.plans__card--info__text 50 sms en total
+                        .plans__card--apps
+                            .title Aplicaciones gratuitas
+                            .plans__card--aps__logos
+                                picture.plans__card--apps__image
+                                    source(media="(min-width: 1024px)" srcset="images/plans-logos-1-desktop.png")
+                                    img(src="images/plans-logos-1-desktop.png", alt="").picture
+                        p.plans__card--acumula Acumula los Gigas que no uses
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card.plans--card--recomentado
+                        p.plans__card--recomendado RECOMENDADO
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 7.55556C15.1382 7.55556 15.5903 7.74286 15.9237 8.07625C16.2571 8.40965 16.4444 8.86184 16.4444 9.33333M14.6667 4C16.0812 4 17.4377 4.5619 18.4379 5.5621C19.4381 6.56229 20 7.91885 20 9.33333M5.77778 4.88889H9.33333L11.1111 9.33333L8.88889 10.6667C9.84085 12.5969 11.4031 14.1591 13.3333 15.1111L14.6667 12.8889L19.1111 14.6667V18.2222C19.1111 18.6937 18.9238 19.1459 18.5904 19.4793C18.257 19.8127 17.8048 20 17.3333 20C13.866 19.7893 10.5957 18.3169 8.1394 15.8606C5.68311 13.4043 4.21071 10.134 4 6.66667C4 6.19517 4.1873 5.74299 4.5207 5.40959C4.8541 5.07619 5.30628 4.88889 5.77778 4.88889Z" stroke="#FF0066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            p.plans__card--info__text 50 min otras operadoras
+                                br
+                                span Ilimitado entre Tuenti
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 11C8.28333 11 8.521 10.904 8.713 10.712C8.905 10.52 9.00067 10.2827 9 10C9 9.71667 8.904 9.479 8.712 9.287C8.52 9.095 8.28267 8.99934 8 9C7.71667 9 7.479 9.096 7.287 9.288C7.095 9.48 6.99933 9.71734 7 10C7 10.2833 7.096 10.521 7.288 10.713C7.48 10.905 7.71733 11.0007 8 11ZM12 11C12.2833 11 12.521 10.904 12.713 10.712C12.905 10.52 13.0007 10.2827 13 10C13 9.71667 12.904 9.479 12.712 9.287C12.52 9.095 12.2827 8.99934 12 9C11.7167 9 11.479 9.096 11.287 9.288C11.095 9.48 10.9993 9.71734 11 10C11 10.2833 11.096 10.521 11.288 10.713C11.48 10.905 11.7173 11.0007 12 11ZM16 11C16.2833 11 16.521 10.904 16.713 10.712C16.905 10.52 17.0007 10.2827 17 10C17 9.71667 16.904 9.479 16.712 9.287C16.52 9.095 16.2827 8.99934 16 9C15.7167 9 15.479 9.096 15.287 9.288C15.095 9.48 14.9993 9.71734 15 10C15 10.2833 15.096 10.521 15.288 10.713C15.48 10.905 15.7173 11.0007 16 11ZM2 22V4C2 3.45 2.196 2.979 2.588 2.587C2.98 2.195 3.45067 1.99934 4 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V16C22 16.55 21.804 17.021 21.412 17.413C21.02 17.805 20.5493 18.0007 20 18H6L2 22ZM5.15 16H20V4H4V17.125L5.15 16Z" fill="#FF0066"/>
+                                </svg>
+                            p.plans__card--info__text 50 sms en total
+                        .plans__card--apps
+                            .title Aplicaciones gratuitas
+                            .plans__card--aps__logos
+                                picture.plans__card--apps__image
+                                    source(media="(min-width: 1024px)" srcset="images/plans-logos-1-desktop.png")
+                                    img(src="images/plans-logos-1-desktop.png", alt="").picture
+                        p.plans__card--acumula Acumula los Gigas que no uses
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 7.55556C15.1382 7.55556 15.5903 7.74286 15.9237 8.07625C16.2571 8.40965 16.4444 8.86184 16.4444 9.33333M14.6667 4C16.0812 4 17.4377 4.5619 18.4379 5.5621C19.4381 6.56229 20 7.91885 20 9.33333M5.77778 4.88889H9.33333L11.1111 9.33333L8.88889 10.6667C9.84085 12.5969 11.4031 14.1591 13.3333 15.1111L14.6667 12.8889L19.1111 14.6667V18.2222C19.1111 18.6937 18.9238 19.1459 18.5904 19.4793C18.257 19.8127 17.8048 20 17.3333 20C13.866 19.7893 10.5957 18.3169 8.1394 15.8606C5.68311 13.4043 4.21071 10.134 4 6.66667C4 6.19517 4.1873 5.74299 4.5207 5.40959C4.8541 5.07619 5.30628 4.88889 5.77778 4.88889Z" stroke="#FF0066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            p.plans__card--info__text 50 min otras operadoras
+                                br
+                                span Ilimitado entre Tuenti
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 11C8.28333 11 8.521 10.904 8.713 10.712C8.905 10.52 9.00067 10.2827 9 10C9 9.71667 8.904 9.479 8.712 9.287C8.52 9.095 8.28267 8.99934 8 9C7.71667 9 7.479 9.096 7.287 9.288C7.095 9.48 6.99933 9.71734 7 10C7 10.2833 7.096 10.521 7.288 10.713C7.48 10.905 7.71733 11.0007 8 11ZM12 11C12.2833 11 12.521 10.904 12.713 10.712C12.905 10.52 13.0007 10.2827 13 10C13 9.71667 12.904 9.479 12.712 9.287C12.52 9.095 12.2827 8.99934 12 9C11.7167 9 11.479 9.096 11.287 9.288C11.095 9.48 10.9993 9.71734 11 10C11 10.2833 11.096 10.521 11.288 10.713C11.48 10.905 11.7173 11.0007 12 11ZM16 11C16.2833 11 16.521 10.904 16.713 10.712C16.905 10.52 17.0007 10.2827 17 10C17 9.71667 16.904 9.479 16.712 9.287C16.52 9.095 16.2827 8.99934 16 9C15.7167 9 15.479 9.096 15.287 9.288C15.095 9.48 14.9993 9.71734 15 10C15 10.2833 15.096 10.521 15.288 10.713C15.48 10.905 15.7173 11.0007 16 11ZM2 22V4C2 3.45 2.196 2.979 2.588 2.587C2.98 2.195 3.45067 1.99934 4 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V16C22 16.55 21.804 17.021 21.412 17.413C21.02 17.805 20.5493 18.0007 20 18H6L2 22ZM5.15 16H20V4H4V17.125L5.15 16Z" fill="#FF0066"/>
+                                </svg>
+                            p.plans__card--info__text 50 sms en total
+                        .plans__card--apps
+                            .title Aplicaciones gratuitas
+                            .plans__card--aps__logos
+                                picture.plans__card--apps__image
+                                    source(media="(min-width: 1024px)" srcset="images/plans-logos-1-desktop.png")
+                                    img(src="images/plans-logos-1-desktop.png", alt="").picture
+                        p.plans__card--acumula Acumula los Gigas que no uses
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 7.55556C15.1382 7.55556 15.5903 7.74286 15.9237 8.07625C16.2571 8.40965 16.4444 8.86184 16.4444 9.33333M14.6667 4C16.0812 4 17.4377 4.5619 18.4379 5.5621C19.4381 6.56229 20 7.91885 20 9.33333M5.77778 4.88889H9.33333L11.1111 9.33333L8.88889 10.6667C9.84085 12.5969 11.4031 14.1591 13.3333 15.1111L14.6667 12.8889L19.1111 14.6667V18.2222C19.1111 18.6937 18.9238 19.1459 18.5904 19.4793C18.257 19.8127 17.8048 20 17.3333 20C13.866 19.7893 10.5957 18.3169 8.1394 15.8606C5.68311 13.4043 4.21071 10.134 4 6.66667C4 6.19517 4.1873 5.74299 4.5207 5.40959C4.8541 5.07619 5.30628 4.88889 5.77778 4.88889Z" stroke="#FF0066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            p.plans__card--info__text 50 min otras operadoras
+                                br
+                                span Ilimitado entre Tuenti
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 11C8.28333 11 8.521 10.904 8.713 10.712C8.905 10.52 9.00067 10.2827 9 10C9 9.71667 8.904 9.479 8.712 9.287C8.52 9.095 8.28267 8.99934 8 9C7.71667 9 7.479 9.096 7.287 9.288C7.095 9.48 6.99933 9.71734 7 10C7 10.2833 7.096 10.521 7.288 10.713C7.48 10.905 7.71733 11.0007 8 11ZM12 11C12.2833 11 12.521 10.904 12.713 10.712C12.905 10.52 13.0007 10.2827 13 10C13 9.71667 12.904 9.479 12.712 9.287C12.52 9.095 12.2827 8.99934 12 9C11.7167 9 11.479 9.096 11.287 9.288C11.095 9.48 10.9993 9.71734 11 10C11 10.2833 11.096 10.521 11.288 10.713C11.48 10.905 11.7173 11.0007 12 11ZM16 11C16.2833 11 16.521 10.904 16.713 10.712C16.905 10.52 17.0007 10.2827 17 10C17 9.71667 16.904 9.479 16.712 9.287C16.52 9.095 16.2827 8.99934 16 9C15.7167 9 15.479 9.096 15.287 9.288C15.095 9.48 14.9993 9.71734 15 10C15 10.2833 15.096 10.521 15.288 10.713C15.48 10.905 15.7173 11.0007 16 11ZM2 22V4C2 3.45 2.196 2.979 2.588 2.587C2.98 2.195 3.45067 1.99934 4 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V16C22 16.55 21.804 17.021 21.412 17.413C21.02 17.805 20.5493 18.0007 20 18H6L2 22ZM5.15 16H20V4H4V17.125L5.15 16Z" fill="#FF0066"/>
+                                </svg>
+                            p.plans__card--info__text 50 sms en total
+                        .plans__card--apps
+                            .title Aplicaciones gratuitas
+                            .plans__card--aps__logos
+                                picture.plans__card--apps__image
+                                    source(media="(min-width: 1024px)" srcset="images/plans-logos-1-desktop.png")
+                                    img(src="images/plans-logos-1-desktop.png", alt="").picture
+                        p.plans__card--acumula Acumula los Gigas que no uses
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 7.55556C15.1382 7.55556 15.5903 7.74286 15.9237 8.07625C16.2571 8.40965 16.4444 8.86184 16.4444 9.33333M14.6667 4C16.0812 4 17.4377 4.5619 18.4379 5.5621C19.4381 6.56229 20 7.91885 20 9.33333M5.77778 4.88889H9.33333L11.1111 9.33333L8.88889 10.6667C9.84085 12.5969 11.4031 14.1591 13.3333 15.1111L14.6667 12.8889L19.1111 14.6667V18.2222C19.1111 18.6937 18.9238 19.1459 18.5904 19.4793C18.257 19.8127 17.8048 20 17.3333 20C13.866 19.7893 10.5957 18.3169 8.1394 15.8606C5.68311 13.4043 4.21071 10.134 4 6.66667C4 6.19517 4.1873 5.74299 4.5207 5.40959C4.8541 5.07619 5.30628 4.88889 5.77778 4.88889Z" stroke="#FF0066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            p.plans__card--info__text 50 min otras operadoras
+                                br
+                                span Ilimitado entre Tuenti
+                        .plans__card--info
+                            .plans__card--info__icon
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 11C8.28333 11 8.521 10.904 8.713 10.712C8.905 10.52 9.00067 10.2827 9 10C9 9.71667 8.904 9.479 8.712 9.287C8.52 9.095 8.28267 8.99934 8 9C7.71667 9 7.479 9.096 7.287 9.288C7.095 9.48 6.99933 9.71734 7 10C7 10.2833 7.096 10.521 7.288 10.713C7.48 10.905 7.71733 11.0007 8 11ZM12 11C12.2833 11 12.521 10.904 12.713 10.712C12.905 10.52 13.0007 10.2827 13 10C13 9.71667 12.904 9.479 12.712 9.287C12.52 9.095 12.2827 8.99934 12 9C11.7167 9 11.479 9.096 11.287 9.288C11.095 9.48 10.9993 9.71734 11 10C11 10.2833 11.096 10.521 11.288 10.713C11.48 10.905 11.7173 11.0007 12 11ZM16 11C16.2833 11 16.521 10.904 16.713 10.712C16.905 10.52 17.0007 10.2827 17 10C17 9.71667 16.904 9.479 16.712 9.287C16.52 9.095 16.2827 8.99934 16 9C15.7167 9 15.479 9.096 15.287 9.288C15.095 9.48 14.9993 9.71734 15 10C15 10.2833 15.096 10.521 15.288 10.713C15.48 10.905 15.7173 11.0007 16 11ZM2 22V4C2 3.45 2.196 2.979 2.588 2.587C2.98 2.195 3.45067 1.99934 4 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V16C22 16.55 21.804 17.021 21.412 17.413C21.02 17.805 20.5493 18.0007 20 18H6L2 22ZM5.15 16H20V4H4V17.125L5.15 16Z" fill="#FF0066"/>
+                                </svg>
+                            p.plans__card--info__text 50 sms en total
+                        .plans__card--apps
+                            .title Aplicaciones gratuitas
+                            .plans__card--aps__logos
+                                picture.plans__card--apps__image
+                                    source(media="(min-width: 1024px)" srcset="images/plans-logos-1-desktop.png")
+                                    img(src="images/plans-logos-1-desktop.png", alt="").picture
+                        p.plans__card--acumula Acumula los Gigas que no uses
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+            .swiper-pagination.swiper-pagination--plans
+
+section.tuenti__plans
+    .tuenti__plans--content
+        h2.tuenti__plans--title Compra un comodín y sal del apuro
+        p.tuenti__plans--text Nuestros comodines amplian tus datos, minutos de voz y SMS
+        ul.tuenti__plans--list.swiper.tuenti__miniplans--list
+            .swiper-wrapper
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card.plans--card--recomentado
+                        p.plans__card--recomendado RECOMENDADO
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad-recomendado.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+                li.tuenti__plans--item.swiper-slide
+                    .plans--card
+                        p.plans__card--bagde Combo
+                        p.plans__card--gigas 5 Gigas
+                        p.plans__card--price $7 x 30 días
+                        .plans__card--velocidad
+                            img(src="images/plans-icono-velocidad.png", alt="").picture
+                        .plans__card--enlace-content
+                            a(href="#").plans__card--enlace Comprar x $7
+
+                
+            .swiper-pagination.swiper-pagination--plans
