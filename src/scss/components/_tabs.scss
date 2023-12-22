@@ -42,8 +42,9 @@
                     }
                 }
 
-                &.active {
-                    .tab__link {
+
+                .tab__link {
+                    &.active {
                         background: var(--color-primary);
                         color: var(--color-white);
 

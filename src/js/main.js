@@ -324,3 +324,84 @@ let swiper_benefit = new Swiper(".mySwiperBenefit", {
     },
   },
 });
+
+
+/* TABS */
+var fragmentElement = document.querySelector('#fragment-2-aywy');
+var fragmentNamespace = 'aywy';
+
+const tabItems = [].slice.call(
+  fragmentElement.querySelectorAll(
+    '[data-fragment-namespace="' + fragmentNamespace + '"].tab__link'
+  )
+);
+const tabPanelItems = [].slice.call(
+  fragmentElement.querySelectorAll(
+    '[data-fragment-namespace="' + fragmentNamespace + '"].tue-tab-pane'
+  )
+);
+
+function activeTab(item) {
+  tabItems.forEach(function (tabItem) {
+    tabItem.setAttribute('aria-selected', false);
+    tabItem.classList.remove('active');
+  });
+  item.setAttribute('aria-selected', true);
+  item.classList.add('active');
+}
+
+function activeTabPanel(item) {
+  tabPanelItems.forEach(function (tabPanelItem) {
+    if (!tabPanelItem.classList.contains('tue-tab-pane--none')) {
+      tabPanelItem.classList.add('tue-tab-pane--none');
+    }
+  });
+  item.classList.remove('tue-tab-pane--none');
+}
+
+function openTabPanel(event, i) {
+  const currentTarget = event.currentTarget;
+  const target = event.target;
+
+  currentTarget.focus();
+
+  activeTab(currentTarget, i);
+  activeTabPanel(tabPanelItems[i]);
+
+  this.tabIndex = i;
+}
+
+function mainTabs() {
+  const initialState = !this.tabIndex || this.tabIndex >= tabItems.length;
+  let tabItemSelected = tabItems[0];
+
+  if (initialState) {
+    tabItems.forEach(function (item, i) {
+      if (!i) {
+        activeTab(item);
+      }
+      item.addEventListener('click', function (event) {
+        openTabPanel(event, i);
+      });
+    });
+    tabPanelItems.forEach(function (item, i) {
+      if (!i) {
+        activeTabPanel(item);
+      }
+    });
+  }
+  else {
+    tabItemSelected = tabItems[this.tabIndex];
+    tabItems.forEach(function (item, i) {
+      activeTab(tabItems[this.tabIndex]);
+      item.addEventListener('click', function (event) {
+        openTabPanel(event, i);
+      });
+    });
+    tabPanelItems.forEach(function () {
+      activeTabPanel(tabPanelItems[this.tabIndex]);
+    });
+  }
+}
+
+mainTabs();
