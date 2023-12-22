@@ -117,14 +117,14 @@ p {
 
 a {
     word-wrap: break-word;
-    color: var(--color-blue);
+    color: var(--color-primary);
     -webkit-tap-highlight-color: var(--transparent);
     transition: all ease 300ms;
     text-decoration: none;
 
     &:hover,
     &:active {
-        color: var(--color-blue);
+        color: var(--color-primary);
         text-decoration: underline;
     }
 }

@@ -8,6 +8,10 @@
         }
 
         &__image {
+            @media (max-width: 991.98px) {
+                order: -1;
+                margin-bottom: 18px;
+            }
             .picture {
                 display: block;
 
@@ -22,65 +26,94 @@
         }
 
         &__info {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.3;
             font-weight: 400;
             margin: 0;
 
-            >* {
+            @media (min-width: 992px) {
                 font-size: 18px;
+            }
+
+            >* {
+                font-size: 16px;
                 line-height: 1.3;
                 font-weight: 400;
+
+                @media (min-width: 992px) {
+                    font-size: 18px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
 
-            .info__object {
-                display: flex;
-                margin-bottom: 16px;
+            .info {
+                &__object {
+                    display: flex;
+                    margin-bottom: 16px;
 
-                .object {
-                    &__picture {
-                        display: block;
-                        margin-right: 12px;
-
-                        >img {
+                    .object {
+                        &__picture {
                             display: block;
-                            width: auto;
-                            height: auto;
-                            max-width: 100%;
-                            margin: 0 auto;
-                        }
-                    }
+                            margin-right: 12px;
 
-                    &__description {
-                        flex: 1;
-
-                        .title {
-                            font-size: 18px;
-                            line-height: 1.25;
-                            font-weight: 700;
-                            margin: 0;
-                            margin-bottom: 4px;
+                            >img {
+                                display: block;
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
+                                margin: 0 auto;
+                            }
                         }
 
-                        .description {
-                            font-size: 16px;
-                            line-height: 1.3;
-                            font-weight: 400;
-                            margin: 0;
+                        &__description {
+                            flex: 1;
 
-                            >* {
+                            .title {
+                                font-size: 18px;
+                                line-height: 1.25;
+                                font-weight: 700;
+                                margin: 0;
+                                margin-bottom: 4px;
+                            }
+
+                            .description {
                                 font-size: 16px;
                                 line-height: 1.3;
                                 font-weight: 400;
+                                margin: 0;
 
-                                &:last-child {
-                                    margin-bottom: 0;
+                                >* {
+                                    font-size: 16px;
+                                    line-height: 1.3;
+                                    font-weight: 400;
+
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
                                 }
                             }
+                        }
+                    }
+                }
+
+                &__button {
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+
+                &__visit {
+                    display: block;
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    >* {
+                        &:last-child {
+                            margin-bottom: 0;
                         }
                     }
                 }
