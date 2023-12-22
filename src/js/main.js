@@ -294,7 +294,7 @@ var swiper_plans = new Swiper(".tuenti__plans--list", {
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 26,
     },
   },
 });

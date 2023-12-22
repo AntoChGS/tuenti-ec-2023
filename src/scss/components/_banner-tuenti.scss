@@ -443,6 +443,31 @@
       background: #5144b8;
     }
   }
+  &.tuenti__plans--mini {
+    .tuenti__plans--content {
+      @media (min-width: 768px) {
+        width: 700px;
+      }
+      @media (min-width: 1024px) {
+        width: 1070px;
+      }
+    }
+    .tuenti__plans--item {
+      @media (min-width: 1024px) {
+        width: 324px !important;
+      }
+      &:nth-child(3n) {
+        @media (min-width: 1024px) {
+          margin-right: 0px !important;
+        }
+      }
+    }
+    .swiper-pagination {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
 }
 
 .plans--card {
@@ -526,8 +551,7 @@
     padding: 0px 24px;
   }
   .plans__card--enlace {
-    width: 100%;
-    padding: 14px;
+    padding: 14px 48px;
     background-color: #372e7d;
     border-radius: 30px;
     color: #ffffff;
@@ -536,6 +560,7 @@
     font-weight: 700;
     display: flex;
     justify-content: center;
+    text-decoration: none;
   }
   .plans__card--velocidad {
     position: absolute;
@@ -548,6 +573,7 @@
     border: 1px solid #f06;
     margin-top: -40px;
     .plans__card--recomendado {
+      padding-top: 5px;
       background-color: #fff78f;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
@@ -594,5 +620,8 @@
     .plans__card--velocidad {
       top: 85px;
     }
+  }
+  &.plans--card--mini {
+    width: 324px;
   }
 }
