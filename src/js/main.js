@@ -2,26 +2,6 @@
 //=require jquery/dist/jquery.min.js
 //=require swiper/swiper-bundle.min.js
 
-//function accordion toggle
-// accordionToggle("accordion");
-// animationDelay();
-
-// //dropdown menu quicklinks
-// // dropDownQuickLinks();
-
-// //function header mobile
-// showMenuHamburguer();
-
-// // function swiper sliders
-// // swiperLoops();
-
-// // Footer Menu accordion
-// footerAccordion();
-
-//function resize
-// window.addEventListener("resize", widthChangeCallback);
-// widthChangeCallback();
-
 //dropdown menu quicklinks
 function dropDownQuickLinks() {
   const btnQuicklink = document.querySelector(
@@ -173,18 +153,39 @@ function animationDelay() {
 
 //Swiper Sliders Function
 function swiperLoops() {
-  // Section Interest Carousel
-  if (document.querySelector(".cards-tpl-swiper")) {
-    let swiper = new Swiper(".cards-tpl-swiper .swiper", {
+  // plans
+  if (document.querySelector(".tuenti__plans--list")) {
+    var swiper_plans = new Swiper(".tuenti__plans--list", {
       slidesPerView: 1,
       spaceBetween: 15,
-      navigation: {
-        nextEl: ".cards-tpl-swiper .swiper .swiper-button-next",
-        prevEl: ".cards-tpl-swiper .swiper .swiper-button-prev",
-      },
       pagination: {
-        el: ".cards-tpl-swiper .swiper .swiper-pagination",
+        el: ".swiper-pagination--plans",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  // benefit
+  if (document.querySelector(".mySwiperBenefit")) {
+    let swiper_benefit = new Swiper(".mySwiperBenefit", {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
       breakpoints: {
         640: {
@@ -192,19 +193,13 @@ function swiperLoops() {
           slidesPerGroup: 2,
           spaceBetween: 20,
         },
-        1024: {
+        992: {
           slidesPerView: 3,
           slidesPerGroup: 3,
           spaceBetween: 25,
         },
-        1200: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 40,
-        },
       },
     });
-    return swiper;
   }
 }
 
@@ -280,128 +275,105 @@ function widthChangeCallback() {
   }
 }
 
-// plans
-var swiper_plans = new Swiper(".tuenti__plans--list", {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination--plans",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
+// Tabs
+if (document.querySelector("#fragment-2-aywy")) {
+  var fragmentElement = document.querySelector('#fragment-2-aywy');
+  var fragmentNamespace = 'aywy';
 
-// benefit
-let swiper_benefit = new Swiper(".mySwiperBenefit", {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 25,
-    },
-  },
-});
+  const tabItems = [].slice.call(
+    fragmentElement.querySelectorAll(
+      '[data-fragment-namespace="' + fragmentNamespace + '"].tab__link'
+    )
+  );
+  const tabPanelItems = [].slice.call(
+    fragmentElement.querySelectorAll(
+      '[data-fragment-namespace="' + fragmentNamespace + '"].tue-tab-pane'
+    )
+  );
 
+  function activeTab(item) {
+    tabItems.forEach(function (tabItem) {
+      tabItem.setAttribute('aria-selected', false);
+      tabItem.classList.remove('active');
+    });
+    item.setAttribute('aria-selected', true);
+    item.classList.add('active');
+  }
 
-/* TABS */
-var fragmentElement = document.querySelector('#fragment-2-aywy');
-var fragmentNamespace = 'aywy';
+  function activeTabPanel(item) {
+    tabPanelItems.forEach(function (tabPanelItem) {
+      if (!tabPanelItem.classList.contains('tue-tab-pane--none')) {
+        tabPanelItem.classList.add('tue-tab-pane--none');
+      }
+    });
+    item.classList.remove('tue-tab-pane--none');
+  }
 
-const tabItems = [].slice.call(
-  fragmentElement.querySelectorAll(
-    '[data-fragment-namespace="' + fragmentNamespace + '"].tab__link'
-  )
-);
-const tabPanelItems = [].slice.call(
-  fragmentElement.querySelectorAll(
-    '[data-fragment-namespace="' + fragmentNamespace + '"].tue-tab-pane'
-  )
-);
+  function openTabPanel(event, i) {
+    const currentTarget = event.currentTarget;
+    const target = event.target;
 
-function activeTab(item) {
-  tabItems.forEach(function (tabItem) {
-    tabItem.setAttribute('aria-selected', false);
-    tabItem.classList.remove('active');
-  });
-  item.setAttribute('aria-selected', true);
-  item.classList.add('active');
-}
+    currentTarget.focus();
 
-function activeTabPanel(item) {
-  tabPanelItems.forEach(function (tabPanelItem) {
-    if (!tabPanelItem.classList.contains('tue-tab-pane--none')) {
-      tabPanelItem.classList.add('tue-tab-pane--none');
+    activeTab(currentTarget, i);
+    activeTabPanel(tabPanelItems[i]);
+
+    this.tabIndex = i;
+  }
+
+  function mainTabs() {
+    const initialState = !this.tabIndex || this.tabIndex >= tabItems.length;
+    let tabItemSelected = tabItems[0];
+
+    if (initialState) {
+      tabItems.forEach(function (item, i) {
+        if (!i) {
+          activeTab(item);
+        }
+        item.addEventListener('click', function (event) {
+          openTabPanel(event, i);
+        });
+      });
+      tabPanelItems.forEach(function (item, i) {
+        if (!i) {
+          activeTabPanel(item);
+        }
+      });
     }
-  });
-  item.classList.remove('tue-tab-pane--none');
-}
-
-function openTabPanel(event, i) {
-  const currentTarget = event.currentTarget;
-  const target = event.target;
-
-  currentTarget.focus();
-
-  activeTab(currentTarget, i);
-  activeTabPanel(tabPanelItems[i]);
-
-  this.tabIndex = i;
-}
-
-function mainTabs() {
-  const initialState = !this.tabIndex || this.tabIndex >= tabItems.length;
-  let tabItemSelected = tabItems[0];
-
-  if (initialState) {
-    tabItems.forEach(function (item, i) {
-      if (!i) {
-        activeTab(item);
-      }
-      item.addEventListener('click', function (event) {
-        openTabPanel(event, i);
+    else {
+      tabItemSelected = tabItems[this.tabIndex];
+      tabItems.forEach(function (item, i) {
+        activeTab(tabItems[this.tabIndex]);
+        item.addEventListener('click', function (event) {
+          openTabPanel(event, i);
+        });
       });
-    });
-    tabPanelItems.forEach(function (item, i) {
-      if (!i) {
-        activeTabPanel(item);
-      }
-    });
-  }
-  else {
-    tabItemSelected = tabItems[this.tabIndex];
-    tabItems.forEach(function (item, i) {
-      activeTab(tabItems[this.tabIndex]);
-      item.addEventListener('click', function (event) {
-        openTabPanel(event, i);
+      tabPanelItems.forEach(function () {
+        activeTabPanel(tabPanelItems[this.tabIndex]);
       });
-    });
-    tabPanelItems.forEach(function () {
-      activeTabPanel(tabPanelItems[this.tabIndex]);
-    });
+    }
   }
 }
 
+// function accordion toggle
+accordionToggle("accordion");
+animationDelay();
+
+// //dropdown menu quicklinks
+//dropDownQuickLinks();
+
+// function header mobile
+showMenuHamburguer();
+
+// function swiper sliders
+swiperLoops();
+
+// Tabs Section
 mainTabs();
+
+// // Footer Menu accordion
+footerAccordion();
+
+//function resize
+// window.addEventListener("resize", widthChangeCallback);
+// widthChangeCallback();
