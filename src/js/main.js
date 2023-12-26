@@ -94,6 +94,17 @@ function animationDelay() {
 
 //Swiper Sliders Function
 function swiperLoops() {
+  // banner
+  if (document.querySelector(".tuenti__banner--carousel")) {
+    var swiper_banner = new Swiper(".tuenti__banner--carousel", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination--banner",
+      },
+    });
+  }
+
   // plans
   if (document.querySelector(".tuenti__plans--list")) {
     var swiper_plans = new Swiper(".tuenti__plans--list", {
@@ -264,11 +275,11 @@ if (document.querySelector("#fragment-2-aywy")) {
 // Hunter
 function hunterWeb() {
   if (document.querySelector(".tue-hunter-tpl")) {
-    const hunterBox = document.querySelector('.tue-hunter-tpl');
-    const hunterClick = document.querySelector('.hunter__button');
+    const hunterBox = document.querySelector(".tue-hunter-tpl");
+    const hunterClick = document.querySelector(".hunter__button");
 
     hunterClick.addEventListener("click", function (e) {
-      if (hunterBox.classList.contains('active')) {
+      if (hunterBox.classList.contains("active")) {
         hunterBox.classList.remove("active");
       } else {
         hunterBox.classList.add("active");
