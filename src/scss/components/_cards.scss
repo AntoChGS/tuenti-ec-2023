@@ -1,33 +1,12 @@
 .prv-card {
-    &.prv-style-2 {
-        position: relative;
-        display: block;
-        padding: 32px 30px;
-        border-radius: 16px;
-        background: var(--color-yellow-80);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.08), -2px -2px 0px 0px rgba(0, 0, 0, 0.04);
-
-        @media (min-width: 992px) {
-            display: flex;
-        }
-
+    &.prv-style-1 {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
         .prv-card {
-            @media (min-width: 768px) {
-                align-items: flex-start;
-            }
-
             &__image {
                 display: block;
                 margin: 0 0 15px 0;
-
-                @media (min-width: 992px) {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    height: 100%;
-                    order: 2;
-                    margin: 0 0 0 8px;
-                }
 
                 >img {
                     display: block;
@@ -39,18 +18,14 @@
             }
 
             &__body {
-                @media (min-width: 992px) {
-                    flex: 1;
-                }
-
                 .card {
                     &__title {
                         font-size: 18px;
                         font-weight: 700;
-                        font-family: var(--fontBanda);
+                        text-align: center;
                         line-height: 1.2;
-                        color: var(--color-black);
-                        margin-bottom: 16px;
+                        color: var(--color-title);
+                        margin-bottom: 8px;
 
                         @media (min-width: 1222px) {
                             font-size: 20px;
@@ -59,7 +34,8 @@
 
                     &__description {
                         font-size: 14px;
-                        line-height: 1.2;
+                        text-align: center;
+                        line-height: 1.3;
                         margin-bottom: 0;
 
                         @media (min-width: 1222px) {
@@ -68,7 +44,7 @@
 
                         >* {
                             font-size: 14px;
-                            line-height: 1.2;
+                            line-height: 1.3;
 
                             &:last-child {
                                 margin-bottom: 0;
@@ -77,6 +53,17 @@
                             @media (min-width: 1222px) {
                                 font-size: 16px;
                             }
+                        }
+                    }
+
+                    &__button {
+                        text-align: center;
+                        margin-top: 16px;
+                        .tue-btn {
+                            width: 100%;
+                            max-width: 200px;
+                            padding-left: 15px;
+                            padding-right: 15px;
                         }
                     }
                 }

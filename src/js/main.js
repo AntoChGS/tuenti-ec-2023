@@ -129,12 +129,12 @@ function swiperLoops() {
   }
 
   // benefit
-  if (document.querySelector(".mySwiperBenefit")) {
-    let swiper_benefit = new Swiper(".mySwiperBenefit", {
+  if (document.querySelector(".benefit__swiper")) {
+    let swiper_benefit = new Swiper(".benefit__swiper", {
       slidesPerView: 1,
       spaceBetween: 15,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".benefit__swiper .swiper-pagination",
         clickable: true,
       },
       autoplay: {
