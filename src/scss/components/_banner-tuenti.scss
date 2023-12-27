@@ -86,6 +86,9 @@
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
+    &:hover {
+      background-color: #5144b8;
+    }
   }
   .tuenti__banner--image {
     img {
@@ -329,6 +332,7 @@
     border-radius: 30px;
     &:hover {
       text-decoration: none;
+      background-color: #5144b8;
     }
   }
   &.tuenti__steps--v2 {
@@ -583,6 +587,10 @@
     display: flex;
     justify-content: center;
     text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+      background-color: #5144b8;
+    }
   }
   .plans__card--velocidad {
     position: absolute;
