@@ -194,9 +194,12 @@ function footerAccordion() {
 }
 
 // Tabs
-if (document.querySelector("#fragment-2-aywy")) {
-  var fragmentElement = document.querySelector("#fragment-2-aywy");
-  var fragmentNamespace = "aywy";
+function tueTabsF(element1, element2) {
+
+  const tueTabsId = "#" + element1.id;
+  const tueTabsPaneId = element2.getAttribute("data-fragment-namespace");
+  var fragmentElement = document.querySelector(tueTabsId);
+  var fragmentNamespace = tueTabsPaneId;
 
   const tabItems = [].slice.call(
     fragmentElement.querySelectorAll(
@@ -270,6 +273,7 @@ if (document.querySelector("#fragment-2-aywy")) {
       });
     }
   }
+  mainTabs();
 }
 
 // Hunter
@@ -299,7 +303,11 @@ showMenuHamburguer();
 swiperLoops();
 
 // // Tabs Section
-mainTabs();
+if (document.querySelector(".tue-tabs-container")) {
+  const tueTabs = document.querySelector(".tue-tabs-container");
+  const tueTabsPane = document.querySelector(".tue-tabs-container .tue-tab-pane");
+  tueTabsF(tueTabs, tueTabsPane);
+}
 
 // Footer Menu accordion
 footerAccordion();
