@@ -101,6 +101,7 @@ function swiperLoops() {
       spaceBetween: 0,
       pagination: {
         el: ".swiper-pagination--banner",
+        clickable: true,
       },
     });
   }
@@ -112,6 +113,7 @@ function swiperLoops() {
       spaceBetween: 15,
       pagination: {
         el: ".swiper-pagination--plans",
+        clickable: true,
       },
       breakpoints: {
         768: {
@@ -195,7 +197,6 @@ function footerAccordion() {
 
 // Tabs
 function tueTabsF(element1, element2) {
-
   const tueTabsId = "#" + element1.id;
   const tueTabsPaneId = element2.getAttribute("data-fragment-namespace");
   var fragmentElement = document.querySelector(tueTabsId);
@@ -305,7 +306,9 @@ swiperLoops();
 // // Tabs Section
 if (document.querySelector(".tue-tabs-container")) {
   const tueTabs = document.querySelector(".tue-tabs-container");
-  const tueTabsPane = document.querySelector(".tue-tabs-container .tue-tab-pane");
+  const tueTabsPane = document.querySelector(
+    ".tue-tabs-container .tue-tab-pane"
+  );
   tueTabsF(tueTabs, tueTabsPane);
 }
 
