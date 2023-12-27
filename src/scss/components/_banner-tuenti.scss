@@ -326,6 +326,9 @@
     font-size: 16px;
     line-height: 24px;
     border-radius: 30px;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &.tuenti__steps--v2 {
     background-color: #fdf2df;
