@@ -1,7 +1,9 @@
 .tuec {
     &__header {
         background: var(--color-primary);
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 9;
         display: flex;
         height: 64px;
         padding: 20px 0;
@@ -9,8 +11,7 @@
         align-items: center;
         gap: 184px;
         flex-shrink: 0;
-
-        @media (min-width: 992px) {
+        @media (min-width: 992px) {            
             height: auto;
             padding: 0;
         }
