@@ -109,6 +109,11 @@
 
                 >a {
                     color: var(--color-magenta-75);
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }
