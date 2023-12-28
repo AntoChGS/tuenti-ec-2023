@@ -200,7 +200,7 @@ function footerAccordion() {
 }
 
 // Tabs
-function tueTabsF(element1, element2) {
+/*function tueTabsF(element1, element2) {
   const tueTabsId = "#" + element1.id;
   const tueTabsPaneId = element2.getAttribute("data-fragment-namespace");
   var fragmentElement = document.querySelector(tueTabsId);
@@ -279,7 +279,7 @@ function tueTabsF(element1, element2) {
     }
   }
   mainTabs();
-}
+}*/
 
 // Hunter
 function hunterWeb() {
@@ -308,13 +308,13 @@ showMenuHamburguer();
 swiperLoops();
 
 // // Tabs Section
-if (document.querySelector(".tue-tabs-container")) {
+/*if (document.querySelector(".tue-tabs-container")) {
   const tueTabs = document.querySelector(".tue-tabs-container");
   const tueTabsPane = document.querySelector(
     ".tue-tabs-container .tue-tab-pane"
   );
   tueTabsF(tueTabs, tueTabsPane);
-}
+}*/
 
 // Footer Menu accordion
 footerAccordion();
