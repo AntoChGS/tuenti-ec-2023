@@ -1,0 +1,139 @@
+.tuenti__steps {
+    background-color: var(--color-silver-25);
+    padding: 24px 0px;
+
+    @media (min-width: 1024px) {
+        padding: 50px 0px;
+    }
+
+    .title {
+        width: 328px;
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: bold;
+        color: var(--color-title);
+        text-align: center;
+        margin-bottom: 22px;
+
+        @media (min-width: 1024px) {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            width: 1024px;
+        }
+    }
+
+    .tuenti__steps--list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        @media (min-width: 1024px) {
+            max-width: 1074px;
+        }
+    }
+
+    .tuenti__steps--item {
+        margin: 0 12px 24px;
+    }
+
+    .tuenti__steps--bottom {
+        width: 328px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1024px) {
+            width: 1024px;
+        }
+    }
+
+    .tuenti__steps--terminos {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        color: var(--color-title);
+        text-align: center;
+        letter-spacing: 0.5px;
+        margin-bottom: 0px;
+
+        a {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+
+    .tuenti__steps--bottom__enlace {
+        padding: 14px 48px;
+        color: var(--color-white);
+        background-color: var(--color-purple-100);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 30px;
+
+        &:hover {
+            text-decoration: none;
+            background-color: var(--color-purple-75);
+        }
+    }
+
+    &.tuenti__steps--v2 {
+        background-color: var(--color-orange-0);
+    }
+
+    &.tuenti__steps--v3 {
+        background-color: var(--color-purple-0);
+    }
+}
+
+.tuenti__steps--card {
+    width: 328px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px 0px 12px;
+    margin: 0 auto;
+    border-radius: 16px;
+    height: 128px;
+
+    .tuenti__steps--card__left {
+        width: 180px;
+    }
+
+    .tuenti__steps--card__paso {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        font-size: 18px;
+        line-height: 18px;
+        color: var(--color-title);
+        font-weight: 500;
+    }
+
+    .tuenti__steps--card__numero {
+        width: 27px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-white);
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: bold;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .tuenti__steps--card__cuenta {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0px;
+        color: var(--color-body);
+        font-weight: bold;
+    }
+}

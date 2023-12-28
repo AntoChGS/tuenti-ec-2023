@@ -1,0 +1,139 @@
+.tuenti__banner--carousel {
+    .swiper-pagination--banner {
+        .swiper-pagination-bullet {
+            background: transparent;
+            border: 2px solid var(--color-white);
+            width: 14px;
+            height: 14px;
+            opacity: 1;
+            margin: 0 8px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--color-white);
+        }
+    }
+}
+
+.tuenti__banner {
+    background-color: var(--color-magenta-50);
+    height: 500px;
+
+    @media (min-width: 768px) {
+        height: 380px;
+    }
+
+    .tuenti__banner--content {
+        max-width: 328px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 32px 0px;
+
+        @media (min-width: 768px) {
+            width: 90%;
+            max-width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: 1024px;
+        }
+    }
+
+    .tuenti__banner--body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .tuenti__banner--left {
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            width: auto;
+        }
+    }
+
+    .tuenti__banner--right {
+        height: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            align-items: center;
+        }
+    }
+
+    .text {
+        color: var(--color-white);
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+        @media (min-width: 900px) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+
+    .title {
+        color: var(--color-white);
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+        &.title--fs32 {
+            font-size: 32px;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 56px;
+            line-height: 64px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .button {
+        color: var(--color-white);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 14px 49px;
+        background-color: var(--color-purple-100);
+        border-radius: 30px;
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--color-purple-75);
+        }
+    }
+
+    .tuenti__banner--image {
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &.tuenti__banner--v2 {
+        background-color: var(--color-magenta-25);
+    }
+
+    &.tuenti__banner--v3 {
+        background-color: var(--color-magenta-0);
+    }
+
+    &.tuenti__banner--v4 {
+        background-color: var(--color-magenta-75);
+    }
+}
