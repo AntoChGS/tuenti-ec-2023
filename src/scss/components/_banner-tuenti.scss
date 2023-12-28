@@ -257,7 +257,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: #f06;
     text-decoration: none;
     .tuenti__acciones--card--icono {
