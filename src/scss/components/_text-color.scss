@@ -1,0 +1,17 @@
+.tue-txt {
+    &-white {
+        color: var(--color-white);
+    }
+
+    &-gray-100 {
+        color: var(--color-title);
+    }
+
+    &-magenta-100 {
+        color: var(--color-primary);
+    }
+
+    &-purple-100 {
+        color: var(--color-purple-100);
+    }
+}

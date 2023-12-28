@@ -2,19 +2,19 @@
   .swiper-pagination--banner {
     .swiper-pagination-bullet {
       background: transparent;
-      border: 2px solid #ffffff;
+      border: 2px solid var(--color-white);
       width: 14px;
       height: 14px;
       opacity: 1;
       margin: 0 8px;
     }
     .swiper-pagination-bullet-active {
-      background: #ffffff;
+      background: var(--color-white);
     }
   }
 }
 .tuenti__banner {
-  background-color: #c70855;
+  background-color: var(--color-magenta-50);
   height: 500px;
   @media (min-width: 768px) {
     height: 380px;
@@ -60,7 +60,7 @@
   }
 
   .text {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
@@ -71,7 +71,7 @@
     }
   }
   .title {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 36px;
     line-height: 40px;
     font-weight: bold;
@@ -86,17 +86,17 @@
     }
   }
   .button {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 16px;
     line-height: 24px;
     padding: 14px 49px;
-    background-color: #372e7d;
+    background-color: var(--color-purple-100);
     border-radius: 30px;
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
     &:hover {
-      background-color: #5144b8;
+      background-color: var(--color-purple-75);
     }
   }
   .tuenti__banner--image {
@@ -106,19 +106,19 @@
     }
   }
   &.tuenti__banner--v2 {
-    background-color: #d30279;
+    background-color: var(--color-magenta-25);
   }
   &.tuenti__banner--v3 {
-    background-color: #ff4d94;
+    background-color: var(--color-magenta-0);
   }
   &.tuenti__banner--v4 {
-    background-color: #e90a66;
+    background-color: var(--color-magenta-75);
   }
 }
 
 //
 .tuenti__acciones {
-  background-color: #fdf2df;
+  background-color: var(--color-orange-0);
   padding: 32px 0px 8px;
   @media (min-width: 1024px) {
     padding: 50px 0px 26px;
@@ -143,7 +143,7 @@
         line-height: 36px;
         margin-bottom: 0px;
         text-align: center;
-        color: #363636;
+        color: var(--color-title);
         width: 328px;
         @media (min-width: 1024px) {
           font-size: 36px;
@@ -156,7 +156,7 @@
         font-size: 16px;
         line-height: 24px;
         text-align: center;
-        color: #545353;
+        color: var(--color-body);
         font-weight: 400;
         width: 328px;
         margin: 0 auto 20px;
@@ -167,7 +167,7 @@
           width: 900px;
         }
         a {
-          color: #f06;
+          color: var(--color-primary);
           text-decoration: underline;
         }
       }
@@ -196,14 +196,14 @@
     }
   }
   &.tuenti__acciones--v2 {
-    background-color: #ffd9ff;
+    background-color: var(--color-purple-0);
   }
 }
 
 .tuenti__acciones--card {
   border-radius: 8px;
-  border: 1px solid #d8dee3;
-  background: #fff;
+  border: 1px solid var(--color-silver-50);
+  background: var(--color-white);
   box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@
     width: 56px;
     height: 56px;
     margin: 0 auto 12px;
-    background-color: #fdf2df;
+    background-color: var(--color-orange-0);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -242,7 +242,7 @@
     }
   }
   .text {
-    color: #545353;
+    color: var(--color-body);
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;
@@ -256,19 +256,19 @@
 
   &.tuenti__acciones--card--v2 {
     .tuenti__acciones--card--icono {
-      background-color: #ffd9ff;
+      background-color: var(--color-purple-0);
     }
   }
 
   &:hover,
   &.active {
-    background-color: #f06;
+    background-color: var(--color-primary);
     text-decoration: none;
     .tuenti__acciones--card--icono {
-      background-color: #ffffff;
+      background-color: var(--color-white);
     }
     .text {
-      color: #ffffff;
+      color: var(--color-white);
     }
   }
 }
@@ -276,7 +276,7 @@
 // steps
 
 .tuenti__steps {
-  background-color: #f2f4f6;
+  background-color: var(--color-silver-25);
   padding: 24px 0px;
   @media (min-width: 1024px) {
     padding: 50px 0px;
@@ -287,7 +287,7 @@
     font-size: 28px;
     line-height: 32px;
     font-weight: bold;
-    color: #363636;
+    color: var(--color-title);
     text-align: center;
     margin-bottom: 22px;
     @media (min-width: 1024px) {
@@ -322,40 +322,40 @@
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    color: #363636;
+    color: var(--color-title);
     text-align: center;
     letter-spacing: 0.5px;
     margin-bottom: 0px;
 
     a {
-      color: #f06;
+      color: var(--color-primary);
       text-decoration: underline;
     }
   }
   .tuenti__steps--bottom__enlace {
     padding: 14px 48px;
-    color: #ffffff;
-    background-color: #372e7d;
+    color: var(--color-white);
+    background-color: var(--color-purple-100);
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     border-radius: 30px;
     &:hover {
       text-decoration: none;
-      background-color: #5144b8;
+      background-color: var(--color-purple-75);
     }
   }
   &.tuenti__steps--v2 {
-    background-color: #fdf2df;
+    background-color: var(--color-orange-0);
   }
   &.tuenti__steps--v3 {
-    background-color: #ffd9ff;
+    background-color: var(--color-purple-0);
   }
 }
 
 .tuenti__steps--card {
   width: 328px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -372,7 +372,7 @@
     margin-bottom: 14px;
     font-size: 18px;
     line-height: 18px;
-    color: #363636;
+    color: var(--color-title);
     font-weight: 500;
   }
   .tuenti__steps--card__numero {
@@ -381,11 +381,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 24px;
     line-height: 27px;
     font-weight: bold;
-    background-color: #f06;
+    background-color: var(--color-primary);
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -393,7 +393,7 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 0px;
-    color: #545353;
+    color: var(--color-body);
     font-weight: bold;
   }
 }
@@ -420,7 +420,7 @@
     line-height: 32px;
     margin-bottom: 0px;
     text-align: center;
-    color: #363636;
+    color: var(--color-title);
     width: 328px;
     margin: 0 auto 8px;
     font-weight: bold;
@@ -434,7 +434,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #545353;
+    color: var(--color-body);
     font-weight: 400;
     width: 328px;
     margin: 0 auto 24px;
@@ -445,7 +445,7 @@
       width: 1024px;
     }
     a {
-      color: #f06;
+      color: var(--color-primary);
       text-decoration: underline;
     }
   }
@@ -469,15 +469,15 @@
   }
   .swiper-pagination--plans {
     .swiper-pagination-bullet {
-      background: #ffffff;
-      border: 2px solid #5144b8;
+      background: var(--color-white);
+      border: 2px solid var(--color-purple-75);
       width: 14px;
       height: 14px;
       opacity: 1;
       margin: 0 8px;
     }
     .swiper-pagination-bullet-active {
-      background: #5144b8;
+      background: var(--color-purple-75);
     }
   }
   .swiper-button-next--plans,
@@ -531,7 +531,7 @@
   width: 240px;
   box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 24px 0px;
   margin: 0 auto;
   position: relative;
@@ -545,7 +545,7 @@
     font-size: 20px;
     line-height: 1;
     margin-bottom: 8px;
-    color: #e90a66;
+    color: var(--color-magenta-75);
     font-weight: 600;
   }
   .plans__card--gigas {
@@ -554,7 +554,7 @@
     font-size: 36px;
     line-height: 1.2;
     margin: 0;
-    color: #e90a66;
+    color: var(--color-magenta-75);
     font-weight: 700;
   }
   .plans__card--price {
@@ -562,7 +562,7 @@
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 22px;
-    color: #e90a66;
+    color: var(--color-magenta-75);
     font-weight: 400;
   }
   .plans__card--info {
@@ -580,18 +580,18 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0px;
-    color: #545353;
+    color: var(--color-body);
     font-weight: 400;
   }
   .plans__card--apps {
-    background-color: #f2f4f6;
+    background-color: var(--color-silver-25);
     padding: 8px 24px 7px;
     margin-bottom: 16px;
     .title {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 9px;
-      color: #545353;
+      color: var(--color-body);
       font-weight: 500;
     }
     .picture {
@@ -604,7 +604,7 @@
     font-size: 12px;
     line-height: 8px;
     margin-bottom: 16px;
-    color: #767d85;
+    color: var(--color-silver-100);
     font-weight: 500;
     text-align: center;
   }
@@ -615,9 +615,9 @@
   }
   .plans__card--enlace {
     padding: 14px 48px;
-    background-color: #372e7d;
+    background-color: var(--color-purple-100);
     border-radius: 30px;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -626,7 +626,7 @@
     text-decoration: none;
     white-space: nowrap;
     &:hover {
-      background-color: #5144b8;
+      background-color: var(--color-purple-75);
     }
   }
   .plans__card--velocidad {
@@ -635,18 +635,18 @@
     top: 45px;
   }
   &.plans--card--recomentado {
-    background-color: #f06;
+    background-color: var(--color-primary);
     padding-top: 0px;
-    border: 1px solid #f06;
+    border: 1px solid var(--color-primary);
     margin-top: -40px;
     .plans__card--recomendado {
       padding-top: 5px;
-      background-color: #fff78f;
+      background-color: var(--color-yellow-25);
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       font-size: 16px;
       line-height: 16px;
-      color: #f06;
+      color: var(--color-primary);
       font-weight: 700;
       margin-bottom: 24px;
       height: 40px;
@@ -655,32 +655,32 @@
       align-items: center;
     }
     .plans__card--bagde {
-      color: #ffffff;
+      color: var(--color-white);
     }
     .plans__card--gigas {
-      color: #ffffff;
+      color: var(--color-white);
     }
     .plans__card--price {
-      color: #ffffff;
+      color: var(--color-white);
     }
     .plans__card--info__text {
-      color: #ffffff;
+      color: var(--color-white);
     }
     .plans__card--acumula {
-      color: #ffffff;
+      color: var(--color-white);
     }
     .plans__card--info {
       &:nth-of-type(1) {
         .plans__card--info__icon {
           path {
-            stroke: #ffffff;
+            stroke: var(--color-white);
             fill: none;
           }
         }
       }
       .plans__card--info__icon {
         path {
-          fill: #ffffff;
+          fill: var(--color-white);
         }
       }
     }
