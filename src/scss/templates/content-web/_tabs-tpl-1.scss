@@ -8,6 +8,7 @@
                 align-items: center;
             }
         }
+
         &__title {
             text-align: center;
         }
@@ -17,6 +18,7 @@
                 order: -1;
                 margin-bottom: 18px;
             }
+
             .picture {
                 display: block;
 
@@ -101,6 +103,14 @@
                     >* {
                         &:last-child {
                             margin-bottom: 0;
+                        }
+                    }
+
+                    a {
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: underline;
                         }
                     }
                 }
