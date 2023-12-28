@@ -115,6 +115,10 @@ function swiperLoops() {
         el: ".swiper-pagination--plans",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".swiper-button-next--plans",
+        prevEl: ".swiper-button-prev--plans",
+      },
       breakpoints: {
         768: {
           slidesPerView: 2,

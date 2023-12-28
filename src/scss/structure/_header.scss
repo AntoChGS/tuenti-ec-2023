@@ -206,7 +206,7 @@
                     padding: 16px;
                     align-items: center;
                     color: var(--color-silver-100);
-                    font-family: Catamaran;
+                    font-family: var(--fontCatamaran);
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 700;
@@ -401,10 +401,16 @@
     }
 }
 body.controls-visible.has-control-menu.signed-in{
-    .tuec__header .navigation{
-        top: 115px;
+    .tuec__header {
+        top: 51px;
         @media (min-width: 768px){
-            top: 121px;
+            top: 58px;
+        }
+        .navigation{
+            top: 115px;
+            @media (min-width: 768px){
+                top: 121px;
+            }
         }
     }
 }

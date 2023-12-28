@@ -43,6 +43,12 @@
       justify-content: space-between;
     }
   }
+  .tuenti__banner--left {
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: auto;
+    }
+  }
   .tuenti__banner--right {
     height: 100%;
     display: flex;
@@ -70,6 +76,9 @@
     line-height: 40px;
     font-weight: bold;
     margin-bottom: 16px;
+    &.title--fs32 {
+      font-size: 32px;
+    }
     @media (min-width: 900px) {
       font-size: 56px;
       line-height: 64px;
@@ -251,7 +260,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: #f06;
     text-decoration: none;
     .tuenti__acciones--card--icono {
@@ -402,6 +412,7 @@
     }
     @media (min-width: 1024px) {
       width: 1040px;
+      position: relative;
     }
   }
   .tuenti__plans--title {
@@ -468,6 +479,26 @@
     .swiper-pagination-bullet-active {
       background: #5144b8;
     }
+  }
+  .swiper-button-next--plans,
+  .swiper-button-prev--plans {
+    display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      top: calc(50% + 20px);
+    }
+  }
+  .swiper-button-next--plans::after,
+  .swiper-button-prev--plans::after {
+    display: none;
+  }
+  .swiper-button-prev--plans {
+    left: -45px;
+  }
+  .swiper-button-next--plans {
+    right: -45px;
   }
   &.tuenti__plans--mini {
     .tuenti__plans--content {
