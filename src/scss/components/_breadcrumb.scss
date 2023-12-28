@@ -23,8 +23,8 @@
         font-weight: 400;
         line-height: 1;
 
-        .breadcrumb-item {
-            +.breadcrumb-item {
+        .breadcrumb__item {
+            +.breadcrumb__item {
                 padding-left: 6px;
 
                 &::before {
