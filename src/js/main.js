@@ -16,6 +16,16 @@ function showMenuHamburguer() {
       document.body.removeAttribute("style");
     }
   });
+  document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
+    if (element.childNodes[3]) {
+      let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
+      childrenMenu.forEach(el => {
+          el.querySelector('.link').addEventListener('click', () => {
+              document.querySelector('body').removeAttribute('style');
+          });
+      });
+    }
+  });
 }
 
 //accordion tab
