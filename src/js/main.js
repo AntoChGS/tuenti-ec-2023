@@ -16,13 +16,13 @@ function showMenuHamburguer() {
       document.body.removeAttribute("style");
     }
   });
-  document.querySelectorAll('.menu__list .menu__item').forEach((element) => {
+  document.querySelectorAll(".menu__list .menu__item").forEach((element) => {
     if (element.childNodes[3]) {
-      let childrenMenu = element.children[1].querySelectorAll('.submenu__item');
-      childrenMenu.forEach(el => {
-          el.querySelector('.link').addEventListener('click', () => {
-              document.querySelector('body').removeAttribute('style');
-          });
+      let childrenMenu = element.children[1].querySelectorAll(".submenu__item");
+      childrenMenu.forEach((el) => {
+        el.querySelector(".link").addEventListener("click", () => {
+          document.querySelector("body").removeAttribute("style");
+        });
       });
     }
   });
@@ -137,6 +137,10 @@ function swiperLoops() {
         1024: {
           slidesPerView: 4,
           spaceBetween: 20,
+        },
+        1366: {
+          slidesPerView: 4,
+          spaceBetween: 40,
         },
       },
     });
@@ -320,9 +324,7 @@ swiperLoops();
 // // Tabs Section
 if (document.querySelector(".tue-tabs-container")) {
   let tueTabs = document.querySelector(".tue-tabs-container");
-  let tueTabsPane = document.querySelector(
-    ".tue-tabs-container .tue-tab-pane"
-  );
+  let tueTabsPane = document.querySelector(".tue-tabs-container .tue-tab-pane");
   tueTabsF(tueTabs, tueTabsPane);
 }
 
