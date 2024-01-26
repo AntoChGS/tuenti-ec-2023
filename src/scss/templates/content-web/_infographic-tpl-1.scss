@@ -35,9 +35,6 @@
         &__button {
             text-align: center;
             margin-top: 24px;
-            @media (min-width:992px) {
-                text-align: left;
-            }
 
             >.tue-btn {
                 font-size: 18px;
