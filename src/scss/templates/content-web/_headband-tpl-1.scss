@@ -75,6 +75,9 @@
     }
 
     &.tue-headband-tpl--v2{
+        .headband-info{
+            order:2;
+        }
         .image__picture {
             transform: scaleX(-1); 
         }
