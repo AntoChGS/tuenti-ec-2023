@@ -1,7 +1,13 @@
 .tue-benefit-tpl {
+    background-color: var(--color-orange-0);
     position: relative;
     padding: 50px 0;
 
+    .tue-underline {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+     
     .benefit {
         &__title {
             color: var(--color-title);
@@ -85,5 +91,22 @@
                 }
             }
         }
+    }
+
+    &.tue-benefit-tpl--v2 {
+        .card__button{
+            display: none;
+        }
+      }
+    &.tue-benefit-tpl--v4 {
+        .benefit__subtitle{
+            display: none;
+        }
+    }
+    &.tue-benefit-tpl--bg-white {
+        background-color: var(--color-white);
+    }
+    &.tue-benefit-tpl--bg-purple-0 {
+        background-color: var(--color-purple-0);
     }
 }

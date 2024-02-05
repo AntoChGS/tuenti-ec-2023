@@ -5,6 +5,12 @@
     .offer {
         &-title {
             color: var(--color-title);
+            height: 22px;
+        }
+
+        &-subtitle {
+            text-align: center;
+            margin-bottom: 24px;
         }
 
         &-row {
@@ -36,4 +42,19 @@
             }
         }
     }
+
+    .offer-underline {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+    
+    &.tue-offer-tpl--v2 {
+        .offer-title {
+            height: auto;
+        }
+        .offer-subtitle{
+            display: none;
+        }
+    }
+      
 }

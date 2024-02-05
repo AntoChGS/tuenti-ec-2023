@@ -11,6 +11,12 @@
 
         &__title {
             text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            text-align: center;
+            margin-bottom: 16px;
         }
 
         &__image {
@@ -117,4 +123,42 @@
             }
         }
     }
+
+    &.tue-tabs-tpl--v2{
+        .tabs__subtitle{
+            display: none;
+        }
+    }
+
+    &.tue-tabs-tpl--v3{
+        .info__button{
+            display: none;
+        }     
+    }
+
+    &.tue-tabs-tpl--v4{
+        .info__visit{
+            display: none;
+        }     
+    }
+
+    &.tue-tabs-tpl--v5{
+        .col-md-5 {
+            order: 1;
+            margin-top: 4px;
+
+            @media (min-width:992px) {
+                text-align: left;
+            }
+        }
+    }
+
+    &.tue-tabs-tpl--bg-silver-25 {
+        background-color: var(--color-silver-25);
+    }
+    
+    &.tue-tabs-tpl--bg-orange-0 {
+        background-color: var(--color-orange-0);
+    }
+
 }
