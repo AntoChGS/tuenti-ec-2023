@@ -13,6 +13,12 @@
       background: var(--color-white);
     }
   }
+
+  &.tuenti__banner--carousel-v2 {
+    .swiper-pagination.swiper-pagination--banner{ 
+      display: none;
+    }
+  }
 }
 
 .tuenti__banner {
@@ -127,17 +133,38 @@
   }
 
   &.tuenti__banner--v2 {
-    background-color: var(--color-magenta-25);
+    .tuenti__banner--left p.text{
+      display: none;
+    }
   }
 
   &.tuenti__banner--v3 {
-    background-color: var(--color-magenta-0);
+    .tuenti__banner--left a.button{
+      display: none;
+    }
   }
 
   &.tuenti__banner--v4 {
-    background-color: var(--color-magenta-75);
+    h1.title{
+      @media (min-width:768px) {
+        width: 80%;
+      }
+      @media (min-width:900px) {
+        width: 620px;
+      }
+    }
   }
-  &.tuenti__banner--v5 {
+
+  &.tuenti__banner--bg-purple-25{
     background-color: #b797e8;
   }
+
+  &.tuenti__banner--bg-fucsia-0{
+    background-color: var(--color-magenta-0);
+  }
+
+  &.tuenti__banner--bg-fucsia-25{
+    background-color: var(--color-magenta-25);
+  }
 }
+
