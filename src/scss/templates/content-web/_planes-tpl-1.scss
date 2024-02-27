@@ -128,6 +128,20 @@
     right: -45px;
   }
 
+  &.tuenti__plans--v2{
+    .tuenti__plans--text a{
+        display: none;
+    }
+  }
+
+  &.tuenti__plans--bg-white {
+    background-color: var(--color-white);
+  }
+
+  &.tuenti__plans--bg-silver-25 {
+    background-color: var(--color-silver-25);
+  }
+
   &.tuenti__plans--mini {
     .tuenti__plans--content {
       @media (min-width: 768px) {
@@ -162,6 +176,19 @@
         display: none;
       }
     }
+  }
+  &.tuenti__plans--mini--v2{
+    .tuenti__plans--text a{
+        display: none;
+    }
+  }
+
+  &.tuenti__plans--mini--bg-white {
+    background-color: var(--color-white);
+  }
+
+  &.tuenti__plans--mini--bg-silver-25 {
+    background-color: var(--color-silver-25);
   }
 }
 

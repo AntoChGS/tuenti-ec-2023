@@ -90,8 +90,12 @@
     }
   }
 
-  &.tuenti__acciones--v2 {
+  &.tuenti__acciones--bg-purple-0 {
     background-color: var(--color-purple-0);
+  }
+
+  &.tuenti__acciones--bg-orange-0 {
+    background-color: var(--color-orange-0);
   }
 }
 
@@ -156,9 +160,15 @@
     }
   }
 
-  &.tuenti__acciones--card--v2 {
+  &.tuenti__acciones--card--bg-purple-0 {
     .tuenti__acciones--card--icono {
       background-color: var(--color-purple-0);
+    }
+  }
+
+  &.tuenti__acciones--card--bg-orange-0 {
+    .tuenti__acciones--card--icono {
+      background-color: var(--color-orange-0);
     }
   }
 

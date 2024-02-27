@@ -110,12 +110,29 @@
   }
 
   &.tuenti__steps--v2 {
+    .text{
+      display: none; 
+    }
+  }
+  
+  &.tuenti__steps--v3 {
+    .tuenti__steps--bottom{
+      display: none;
+    }
+  }
+
+  &.tuenti__steps--bg-orange-0 {
     background-color: var(--color-orange-0);
   }
 
-  &.tuenti__steps--v3 {
+  &.tuenti__steps--bg-purple-0 {
     background-color: var(--color-purple-0);
   }
+
+  &.tuenti__steps--bg-silver-25 {
+    background-color: var(--color-silver-25);
+  }
+
 }
 
 .tuenti__steps--card {
