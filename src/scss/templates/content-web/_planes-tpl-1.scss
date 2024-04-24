@@ -1,337 +1,376 @@
 .tuenti__plans {
-    padding: 24px 0px;
+  padding: 24px 0px;
+
+  @media (min-width: 1024px) {
+    padding: 50px 0px;
+  }
+
+  .tuenti__plans--content {
+    width: 360px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 540px;
+    }
 
     @media (min-width: 1024px) {
-        padding: 50px 0px;
+      width: 1040px;
+      position: relative;
+    }
+    @media (min-width: 1366px) {
+      width: 1105px;
+    }
+  }
+
+  .tuenti__plans--title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: var(--color-title);
+    width: 328px;
+    margin: 0 auto 8px;
+    font-weight: bold;
+
+    @media (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 40px;
+      width: 600px;
+    }
+  }
+
+  .tuenti__plans--text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-body);
+    font-weight: 400;
+    width: 328px;
+    margin: 0 auto 24px;
+    letter-spacing: 0.5px;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 40px;
+      width: 1024px;
     }
 
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+  }
+
+  .tuenti__plans--list {
+    padding: 40px 10px 50px;
+    margin: 0 auto;
+  }
+
+  .tuenti__miniplans--list {
+    .swiper-wrapper {
+      @media (min-width: 1024px) {
+        transform: none !important;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .tuenti__plans--item {
+      @media (min-width: 1024px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .swiper-pagination--plans {
+    .swiper-pagination-bullet {
+      background: var(--color-white);
+      border: 2px solid var(--color-purple-75);
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      margin: 0 8px;
+
+      @media (min-width: 992px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--color-purple-75);
+    }
+  }
+
+  .swiper-button-next--plans,
+  .swiper-button-prev--plans {
+    display: none;
+    z-index: 7;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      top: calc(50% + 20px);
+    }
+  }
+
+  .swiper-button-next--plans::after,
+  .swiper-button-prev--plans::after {
+    display: none;
+  }
+
+  .swiper-button-prev--plans {
+    left: -45px;
+  }
+
+  .swiper-button-next--plans {
+    right: -45px;
+  }
+
+  &.tuenti__plans--v2{
+    .tuenti__plans--text a{
+        display: none;
+    }
+  }
+
+  &.tuenti__plans--bg-white {
+    background-color: var(--color-white);
+  }
+
+  &.tuenti__plans--bg-silver-25 {
+    background-color: var(--color-silver-25);
+  }
+
+  &.tuenti__plans--mini {
     .tuenti__plans--content {
-        width: 360px;
-        margin: 0 auto;
+      @media (min-width: 768px) {
+        width: 700px;
+      }
 
-        @media (min-width: 768px) {
-            width: 540px;
-        }
+      @media (min-width: 1024px) {
+        width: 1070px;
+      }
+      @media (min-width: 1366px) {
+        width: 1105px;
+      }
+    }
 
+    .tuenti__plans--item {
+      @media (min-width: 1024px) {
+        width: 324px !important;
+      }
+      @media (min-width: 1366px) {
+        width: 332px !important;
+      }
+
+      &:nth-child(3n) {
         @media (min-width: 1024px) {
-            width: 1040px;
-            position: relative;
+          margin-right: 0px !important;
         }
+      }
     }
 
-    .tuenti__plans--title {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 0px;
-        text-align: center;
-        color: var(--color-title);
-        width: 328px;
-        margin: 0 auto 8px;
-        font-weight: bold;
-
-        @media (min-width: 1024px) {
-            font-size: 36px;
-            line-height: 40px;
-            width: 600px;
-        }
-    }
-
-    .tuenti__plans--text {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        color: var(--color-body);
-        font-weight: 400;
-        width: 328px;
-        margin: 0 auto 24px;
-        letter-spacing: 0.5px;
-
-        @media (min-width: 1024px) {
-            font-size: 20px;
-            line-height: 40px;
-            width: 1024px;
-        }
-
-        a {
-            color: var(--color-primary);
-            text-decoration: underline;
-        }
-    }
-
-    .tuenti__plans--list {
-        padding: 40px 10px 50px;
-        margin: 0 auto;
-    }
-
-    .tuenti__miniplans--list {
-        .swiper-wrapper {
-            @media (min-width: 1024px) {
-                transform: none !important;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-
-        .tuenti__plans--item {
-            @media (min-width: 1024px) {
-                margin-bottom: 24px;
-            }
-        }
-    }
-
-    .swiper-pagination--plans {
-        .swiper-pagination-bullet {
-            background: var(--color-white);
-            border: 2px solid var(--color-purple-75);
-            width: 14px;
-            height: 14px;
-            opacity: 1;
-            margin: 0 8px;
-
-            @media (min-width: 992px) {
-                width: 16px;
-                height: 16px;
-            }
-        }
-
-        .swiper-pagination-bullet-active {
-            background: var(--color-purple-75);
-        }
-    }
-
-    .swiper-button-next--plans,
-    .swiper-button-prev--plans {
+    .swiper-pagination {
+      @media (min-width: 1024px) {
         display: none;
-        z-index: 7;
-
-        @media (min-width: 1024px) {
-            display: flex;
-            width: 40px;
-            height: 40px;
-            top: calc(50% + 20px);
-        }
+      }
     }
-
-    .swiper-button-next--plans::after,
-    .swiper-button-prev--plans::after {
+  }
+  &.tuenti__plans--mini--v2{
+    .tuenti__plans--text a{
         display: none;
     }
+  }
 
-    .swiper-button-prev--plans {
-        left: -45px;
-    }
+  &.tuenti__plans--mini--bg-white {
+    background-color: var(--color-white);
+  }
 
-    .swiper-button-next--plans {
-        right: -45px;
-    }
-
-    &.tuenti__plans--mini {
-        .tuenti__plans--content {
-            @media (min-width: 768px) {
-                width: 700px;
-            }
-
-            @media (min-width: 1024px) {
-                width: 1070px;
-            }
-        }
-
-        .tuenti__plans--item {
-            @media (min-width: 1024px) {
-                width: 324px !important;
-            }
-
-            &:nth-child(3n) {
-                @media (min-width: 1024px) {
-                    margin-right: 0px !important;
-                }
-            }
-        }
-
-        .swiper-pagination {
-            @media (min-width: 1024px) {
-                display: none;
-            }
-        }
-    }
+  &.tuenti__plans--mini--bg-silver-25 {
+    background-color: var(--color-silver-25);
+  }
 }
 
 .plans--card {
-    width: 240px;
-    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    background-color: var(--color-white);
-    padding: 24px 0px;
-    margin: 0 auto;
-    position: relative;
+  width: 240px;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: var(--color-white);
+  padding: 24px 0px;
+  margin: 0 auto;
+  position: relative;
 
-    .plans__card--title {
-        font-size: 36px;
-        margin-bottom: 12px;
+  .plans__card--title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .plans__card--bagde {
+    display: block;
+    padding: 0px 24px;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 8px;
+    color: var(--color-magenta-75);
+    font-weight: 600;
+  }
+
+  .plans__card--gigas {
+    display: block;
+    padding: 0px 24px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-magenta-75);
+    font-weight: 700;
+  }
+
+  .plans__card--price {
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 22px;
+    color: var(--color-magenta-75);
+    font-weight: 400;
+  }
+
+  .plans__card--info {
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .plans__card--info__icon {
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+  .plans__card--info__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    color: var(--color-body);
+    font-weight: 400;
+  }
+
+  .plans__card--apps {
+    background-color: var(--color-silver-25);
+    padding: 8px 24px 7px;
+    margin-bottom: 16px;
+
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 9px;
+      color: var(--color-body);
+      font-weight: 500;
+    }
+
+    .picture {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .plans__card--acumula {
+    padding: 0px 24px;
+    font-size: 12px;
+    line-height: 8px;
+    margin-bottom: 16px;
+    color: var(--color-silver-100);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .plans__card--enlace-content {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px;
+
+    .plans__card--link {
+      min-width: 170px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .plans__card--velocidad {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+  }
+
+  &.plans--card--recomentado {
+    background-color: var(--color-primary);
+    padding-top: 0px;
+    border: 1px solid var(--color-primary);
+    margin-top: -40px;
+
+    .plans__card--recomendado {
+      padding-top: 5px;
+      background-color: var(--color-yellow-25);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--color-primary);
+      font-weight: 700;
+      margin-bottom: 24px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .plans__card--bagde {
-        display: block;
-        padding: 0px 24px;
-        font-size: 20px;
-        line-height: 1;
-        margin-bottom: 8px;
-        color: var(--color-magenta-75);
-        font-weight: 600;
+      color: var(--color-white);
     }
 
     .plans__card--gigas {
-        display: block;
-        padding: 0px 24px;
-        font-size: 36px;
-        line-height: 1.2;
-        margin: 0;
-        color: var(--color-magenta-75);
-        font-weight: 700;
+      color: var(--color-white);
     }
 
     .plans__card--price {
-        padding: 0px 24px;
-        font-size: 16px;
-        line-height: 16px;
-        margin-bottom: 22px;
-        color: var(--color-magenta-75);
-        font-weight: 400;
-    }
-
-    .plans__card--info {
-        padding: 0px 24px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 16px;
-    }
-
-    .plans__card--info__icon {
-        margin-right: 4px;
-        display: flex;
-        align-items: center;
+      color: var(--color-white);
     }
 
     .plans__card--info__text {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 0px;
-        color: var(--color-body);
-        font-weight: 400;
-    }
-
-    .plans__card--apps {
-        background-color: var(--color-silver-25);
-        padding: 8px 24px 7px;
-        margin-bottom: 16px;
-
-        .title {
-            font-size: 14px;
-            line-height: 16px;
-            margin-bottom: 9px;
-            color: var(--color-body);
-            font-weight: 500;
-        }
-
-        .picture {
-            width: auto;
-            height: auto;
-        }
+      color: var(--color-white);
     }
 
     .plans__card--acumula {
-        padding: 0px 24px;
-        font-size: 12px;
-        line-height: 8px;
-        margin-bottom: 16px;
-        color: var(--color-silver-100);
-        font-weight: 500;
-        text-align: center;
+      color: var(--color-white);
     }
 
-    .plans__card--enlace-content {
-        display: flex;
-        justify-content: center;
-        padding: 0px 24px;
-
-        .plans__card--link {
-            min-width: 170px;
-            padding-left: 20px;
-            padding-right: 20px;
+    .plans__card--info {
+      &:nth-of-type(1) {
+        .plans__card--info__icon {
+          path {
+            stroke: var(--color-white);
+            fill: none;
+          }
         }
+      }
+
+      .plans__card--info__icon {
+        path {
+          fill: var(--color-white);
+        }
+      }
     }
 
     .plans__card--velocidad {
-        position: absolute;
-        right: 20px;
-        top: 45px;
+      top: 85px;
     }
+  }
 
-    &.plans--card--recomentado {
-        background-color: var(--color-primary);
-        padding-top: 0px;
-        border: 1px solid var(--color-primary);
-        margin-top: -40px;
-
-        .plans__card--recomendado {
-            padding-top: 5px;
-            background-color: var(--color-yellow-25);
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            font-size: 16px;
-            line-height: 16px;
-            color: var(--color-primary);
-            font-weight: 700;
-            margin-bottom: 24px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .plans__card--bagde {
-            color: var(--color-white);
-        }
-
-        .plans__card--gigas {
-            color: var(--color-white);
-        }
-
-        .plans__card--price {
-            color: var(--color-white);
-        }
-
-        .plans__card--info__text {
-            color: var(--color-white);
-        }
-
-        .plans__card--acumula {
-            color: var(--color-white);
-        }
-
-        .plans__card--info {
-            &:nth-of-type(1) {
-                .plans__card--info__icon {
-                    path {
-                        stroke: var(--color-white);
-                        fill: none;
-                    }
-                }
-            }
-
-            .plans__card--info__icon {
-                path {
-                    fill: var(--color-white);
-                }
-            }
-        }
-
-        .plans__card--velocidad {
-            top: 85px;
-        }
+  &.plans--card--mini {
+    width: 324px;
+    @media (min-width: 1366px) {
+      width: 332px;
     }
-
-    &.plans--card--mini {
-        width: 324px;
-    }
+  }
 }

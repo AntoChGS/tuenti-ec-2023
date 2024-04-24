@@ -28,10 +28,10 @@
         }
 
         .brand {
-            display: flex;
-            justify-content: space-between;
+            display: inline-flex;
+            padding: 8px 16px 8px 0;
             align-items: center;
-            flex: 1 0 0;
+            flex-shrink: 0;
         }
 
         .navigation {
@@ -53,11 +53,12 @@
                 position: initial;
                 width: auto;
                 height: auto;
-                display: flex;
-                padding: 24px 4px;
+                display: inline-flex;
+                justify-content: center;
                 align-items: center;
                 gap: 24px;
                 margin-right: 0;
+                padding: 24px 0;
                 top: auto;
                 right: auto;
                 background: var(--transparent);
@@ -107,22 +108,22 @@
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 20px;
+                    line-height: 24px;
 
                     @media (min-width: 992px) {
                         width: auto;
                         display: flex;
-                        justify-content: center;
+                        padding: 0 4px;
                         align-items: center;
-                        border-bottom: 0 !important;
                         gap: 4px;
+                        justify-content: center;
+                        border-bottom: 0 !important;
                         color: var(--color-white);
                         text-align: center;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 16px;
-                        padding: 0;
                         background: var(--transparent);
                     }
 
@@ -262,7 +263,7 @@
         .login {
             width: 100%;
             max-width: 200px;
-            margin: 0 auto;
+            margin: 20px auto 0;
 
             @media (min-width: 992px) {
                 width: auto;

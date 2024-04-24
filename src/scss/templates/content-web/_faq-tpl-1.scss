@@ -84,6 +84,14 @@
             color: var(--color-title);
         }
 
+        &__subtitle {
+            max-width: 650px;
+            margin-left: auto;
+            text-align: center;
+            color: var(--color-title);
+            margin-right: auto;
+        }
+
         &__panel {
             display: block;
             width: 100%;
@@ -213,6 +221,12 @@
                     }
                 }
             }
+        }
+    }
+
+    &.tue-faq-tpl--v2{
+        .faq-tpl__subtitle{
+            display: none;
         }
     }
 }
